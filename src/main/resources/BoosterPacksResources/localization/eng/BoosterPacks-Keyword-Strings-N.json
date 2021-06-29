@@ -1,0 +1,37 @@
+[
+  {
+    "PROPER_NAME": "Immutable",
+    "NAMES": [
+      "immutable"
+    ],
+    "DESCRIPTION": "Has its values fixed."
+  },
+  {
+    "PROPER_NAME": "Grave",
+    "NAMES": [
+      "grave"
+    ],
+    "DESCRIPTION": "Starts combat in your discard pile."
+  },
+  {
+    "PROPER_NAME": "Latent",
+    "NAMES": [
+      "latent"
+    ],
+    "DESCRIPTION": "Starts combat at the bottom of your draw pile."
+  },
+  {
+    "PROPER_NAME": "Invoke",
+    "NAMES": [
+      "invoke"
+    ],
+    "DESCRIPTION": "Activate the Evoke effect of the corresponding orb."
+  },
+  {
+    "PROPER_NAME": "Courage",
+    "NAMES": [
+      "courage"
+    ],
+    "DESCRIPTION": "Upon exiting this Stance, draw #b1 card. NL At the start of your turn, draw #b1 additional card."
+  }
+]
