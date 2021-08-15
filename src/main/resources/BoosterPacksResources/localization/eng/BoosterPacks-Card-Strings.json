@@ -130,7 +130,7 @@
   },
   "BoosterPacks:DominateReality": {
     "NAME": "Dominate Reality",
-    "DESCRIPTION": "Add !M! Insights and Smites to your draw pile. NL Exhaust."
+    "DESCRIPTION": "Add !M! *Insights and *Smites to your draw pile. NL Exhaust."
   },
   "BoosterPacks:DoubleEdge": {
     "NAME": "Double Edge",
@@ -471,7 +471,7 @@
   },
   "BoosterPacks:SwissKnife": {
     "NAME": "Swiss Knife",
-    "DESCRIPTION": "Deal damage equal to !M! times the number of cards in your hand. NL boosterpacks:Immutable.",
+    "DESCRIPTION": "Deal damage equal to !M! times the number of cards in your hand to ALL enemies. NL boosterpacks:Immutable.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)"
     ]

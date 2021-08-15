@@ -16,13 +16,13 @@ public class SwissKnife extends CustomCard {
     public static final String ID = BoosterPacks.makeID(SwissKnife.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("SwissKnife.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
+    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.GREEN;
     private static final int COST = 1;
@@ -63,7 +63,7 @@ public class SwissKnife extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = this.cardDamage();
         this.calculateCardDamage(m);
-        this.addToBot(new SwissKnifeAction(m, this.magicNumber));
+        this.addToBot(new SwissKnifeAction(this.magicNumber));
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }

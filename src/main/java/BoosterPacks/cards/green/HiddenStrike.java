@@ -4,6 +4,7 @@ import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -17,7 +18,7 @@ public class HiddenStrike extends CustomCard {
     public static final String ID = BoosterPacks.makeID(HiddenStrike.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("HiddenStrike.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -48,7 +49,7 @@ public class HiddenStrike extends CustomCard {
     @Override
     public void triggerOnManualDiscard() {
         AbstractPlayer p = AbstractDungeon.player;
-        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageType, AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
+        this.addToBot(new DamageAllEnemiesAction(p, DamageInfo.createDamageMatrix(this.damage, false), this.damageType, AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
     @Override

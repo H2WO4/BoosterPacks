@@ -19,7 +19,7 @@ public class MasterTrick extends CustomCard {
     public static final String ID = BoosterPacks.makeID(MasterTrick.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Skill.png");
+    public static final String IMG = makeCardPath("MasterTrick.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

@@ -10,8 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 @SpirePatch(clz = CardGroup.class, method = "moveToExhaustPile")
 public class Exhaust {
     public static void Postfix(CardGroup __instance, AbstractCard c) {
-        if (AbstractDungeon.player.masterDeck.contains(new AshesToAshes())) {
-            AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.discardPile, AshesToAshes.ID));
-        }
+        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.discardPile, AshesToAshes.ID));
     }
 }

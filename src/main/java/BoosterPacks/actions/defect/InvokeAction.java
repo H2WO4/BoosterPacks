@@ -18,15 +18,7 @@ public class InvokeAction extends AbstractGameAction {
     }
 
     public void update() {
-        AbstractPlayer p = AbstractDungeon.player;
         orb.onEvoke();
-
-        for (AbstractPower po: p.powers) {
-            po.onEvokeOrb(orb);
-        }
-        for (AbstractRelic re: p.relics) {
-            re.onEvokeOrb(orb);
-        }
 
         this.isDone = true;
     }

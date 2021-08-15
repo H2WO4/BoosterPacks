@@ -15,11 +15,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 @SpirePatch(clz = ShuffleAllAction.class, method = "update")
 public class Shuffle {
     public static void Postfix(AbstractGameAction __instance) {
-        if (AbstractDungeon.player.masterDeck.contains(new StrikeBarrage())) {
-            AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.exhaustPile, StrikeBarrage.ID));
-        }
-        if (AbstractDungeon.player.masterDeck.contains(new Guilt())) {
-            AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.drawPile, Guilt.ID));
-        }
+        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.exhaustPile, StrikeBarrage.ID));
+        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.drawPile, Guilt.ID));
     }
 }

@@ -105,7 +105,7 @@
   "BoosterPacks:NinjutsuPower": {
     "NAME": "Ninjutsu",
     "DESCRIPTIONS": [
-      "#yShivs now gain #yRetain. Whenever you #yRetain a #yShiv, #yUpgrade it."
+      "Whenever you #yRetain a #yShiv, #yUpgrade it."
     ]
   },
   "BoosterPacks:OraclePower": {

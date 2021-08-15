@@ -21,7 +21,7 @@ public class PhantomStrike extends CustomCard {
     public static final String ID = BoosterPacks.makeID(PhantomStrike.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("PhantomStrike.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;

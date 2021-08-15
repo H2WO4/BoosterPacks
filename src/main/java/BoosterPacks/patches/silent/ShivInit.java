@@ -11,7 +11,7 @@ public class ShivInit {
         AbstractPlayer p = AbstractDungeon.player;
         if (p != null && p.hasPower(NinjutsuPower.POWER_ID)) {
             __instance.selfRetain = true;
-            __instance.rawDescription = "Retain. NL " + __instance.rawDescription + "NL Upgrade when retained.";
+            __instance.rawDescription = "Retain. NL " + __instance.rawDescription;
         }
     }
 }
