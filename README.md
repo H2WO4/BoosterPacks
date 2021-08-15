@@ -1,4 +1,4 @@
-| Name | ⠀⠀⠀⠀Image⠀⠀⠀⠀⠀ | Upgraded image | Rarity | Type | Cost | Description |
+| Name | ⠀⠀⠀Image⠀⠀⠀ | Upgraded image | Rarity | Type | Cost | Description |
 | ---- | ----- | -------------- | ------ | ---- | ---- | ----------- |
 | Charge | ![](small-card-images/Red-Charge.png) | ![](small-card-images/Red-ChargePlus.png) | Common | Attack | 0 | Deal 5 (7) damage. If this consumes Vigor, draw 1 (2) card(s). |
 | Double Edge | ![](small-card-images/Red-DoubleEdge.png) | ![](small-card-images/Red-DoubleEdgePlus.png) | Common | Attack | 1 | Deal 4 (5) damage. Gain Vigor equal to damage dealt. |
