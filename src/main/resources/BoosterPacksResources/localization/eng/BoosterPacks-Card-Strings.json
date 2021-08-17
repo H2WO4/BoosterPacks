@@ -3,6 +3,10 @@
     "NAME": "Abyss",
     "DESCRIPTION": "Put all copies of a card in your draw pile in your hand. NL Exhaust."
   },
+  "BoosterPacks:Ambivalent": {
+    "NAME": "Ambivalent",
+    "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards at random. NL Draw !M! cards. NL Deal !B! damage."
+  },
   "BoosterPacks:Ambush": {
     "NAME": "Ambush",
     "DESCRIPTION": "Add Shivs to your hand until you have !M! cards in hand. NL Exhaust."
@@ -238,7 +242,8 @@
   },
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
-    "DESCRIPTION": "Retain. NL Discard any number of card in your hand."
+    "DESCRIPTION": "Retain. NL Discard any number of card in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Discard any number of card in your hand."
   },
   "BoosterPacks:KeenEyes": {
     "NAME": "Keen Eyes",
@@ -249,8 +254,7 @@
   },
   "BoosterPacks:LastTheorem": {
     "NAME": "Last Theorem",
-    "DESCRIPTION": "Deal X+3 damage squared. NL boosterpacks:Immutable. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal X+5 damage squared. NL boosterpacks:Immutable. NL Exhaust.",
+    "DESCRIPTION": "Deal X + !M! damage squared. NL boosterpacks:Immutable. NL Exhaust.",
     "EXTENDED_DESCRIPTION": [
       " NL (Deal !D! damage)."
     ]
@@ -266,8 +270,8 @@
   },
   "BoosterPacks:MasterTrick": {
     "NAME": "Master Trick",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add a card from your draw pile to your hand.",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add a card from your draw or discard pile to your hand.",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, put a card from your draw pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, put a card from your draw or discard pile to your hand.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -307,7 +311,7 @@
     "NAME": "Monad",
     "DESCRIPTION": "Deal damage equal to the number of cards currently in play. NL boosterpacks:Immutable.",
     "EXTENDED_DESCRIPTION": [
-      "NL (Deal !D! damage)"
+      " NL (Deal !D! damage.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -326,7 +330,7 @@
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
     "DESCRIPTION": "Shivs now gain Retain. NL Whenever you retain a Shiv, Upgrade it.",
-    "UPGRADE_DESCRIPTION": "Innate. NL All future Shivs now gain Retain. NL Whenever you retain a Shiv, Upgrade it."
+    "UPGRADE_DESCRIPTION": "Innate. NL Shivs now gain Retain. NL Whenever you retain a Shiv, Upgrade it."
   },
   "BoosterPacks:NoMoreRemorse": {
     "NAME": "No More Remorse",
@@ -511,8 +515,8 @@
   },
   "BoosterPacks:UnderhandedTrick": {
     "NAME": "Underhanded Trick",
-    "DESCRIPTION": "Scry your entire draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Scry your entire draw pile. "
+    "DESCRIPTION": "Scry 99. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Scry 99."
   },
   "BoosterPacks:Valor": {
     "NAME": "Valor",

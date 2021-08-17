@@ -34,7 +34,7 @@ public class DictionaryAttack extends CustomCard {
 
     public DictionaryAttack() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 13;
+        this.baseDamage = 14;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
@@ -58,7 +58,7 @@ public class DictionaryAttack extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(5);
+            this.upgradeDamage(2);
             this.upgradeMagicNumber(2);
             initializeDescription();
         }

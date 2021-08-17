@@ -27,10 +27,11 @@ public class Instinct extends CustomCard {
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.GREEN;
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     public Instinct() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
         this.selfRetain = true;
     }
 
@@ -47,7 +48,8 @@ public class Instinct extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.exhaust = false;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -48,6 +48,7 @@ public class Monad extends CustomCard {
     public void applyPowers() {
         this.baseDamage = this.countCards();
         super.applyPowers();
+        this.baseDamage = this.countCards();
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
@@ -55,7 +56,9 @@ public class Monad extends CustomCard {
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
+        this.baseDamage = this.countCards();
         super.calculateCardDamage(mo);
+        this.baseDamage = this.countCards();
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();

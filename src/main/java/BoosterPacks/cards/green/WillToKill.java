@@ -29,7 +29,7 @@ public class WillToKill extends CustomCard {
 
     public WillToKill() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -44,7 +44,7 @@ public class WillToKill extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }

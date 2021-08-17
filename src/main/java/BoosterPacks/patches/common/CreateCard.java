@@ -10,12 +10,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 @SpirePatch(clz = MakeTempCardInHandAction.class, method = "update")
 public class CreateCard {
-    public static void Postfix(MakeTempCardInHandAction __instance)
+    public static void Prefix(MakeTempCardInHandAction __instance)
     {
         AbstractCard c = ReflectionHacks.getPrivate(__instance, MakeTempCardInHandAction.class, "c");
         if (AbstractDungeon.player.hasPower(MasteryPower.POWER_ID) && c.cardID.equals(com.megacrit.cardcrawl.cards.tempCards.Shiv.ID) && __instance.amount > 1) {
             AbstractDungeon.player.getPower(MasteryPower.POWER_ID).flash();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new com.megacrit.cardcrawl.cards.tempCards.Shiv(), 1));
+            __instance.amount += 1;
         }
     }
 }

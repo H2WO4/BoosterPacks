@@ -40,7 +40,7 @@ public class LastTheorem extends CustomCard {
 
     @Override
     public void onMoveToDiscard() {
-        this.rawDescription = this.upgraded ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION;
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }
 
@@ -49,7 +49,7 @@ public class LastTheorem extends CustomCard {
         AbstractPlayer p = AbstractDungeon.player;
         this.baseDamage = (int) Math.pow(p.energy.energy + this.magicNumber + (p.hasRelic(ChemicalX.ID) ? 2 : 0), 2);
         super.applyPowers();
-        this.rawDescription = this.upgraded ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION;
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
@@ -57,7 +57,7 @@ public class LastTheorem extends CustomCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
-        this.rawDescription = this.upgraded ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION;
+        this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
     }
@@ -67,7 +67,6 @@ public class LastTheorem extends CustomCard {
         this.baseDamage = (int) Math.pow(p.energy.energy + this.magicNumber + (p.hasRelic(ChemicalX.ID) ? 2 : 0), 2);
         this.calculateCardDamage(m);
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.FIRE));
-        this.rawDescription = this.upgraded ? cardStrings.UPGRADE_DESCRIPTION : cardStrings.DESCRIPTION;
         this.initializeDescription();
         if (!this.freeToPlayOnce) {
             this.addToBot(new LoseEnergyAction(this.energyOnUse));
@@ -79,7 +78,6 @@ public class LastTheorem extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeMagicNumber(2);
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }
