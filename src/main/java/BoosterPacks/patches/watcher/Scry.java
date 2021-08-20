@@ -1,7 +1,6 @@
 package BoosterPacks.patches.watcher;
 
 import BoosterPacks.cards.purple.FreeWill;
-import BoosterPacks.powers.watcher.BlissfulIgnorancePower;
 import BoosterPacks.powers.watcher.ThreadsOfFatePower;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.actions.utility.ScryAction;
@@ -24,12 +23,6 @@ public class Scry {
                 power.onDiscardScry();
             }
             c.triggerOnManualDiscard();
-        }
-        if (p.hasPower(BlissfulIgnorancePower.POWER_ID)) {
-            BlissfulIgnorancePower power = (BlissfulIgnorancePower) p.getPower(BlissfulIgnorancePower.POWER_ID);
-            if (cardsDiscarded.size() == __instance.amount) {
-                power.onDiscardScry(__instance.amount);
-            }
         }
         if (p.cardInUse != null && p.cardInUse.cardID.equals(FreeWill.ID)) {
             FreeWill.drawForDiscard(cardsDiscarded.size());

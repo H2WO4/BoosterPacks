@@ -34,7 +34,7 @@ public class TacticalAdvantage extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 5;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 7;
+        this.baseMagicNumber = 8;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
     }
@@ -52,7 +52,7 @@ public class TacticalAdvantage extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeDamage(1);
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }

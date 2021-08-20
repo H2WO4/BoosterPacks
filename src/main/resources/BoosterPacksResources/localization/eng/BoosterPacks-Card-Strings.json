@@ -1,15 +1,15 @@
 {
   "BoosterPacks:Abyss": {
     "NAME": "Abyss",
-    "DESCRIPTION": "Put all copies of a card in your draw pile in your hand. NL Exhaust."
+    "DESCRIPTION": "Put all copies of a card in your draw pile to your hand. NL Exhaust."
   },
   "BoosterPacks:Ambivalent": {
     "NAME": "Ambivalent",
-    "DESCRIPTION": "Deal !D! damage. NL Discard !M! cards at random. NL Draw !M! cards. NL Deal !B! damage."
+    "DESCRIPTION": "Deal !D! damage twice. NL Discard !M! cards at random. NL Draw !M! cards."
   },
   "BoosterPacks:Ambush": {
     "NAME": "Ambush",
-    "DESCRIPTION": "Add Shivs to your hand until you have !M! cards in hand. NL Exhaust."
+    "DESCRIPTION": "Add Shivs to your hand until you have !M! cards in your hand. NL Exhaust."
   },
   "BoosterPacks:Animosity": {
     "NAME": "Animosity",
@@ -24,10 +24,18 @@
     "NAME": "Ashes To Ashes",
     "DESCRIPTION": "Deal !D! damage. NL Whenever a card is Exhausted, return this from your discard pile to your hand."
   },
+  "BoosterPacks:Assassinate": {
+    "NAME": "Assassinate",
+    "DESCRIPTION": "Deal !D! damage. NL If this card is discarded from your hand, reduce its cost by 1 until played and add it back to your hand."
+  },
   "BoosterPacks:Audacity": {
     "NAME": "Audacity",
     "DESCRIPTION": "Draw 1 card. NL If you draw a Skill, enter boosterpacks:Courage. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Draw 1 card. NL If you draw a Skill, enter boosterpacks:Courage."
+  },
+  "BoosterPacks:BlackDeath": {
+    "NAME": "Black Death",
+    "DESCRIPTION": "Apply !M! Poison. NL Double this card's poison and increase its cost by 1 for this combat."
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Black Hole",
@@ -74,8 +82,8 @@
   },
   "BoosterPacks:ComplexPlane": {
     "NAME": "Complex Plane",
-    "DESCRIPTION": "Gain X Focus. NL Cost only up to [B] [B].",
-    "UPGRADE_DESCRIPTION": "Gain X Focus. NL Cost only up to [B]."
+    "DESCRIPTION": "Gain X Focus. NL Cost only up to [B] [B] [B].",
+    "UPGRADE_DESCRIPTION": "Gain X Focus. NL Cost only up to [B] [B]."
   },
   "BoosterPacks:ConductiveStrike": {
     "NAME": "Conductive Strike",
@@ -122,7 +130,7 @@
   },
   "BoosterPacks:Desecration": {
     "NAME": "Desecration",
-    "DESCRIPTION": "Lose 3 HP. NL Play a copy of any card not currently in your hand."
+    "DESCRIPTION": "Lose !M! HP. NL Play a copy of any card not currently in your hand."
   },
   "BoosterPacks:Determination": {
     "NAME": "Determination",
@@ -236,21 +244,21 @@
       "I can't play this card."
     ]
   },
+  "BoosterPacks:HonedBlade": {
+    "NAME": "Honed Blade",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn, gain !M! Strength for this turn."
+  },
   "BoosterPacks:InnerDemons": {
     "NAME": "Inner Demons",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Add a random curse to your hand."
   },
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
-    "DESCRIPTION": "Retain. NL Discard any number of card in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Discard any number of card in your hand."
+    "DESCRIPTION": "Retain. NL Discard any number of cards from your hand. NL Exhaust."
   },
-  "BoosterPacks:KeenEyes": {
-    "NAME": "Keen Eyes",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, apply !M! Weak to ALL enemies",
-    "EXTENDED_DESCRIPTION": [
-      "I can't play this card."
-    ]
+  "BoosterPacks:KillingUrge": {
+    "NAME": "Killing Urge",
+    "DESCRIPTION": "Next turn, add !M! Shivs to your hand."
   },
   "BoosterPacks:LastTheorem": {
     "NAME": "Last Theorem",
@@ -300,8 +308,8 @@
   },
   "BoosterPacks:Mirage": {
     "NAME": "Mirage",
-    "DESCRIPTION": "Whenever you draw a non-Curse, non-Status unplayable card, draw 1 card.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you draw a non-Curse, non-Status unplayable card, draw 1 card."
+    "DESCRIPTION": "Whenever you draw a non-Curse, non-Status Unplayable card, draw 1 card.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you draw a non-Curse, non-Status Unplayable card, draw 1 card."
   },
   "BoosterPacks:MobMentality": {
     "NAME": "Mob Mentality",
@@ -329,8 +337,8 @@
   },
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
-    "DESCRIPTION": "Shivs now gain Retain. NL Whenever you retain a Shiv, Upgrade it.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Shivs now gain Retain. NL Whenever you retain a Shiv, Upgrade it."
+    "DESCRIPTION": "Shivs gain Retain. NL When a Shiv is Retained, Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Shivs gain Retain. NL When a Shiv is Retained, Upgrade it."
   },
   "BoosterPacks:NoMoreRemorse": {
     "NAME": "No More Remorse",
@@ -359,11 +367,11 @@
   },
   "BoosterPacks:PhantomStrike": {
     "NAME": "Phantom Strike",
-    "DESCRIPTION": "Deal !D! damage per 0-cost card in your hand.",
+    "DESCRIPTION": "Deal !D! damage per cost 0 or Unplayable card in your hand.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have ",
-      " 0-cost card).",
-      " 0-cost cards)."
+      " NL (Deal damage ",
+      " time).",
+      " times)."
     ]
   },
   "BoosterPacks:PiercingClaws": {
@@ -443,10 +451,14 @@
   },
   "BoosterPacks:Shinobi": {
     "NAME": "Shinobi",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add !M! Shivs to your hand.",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add !M! Shivs+ to your hand.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
+  },
+  "BoosterPacks:Silence": {
+    "NAME": "Silence",
+    "DESCRIPTION": "Discard your hand. NL Gain !B! Block per card discarded."
   },
   "BoosterPacks:SlidingKick": {
     "NAME": "Sliding Kick",
@@ -525,10 +537,6 @@
   "BoosterPacks:Vision": {
     "NAME": "Vision",
     "DESCRIPTION": "Retain. NL Scry !M!. NL Exhaust."
-  },
-  "BoosterPacks:WillToKill": {
-    "NAME": "Will to Kill",
-    "DESCRIPTION": "Apply !M! Poison. NL Double this card potency and increase its cost by 1 for this combat."
   },
   "BoosterPacks:Worsening": {
     "NAME": "Worsening",

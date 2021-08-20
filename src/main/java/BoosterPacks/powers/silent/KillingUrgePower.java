@@ -1,20 +1,24 @@
-package BoosterPacks.powers.defect;
+package BoosterPacks.powers.silent;
 
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.util.TextureLoader;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static BoosterPacks.BoosterPacks.makePowerPath;
 
-public class DarkFocusPower extends AbstractPower implements CloneablePowerInterface {
+public class KillingUrgePower extends AbstractPower implements CloneablePowerInterface {
 
-    public static final String POWER_ID = BoosterPacks.makeID("DarkFocusPower");
+    public static final String POWER_ID = BoosterPacks.makeID("KillingUrgePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -22,13 +26,12 @@ public class DarkFocusPower extends AbstractPower implements CloneablePowerInter
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
 
-    public DarkFocusPower(final AbstractCreature owner, final int amount) {
+    public KillingUrgePower(final AbstractCreature owner, int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
         this.amount = amount;
-        this.canGoNegative = true;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -40,12 +43,18 @@ public class DarkFocusPower extends AbstractPower implements CloneablePowerInter
     }
 
     @Override
+    public void atStartOfTurnPostDraw() {
+        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.amount));
+        this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this));
+    }
+
+    @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new DarkFocusPower(owner, amount);
+        return new KillingUrgePower(owner, amount);
     }
 }

@@ -3,6 +3,7 @@ package BoosterPacks.cards.green;
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -31,6 +32,10 @@ public class Shinobi extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
+
+        AbstractCard shiv = new Shiv();
+        shiv.upgrade();
+        this.cardsToPreview = shiv;
     }
 
     @Override
@@ -44,7 +49,9 @@ public class Shinobi extends CustomCard {
 
     @Override
     public void triggerOnManualDiscard() {
-        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.magicNumber));
+        AbstractCard shiv = new Shiv();
+        shiv.upgrade();
+        this.addToBot(new MakeTempCardInHandAction(shiv, this.magicNumber));
     }
 
     @Override

@@ -23,12 +23,12 @@ public class Ambivalent extends CustomCard {
     public static final String ID = BoosterPacks.makeID(Ambivalent.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Ambivalent.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.GREEN;
@@ -36,42 +36,26 @@ public class Ambivalent extends CustomCard {
 
     public Ambivalent() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 6;
+        this.baseDamage = 5;
         this.damage = this.baseDamage;
-        this.baseBlock = 4;
-        this.block = this.baseBlock;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
-    public void applyPowers() {
-        super.applyPowers();
-        this.block = this.damage - (this.upgraded ? 3 : 2);
-        this.initializeDescription();
-    }
-
-    @Override
-    public void calculateCardDamage(AbstractMonster mo) {
-        super.calculateCardDamage(mo);
-        this.block = this.damage - (this.upgraded ? 3 : 2);
-        this.initializeDescription();
-    }
-
-    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        for (int i = 0; i < 2; i++) {
+            this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
+        }
         this.addToBot(new DiscardAction(p, p, this.magicNumber, true, false));
         this.addToBot(new DrawCardAction(this.magicNumber));
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.block, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(2);
-            this.upgradeBlock(1);
+            this.upgradeDamage(1);
             this.upgradeMagicNumber(1);
             initializeDescription();
         }

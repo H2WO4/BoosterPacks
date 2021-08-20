@@ -15,6 +15,7 @@ import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
@@ -44,13 +45,9 @@ public class GutStab extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        ArrayList<AbstractGameAction.AttackEffect> animType = new ArrayList<>();
-        animType.add(AbstractGameAction.AttackEffect.SLASH_HORIZONTAL);
-        animType.add(AbstractGameAction.AttackEffect.SLASH_VERTICAL);
-        animType.add(AbstractGameAction.AttackEffect.SLASH_DIAGONAL);
-        for (int i = 0; i < 3; i++) {
-            this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), animType.get((int) Math.round(Math.random() * 3))));
-        }
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -this.magicNumber), -this.magicNumber));
         if (!m.hasPower(ArtifactPower.POWER_ID)) {
             this.addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, this.magicNumber), this.magicNumber));

@@ -1,6 +1,7 @@
 package BoosterPacks.actions.silent;
 
-import BoosterPacks.actions.common.MoveToHandAction;
+import BoosterPacks.cards.green.MasterTrick;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -9,12 +10,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class MasterTrickAction extends AbstractGameAction {
 
-    private final AbstractCard card;
+    private final boolean upgraded;
 
-    public MasterTrickAction(AbstractCard c) {
+    public MasterTrickAction(boolean upgraded) {
         this.duration = 0.0F;
         this.actionType = ActionType.CARD_MANIPULATION;
-        this.card = c;
+        this.upgraded = upgraded;
     }
 
     public void update() {
@@ -22,12 +23,24 @@ public class MasterTrickAction extends AbstractGameAction {
         CardGroup draw = p.drawPile;
         CardGroup discard = p.discardPile;
 
-        if (draw.contains(card)) {
-            this.addToBot(new MoveToHandAction(card, draw));
+        CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+        for (AbstractCard c: draw.group) {
+            if (!c.cardID.equals(MasterTrick.ID)) {
+                temp.addToTop(c);
+            }
         }
-        else if (discard.contains(card)) {
-            this.addToBot(new MoveToHandAction(card, discard));
+        if (this.upgraded) {
+            for (AbstractCard c: discard.group) {
+                if (!c.cardID.equals(MasterTrick.ID)) {
+                    temp.addToTop(c);
+                }
+            }
         }
+        temp.sortByRarity(false);
+        this.addToBot(new SelectCardsAction(temp.group, 1, "Choose a card", (cards) -> {
+            AbstractCard card = cards.get(0);
+            AbstractDungeon.actionManager.addToTop(new MasterTrickMoveAction(card));
+        }));
 
 
         this.isDone = true;

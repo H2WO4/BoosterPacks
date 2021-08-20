@@ -45,25 +45,7 @@ public class MasterTrick extends CustomCard {
 
     @Override
     public void triggerOnManualDiscard() {
-        AbstractPlayer p = AbstractDungeon.player;
-        CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractCard c: p.drawPile.group) {
-            if (!c.cardID.equals(MasterTrick.ID)) {
-                temp.addToTop(c);
-            }
-        }
-        if (this.upgraded) {
-            for (AbstractCard c: p.discardPile.group) {
-                if (!c.cardID.equals(MasterTrick.ID)) {
-                    temp.addToTop(c);
-                }
-            }
-        }
-        temp.sortByRarity(false);
-        this.addToBot(new SelectCardsAction(temp.group, 1, "Choose a card", (cards) -> {
-            AbstractCard card = cards.get(0);
-            AbstractDungeon.actionManager.addToTop(new MasterTrickAction(card));
-        }));
+        this.addToBot(new MasterTrickAction(this.upgraded));
     }
 
     @Override

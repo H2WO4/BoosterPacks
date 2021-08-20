@@ -73,6 +73,20 @@
       "Whenever you #yEvoke an non-#yLightning, Invoke a #yLightning."
     ]
   },
+  "BoosterPacks:HonedBladePower": {
+    "NAME": "Honed Blade",
+    "DESCRIPTIONS": [
+      "Next turn, gain #b",
+      " #yStrength for this turn."
+    ]
+  },
+  "BoosterPacks:KillingUrgePower": {
+    "NAME": "Killing Urge",
+    "DESCRIPTIONS": [
+      "Next turn, add #b",
+      " Shivs to your hand."
+    ]
+  },
   "BoosterPacks:LoseFocusPower": {
     "NAME": "Focus Down",
     "DESCRIPTIONS": [
@@ -105,7 +119,7 @@
   "BoosterPacks:NinjutsuPower": {
     "NAME": "Ninjutsu",
     "DESCRIPTIONS": [
-      "Whenever you #yRetain a #yShiv, #yUpgrade it."
+      "When a #yShiv is #yRetained, #yUpgrade it."
     ]
   },
   "BoosterPacks:OraclePower": {
@@ -169,12 +183,6 @@
     "DESCRIPTIONS": [
       "Whenever #yPoison is #yFatal, heal #b",
       " HP."
-    ]
-  },
-  "BoosterPacks:SuperconductorPower": {
-    "NAME": "Superconductor",
-    "DESCRIPTIONS": [
-      "Whenever you #yChannel an #yOrb, #yInvoke a copy of it."
     ]
   },
   "BoosterPacks:ThreadsOfFatePower": {

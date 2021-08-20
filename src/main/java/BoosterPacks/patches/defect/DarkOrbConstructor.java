@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.orbs.Dark;
 public class DarkOrbConstructor {
     public static void Postfix(Dark __instance) {
         if (AbstractDungeon.player.hasRelic(BlackLED.ID)) {
-            ReflectionHacks.setPrivate(__instance, AbstractOrb.class, "baseEvokeAmount", 10);
-            ReflectionHacks.setPrivate(__instance, AbstractOrb.class, "evokeAmount", 10);
+            ReflectionHacks.setPrivate(__instance, AbstractOrb.class, "baseEvokeAmount", 12);
+            ReflectionHacks.setPrivate(__instance, AbstractOrb.class, "evokeAmount", 12);
         }
     }
 }

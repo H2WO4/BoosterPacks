@@ -33,6 +33,8 @@ public class Desecration extends CustomCard {
 
     public Desecration() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 4;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
@@ -60,7 +62,7 @@ public class Desecration extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.upgradeMagicNumber(-1);
             initializeDescription();
         }
     }

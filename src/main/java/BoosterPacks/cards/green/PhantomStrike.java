@@ -45,7 +45,7 @@ public class PhantomStrike extends CustomCard {
 
         int count = 0;
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.costForTurn == 0) {
+            if (c.costForTurn == 0 || c.cost == -2) {
                 ++count;
             }
         }
@@ -68,7 +68,7 @@ public class PhantomStrike extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.rawDescription = cardStrings.DESCRIPTION;
         for (AbstractCard c: p.hand.group) {
-            if (c.costForTurn == 0) {
+            if (c.costForTurn == 0 || c.cost == -2) {
                 this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
             }
         }

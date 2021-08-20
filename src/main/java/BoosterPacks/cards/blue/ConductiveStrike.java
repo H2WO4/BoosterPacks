@@ -30,7 +30,7 @@ public class ConductiveStrike extends CustomCard {
 
     public ConductiveStrike() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 5;
         this.damage = this.baseDamage;
         this.tags.add(CardTags.STRIKE);
     }
@@ -47,7 +47,7 @@ public class ConductiveStrike extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(2);
             initializeDescription();
         }
     }

@@ -10,7 +10,7 @@
     "NAME": "Black LED",
     "FLAVOR": "Breaks at least three laws of physics, as well as the Geneva convention.",
     "DESCRIPTIONS": [
-      "#yDark #yOrbs start at #b10 damage."
+      "#yDark #yOrbs start at #b12 damage."
     ]
   },
   "BoosterPacks:BookOfHorrors": {
