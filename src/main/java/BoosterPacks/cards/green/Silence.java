@@ -32,7 +32,6 @@ public class Silence extends CustomCard {
 
     public Silence() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.selfRetain = true;
         this.baseBlock = 2;
         this.block = this.baseBlock;
     }

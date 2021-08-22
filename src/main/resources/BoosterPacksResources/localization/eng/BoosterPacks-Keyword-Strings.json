@@ -21,11 +21,18 @@
     "DESCRIPTION": "Starts combat at the bottom of your draw pile."
   },
   {
+    "PROPER_NAME": "Integrity",
+    "NAMES": [
+      "integrity"
+    ],
+    "DESCRIPTION": "Increase the effectiveness of the #yEvoke effect of Orbs by X."
+  },
+  {
     "PROPER_NAME": "Invoke",
     "NAMES": [
       "invoke"
     ],
-    "DESCRIPTION": "Activate the Evoke effect of the corresponding orb."
+    "DESCRIPTION": "Use the Evoke effect of the corresponding orb, without consuming it."
   },
   {
     "PROPER_NAME": "Courage",

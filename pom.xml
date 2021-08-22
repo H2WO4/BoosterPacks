@@ -18,7 +18,6 @@
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
         <Steam.path>E:\Steam\steamapps</Steam.path>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>com.megacrit.cardcrawl</groupId>

@@ -38,7 +38,6 @@ public class Midnight extends CustomCard {
         this.damage = this.baseDamage;
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-        this.tags.add(BoosterTags.LATENT);
     }
 
     @Override

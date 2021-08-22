@@ -22,7 +22,6 @@ public class Scry {
                 ThreadsOfFatePower power = (ThreadsOfFatePower) p.getPower(ThreadsOfFatePower.POWER_ID);
                 power.onDiscardScry();
             }
-            c.triggerOnManualDiscard();
         }
         if (p.cardInUse != null && p.cardInUse.cardID.equals(FreeWill.ID)) {
             FreeWill.drawForDiscard(cardsDiscarded.size());

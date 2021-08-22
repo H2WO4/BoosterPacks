@@ -26,7 +26,7 @@ public class DictionaryAttack extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.BLUE;
@@ -36,7 +36,7 @@ public class DictionaryAttack extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 14;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }
 
@@ -48,6 +48,7 @@ public class DictionaryAttack extends CustomCard {
         for (int i = end; i > 0; i--) {
             temp.addToTop(p.drawPile.getNCardFromTop(i));
         }
+        temp.sortByRarity(false);
         this.addToBot(new SelectCardsAction(temp.group, 1, "", (cards) -> {
             AbstractCard card = cards.get(0);
             AbstractDungeon.actionManager.addToTop(new MoveToHandAction(card, p.drawPile));

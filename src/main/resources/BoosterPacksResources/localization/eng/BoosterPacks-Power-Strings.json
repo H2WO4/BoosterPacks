@@ -50,13 +50,6 @@
       "."
     ]
   },
-  "BoosterPacks:DarkOmenPower": {
-    "NAME": "Dark Omen",
-    "DESCRIPTIONS": [
-      "Whenever you apply #yWeak, apply #b",
-      " #yPoison as well."
-    ]
-  },
   "BoosterPacks:EncorePower": {
     "NAME": "Encore",
     "DESCRIPTIONS": [
@@ -70,7 +63,7 @@
   "BoosterPacks:GalvanicAuraPower": {
     "NAME": "Galvanic Aura",
     "DESCRIPTIONS": [
-      "Whenever you #yEvoke an non-#yLightning, Invoke a #yLightning."
+      "Whenever you #yEvoke a non #yLightning, Invoke a #yLightning."
     ]
   },
   "BoosterPacks:HonedBladePower": {
@@ -78,6 +71,13 @@
     "DESCRIPTIONS": [
       "Next turn, gain #b",
       " #yStrength for this turn."
+    ]
+  },
+  "BoosterPacks:IntegrityPower": {
+    "NAME": "Integrity",
+    "DESCRIPTIONS": [
+      "Increase the effectiveness of Orbs' #yEvoke by #b",
+      "."
     ]
   },
   "BoosterPacks:KillingUrgePower": {
@@ -122,6 +122,13 @@
       "When a #yShiv is #yRetained, #yUpgrade it."
     ]
   },
+  "BoosterPacks:OptimizePower": {
+    "NAME": "Optimize",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yLock-on to ALL enemies."
+    ]
+  },
   "BoosterPacks:OraclePower": {
     "NAME": "Oracle",
     "DESCRIPTIONS": [
@@ -163,6 +170,16 @@
       " HP."
     ]
   },
+  "BoosterPacks:RecursiveCallPower": {
+    "NAME": "Recursive Call",
+    "DESCRIPTIONS": [
+      "If you play #b",
+      " more card this turn, #yChannel #b",
+      " more cards this turn, #yChannel #b",
+      " copy of your leftmost Orb.",
+      " copies of your leftmost Orb."
+    ]
+  },
   "BoosterPacks:RevengePower": {
     "NAME": "Revenge",
     "DESCRIPTIONS": [
@@ -183,6 +200,13 @@
     "DESCRIPTIONS": [
       "Whenever #yPoison is #yFatal, heal #b",
       " HP."
+    ]
+  },
+  "BoosterPacks:SomberOmenPower": {
+    "NAME": "Somber Omen",
+    "DESCRIPTIONS": [
+      "Whenever you apply #yWeak, apply #b",
+      " #yPoison as well."
     ]
   },
   "BoosterPacks:ThreadsOfFatePower": {

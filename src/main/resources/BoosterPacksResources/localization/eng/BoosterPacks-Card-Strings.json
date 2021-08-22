@@ -50,10 +50,6 @@
     "NAME": "Blessing",
     "DESCRIPTION": "boosterpacks:Latent. NL At the start of your turn, gain [E] ."
   },
-  "BoosterPacks:BlissfulIgnorance": {
-    "NAME": "Blissful Ignorance",
-    "DESCRIPTION": "Whenever you discard every card you Scry, gain !M! Block per card *Scried."
-  },
   "BoosterPacks:BloodBarrier": {
     "NAME": "Blood Barrier",
     "DESCRIPTION": "Gain !B! Block. NL Lose !M! HP."
@@ -68,7 +64,7 @@
   },
   "BoosterPacks:Breakthrough": {
     "NAME": "Breakthrough",
-    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL Gain !M! Focus."
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity."
   },
   "BoosterPacks:Charge": {
     "NAME": "Charge",
@@ -82,8 +78,8 @@
   },
   "BoosterPacks:ComplexPlane": {
     "NAME": "Complex Plane",
-    "DESCRIPTION": "Gain X Focus. NL Cost only up to [B] [B] [B].",
-    "UPGRADE_DESCRIPTION": "Gain X Focus. NL Cost only up to [B] [B]."
+    "DESCRIPTION": "Gain X boosterpacks:Integrity. NL Gain [B] .",
+    "UPGRADE_DESCRIPTION": "Gain X+1 boosterpacks:Integrity. NL Gain [B] ."
   },
   "BoosterPacks:ConductiveStrike": {
     "NAME": "Conductive Strike",
@@ -115,14 +111,6 @@
     "NAME": "Dark Mirror",
     "DESCRIPTION": "Gain !M! *Dark Focus. NL Channel 1 Dark."
   },
-  "BoosterPacks:DarkOmen": {
-    "NAME": "Dark Omen",
-    "DESCRIPTION": "Whenever you apply Weak, apply !M! Poison as well."
-  },
-  "BoosterPacks:Defense": {
-    "NAME": "Defense",
-    "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL Exhaust."
-  },
   "BoosterPacks:DefyReality": {
     "NAME": "Defy Reality",
     "DESCRIPTION": "Scry 5. NL Add !M! *Vision to your hand.",
@@ -138,7 +126,7 @@
   },
   "BoosterPacks:DictionaryAttack": {
     "NAME": "Dictionary Attack",
-    "DESCRIPTION": "Deal !D! damage. NL Look at the top !M! cards of your deck. Choose one and add it to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Look at the top !M! cards of your deck, choose one and add it to your hand."
   },
   "BoosterPacks:DominateReality": {
     "NAME": "Dominate Reality",
@@ -177,6 +165,10 @@
       "I can't play this card."
     ]
   },
+  "BoosterPacks:Factorization": {
+    "NAME": "Factorization",
+    "DESCRIPTION": "Gain !M! boosterpacks:Integrity. NL Lose 1 Focus."
+  },
   "BoosterPacks:ForgeReality": {
     "NAME": "Forge Reality",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Add a *Smite and a *Safety to your hand."
@@ -201,11 +193,6 @@
   "BoosterPacks:Fury": {
     "NAME": "Fury",
     "DESCRIPTION": "Gain !M! Vigor."
-  },
-  "BoosterPacks:GalvanicAura": {
-    "NAME": "Galvanic Aura",
-    "DESCRIPTION": "Whenever you Evoke a non-Lightning, boosterpacks:Invoke a Lightning.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you Evoke a non-Lightning, boosterpacks:Invoke a Lightning."
   },
   "BoosterPacks:Gambit": {
     "NAME": "Gambit",
@@ -299,8 +286,8 @@
   },
   "BoosterPacks:Midnight": {
     "NAME": "Midnight",
-    "DESCRIPTION": "boosterpacks:Latent. NL Deal !D! damage. NL Gain damage equal to half of your next Dark Evoke value.",
-    "UPGRADE_DESCRIPTION": "boosterpacks:Latent. NL Deal !D! damage. NL Gain damage equal to your next Dark Evoke value."
+    "DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to half of your next Dark Evoke value.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Deal additional damage equal to your next Dark Evoke value."
   },
   "BoosterPacks:MindOverMatter": {
     "NAME": "Mind Over Matter",
@@ -333,7 +320,7 @@
   },
   "BoosterPacks:Nilpotency": {
     "NAME": "Nilpotency",
-    "DESCRIPTION": "Put !M! 0-cost cards from your draw pile into your hand."
+    "DESCRIPTION": "Put !M! cost 0 cards from your draw pile into your hand."
   },
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
@@ -344,9 +331,10 @@
     "NAME": "No More Remorse",
     "DESCRIPTION": "Deal !M! damage to ALL enemies per card in your exhaust pile. NL boosterpacks:Immutable. NL Exhaust."
   },
-  "BoosterPacks:Offense": {
-    "NAME": "Offense",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Exhaust."
+  "BoosterPacks:Optimize": {
+    "NAME": "Optimize",
+    "DESCRIPTION": "At the beginning of your turn, apply 1 Lock-on to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the beginning of your turn, apply 1 Lock-on to ALL enemies."
   },
   "BoosterPacks:Oracle": {
     "NAME": "Oracle",
@@ -361,9 +349,9 @@
     "NAME": "Overflow",
     "DESCRIPTION": "Fills your hand with copies of a card in your hand. NL Exhaust."
   },
-  "BoosterPacks:Perfectionist": {
-    "NAME": "Perfectionist",
-    "DESCRIPTION": "Deal !D! damage. NL Cost is equal to the number of empty cards slots in your hand."
+  "BoosterPacks:ParadigmShift": {
+    "NAME": "Paradigm Shift",
+    "DESCRIPTION": "Lose all Focus. NL Gain that much boosterpacks:Integrity. NL Gain !M! Integrity."
   },
   "BoosterPacks:PhantomStrike": {
     "NAME": "Phantom Strike",
@@ -408,6 +396,10 @@
   "BoosterPacks:Psychoanalysis": {
     "NAME": "Psychoanalysis",
     "DESCRIPTION": "At the start of your turn, apply !M! Mark to ALL enemies and all enemies lose !M! HP."
+  },
+  "BoosterPacks:RecursiveCall": {
+    "NAME": "Recursive Call",
+    "DESCRIPTION": "Every time you play 4 cards in a turn, Channel a copy of your leftmost orb."
   },
   "BoosterPacks:Register": {
     "NAME": "Register",
@@ -465,9 +457,14 @@
     "DESCRIPTION": "Deal !D! damage. NL Discard !M! card.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Discard !M! cards."
   },
+  "BoosterPacks:SomberOmen": {
+    "NAME": "Somber Omen",
+    "DESCRIPTION": "Whenever you apply Weak, apply !M! Poison as well."
+  },
   "BoosterPacks:StaticWave": {
     "NAME": "Static Wave",
-    "DESCRIPTION": "Activate the passive effect of each of your Orbs. NL Draw 1 card."
+    "DESCRIPTION": "Activate the passive effect of each of your Orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Activate the passive effect of each of your Orbs."
   },
   "BoosterPacks:StrikeBarrage": {
     "NAME": "Strike Barrage",
@@ -500,6 +497,10 @@
   "BoosterPacks:TacticalAdvantage": {
     "NAME": "Tactical Advantage",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not have Poison, apply !M! Poison. NL Exhaust."
+  },
+  "BoosterPacks:TargetingSystem": {
+    "NAME": "Targeting System",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-on."
   },
   "BoosterPacks:Terminal": {
     "NAME": "Terminal",

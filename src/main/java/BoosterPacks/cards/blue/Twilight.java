@@ -25,7 +25,7 @@ public class Twilight extends CustomCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.BLUE;
-    private static final int COST = 0;
+    private static final int COST = 1;
 
     public Twilight() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

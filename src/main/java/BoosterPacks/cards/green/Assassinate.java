@@ -40,13 +40,12 @@ public class Assassinate extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SMASH));
-        this.cost = 4;
+        this.cost = this.upgraded ? 3 : 4;
         this.isCostModified = false;
     }
 
     @Override
     public void triggerOnManualDiscard() {
-        AbstractPlayer p = AbstractDungeon.player;
         if (this.cost > 0) {
             this.cost -= 1;
             this.isCostModified = true;
@@ -58,7 +57,7 @@ public class Assassinate extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(10);
+            this.upgradeBaseCost(3);
             initializeDescription();
         }
     }

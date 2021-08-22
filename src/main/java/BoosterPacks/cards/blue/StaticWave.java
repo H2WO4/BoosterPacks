@@ -34,14 +34,15 @@ public class StaticWave extends CustomCardMultiPreview {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new TriggerAllOrbsAction());
-        this.addToBot(new DrawCardAction(1));
+        this.exhaust = true;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.exhaust = false;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

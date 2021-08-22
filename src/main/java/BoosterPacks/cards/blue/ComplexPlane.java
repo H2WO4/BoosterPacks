@@ -1,8 +1,10 @@
 package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.powers.defect.IntegrityPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -23,7 +25,7 @@ public class ComplexPlane extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = CardColor.BLUE;
@@ -31,26 +33,24 @@ public class ComplexPlane extends CustomCard {
 
     public ComplexPlane() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
-        this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int effect = this.energyOnUse + (p.hasRelic(ChemicalX.ID) ? 2: 0);
+        int effect = this.energyOnUse + (p.hasRelic(ChemicalX.ID) ? 2: 0) + (this.upgraded ? 1 : 0);
         if (effect > 0) {
-            this.addToBot(new ApplyPowerAction(p, p, new FocusPower(p, effect), effect));
+            this.addToBot(new ApplyPowerAction(p, p, new IntegrityPower(p, effect), effect));
         }
         if (!this.freeToPlayOnce) {
-            this.addToBot(new LoseEnergyAction(this.baseMagicNumber));
+            this.addToBot(new LoseEnergyAction(this.energyOnUse));
         }
+        this.addToBot(new GainEnergyAction(1));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

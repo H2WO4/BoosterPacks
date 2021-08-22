@@ -29,7 +29,7 @@ public class BlackDeath extends CustomCard {
 
     public BlackDeath() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
     }
 
