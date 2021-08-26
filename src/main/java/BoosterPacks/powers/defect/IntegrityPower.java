@@ -24,8 +24,8 @@ public class IntegrityPower extends AbstractPower implements CloneablePowerInter
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("Integrity84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("Integrity32.png"));
 
     public IntegrityPower(final AbstractCreature owner, final int amount) {
         name = NAME;

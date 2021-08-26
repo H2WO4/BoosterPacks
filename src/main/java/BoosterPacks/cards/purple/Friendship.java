@@ -28,6 +28,8 @@ public class Friendship extends CustomCard {
 
     public Friendship() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.selfRetain = true;
+        this.exhaust = true;
     }
 
     @Override
@@ -39,7 +41,7 @@ public class Friendship extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.selfRetain = true;
+            this.exhaust = false;
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

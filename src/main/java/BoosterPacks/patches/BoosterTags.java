@@ -5,7 +5,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 
 public class BoosterTags {
     @SpireEnum
-    public static AbstractCard.CardTags BURIED;
     public static AbstractCard.CardTags LATENT;
     public static AbstractCard.CardTags CLAW;
 }

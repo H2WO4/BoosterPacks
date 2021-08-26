@@ -29,12 +29,12 @@ public class StaticWave extends CustomCardMultiPreview {
 
     public StaticWave() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new TriggerAllOrbsAction());
-        this.exhaust = true;
     }
 
     @Override

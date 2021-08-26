@@ -25,7 +25,7 @@
     "NAMES": [
       "integrity"
     ],
-    "DESCRIPTION": "Increase the effectiveness of the #yEvoke effect of Orbs by X."
+    "DESCRIPTION": "Increase the effectiveness of #yEvoking an Orb by X."
   },
   {
     "PROPER_NAME": "Invoke",
@@ -39,6 +39,6 @@
     "NAMES": [
       "courage"
     ],
-    "DESCRIPTION": "Upon exiting this Stance, draw #b1 card. NL At the start of your turn, draw #b1 additional card."
+    "DESCRIPTION": "Upon exiting #yCourage, draw #b1 card. NL At the start of your turn, draw #b1 card."
   }
 ]

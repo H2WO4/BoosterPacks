@@ -1,0 +1,8 @@
+{
+  "BoosterPacks:StancePotion": {
+    "NAME": "Stance Potion",
+    "DESCRIPTIONS": [
+      "Enter #yCalm, #yWrath or #yCourage."
+    ]
+  }
+}

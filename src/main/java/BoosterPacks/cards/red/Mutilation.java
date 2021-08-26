@@ -29,7 +29,7 @@ public class Mutilation extends CustomCard {
 
     public Mutilation() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
         GraveField.grave.set(this, true);
@@ -38,7 +38,7 @@ public class Mutilation extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new HealAction(p, p, 12));
+        this.addToBot(new HealAction(p, p, 10));
         p.increaseMaxHp(-this.magicNumber, true);
     }
 

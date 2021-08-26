@@ -24,8 +24,8 @@ public class NinjutsuPower extends AbstractPower implements CloneablePowerInterf
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("Ninjutsu84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("Ninjutsu32.png"));
 
     public NinjutsuPower(final AbstractCreature owner) {
         name = NAME;

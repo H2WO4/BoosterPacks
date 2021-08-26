@@ -27,8 +27,8 @@ public class RecursiveCallPower extends AbstractPower implements CloneablePowerI
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("RecursiveCall84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("RecursiveCall32.png"));
 
     int stackAmount;
 
@@ -66,9 +66,11 @@ public class RecursiveCallPower extends AbstractPower implements CloneablePowerI
         AbstractPlayer p = AbstractDungeon.player;
         this.amount--;
         if (this.amount == 0) {
-            AbstractOrb leftOrb = p.orbs.get(p.filledOrbCount() - 1);
-            for (int i = 0; i < this.stackAmount; i++) {
-                this.addToBot(new ChannelAction(leftOrb.makeCopy()));
+            if (p.filledOrbCount() >= 1) {
+                AbstractOrb leftOrb = p.orbs.get(p.filledOrbCount() - 1);
+                for (int i = 0; i < this.stackAmount; i++) {
+                    this.addToBot(new ChannelAction(leftOrb.makeCopy()));
+                }
             }
             this.amount = 4;
         }

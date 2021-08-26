@@ -5,14 +5,17 @@ import BoosterPacks.util.TextureLoader;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.tempCards.Shiv;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.AccuracyPower;
 
 import static BoosterPacks.BoosterPacks.makePowerPath;
 
@@ -23,8 +26,8 @@ public class KillingUrgePower extends AbstractPower implements CloneablePowerInt
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("KillingUrge84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("KillingUrge32.png"));
 
     public KillingUrgePower(final AbstractCreature owner, int amount) {
         name = NAME;
@@ -43,9 +46,9 @@ public class KillingUrgePower extends AbstractPower implements CloneablePowerInt
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        this.addToBot(new MakeTempCardInHandAction(new Shiv(), this.amount));
-        this.addToBot(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this));
+    public void atStartOfTurn() {
+        AbstractPlayer p = AbstractDungeon.player;
+        this.addToBot(new ApplyPowerAction(p, p, new AccuracyPower(p, this.amount), this.amount));
     }
 
     @Override

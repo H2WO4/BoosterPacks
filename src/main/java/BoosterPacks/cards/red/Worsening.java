@@ -29,11 +29,11 @@ public class Worsening extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.RED;
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public Worsening() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 10;
+        this.baseDamage = 15;
         this.damage = this.baseDamage;
         this.tags.add(BoosterTags.LATENT);
         this.exhaust = true;

@@ -27,26 +27,26 @@ public class ParadigmShift extends CustomCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = CardColor.BLUE;
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public ParadigmShift() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
-        this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         int focus = p.hasPower(FocusPower.POWER_ID) ? p.getPower(FocusPower.POWER_ID).amount : 0;
-        this.addToBot(new ApplyPowerAction(p, p, new IntegrityPower(p, focus + this.magicNumber), focus + this.magicNumber));
-        this.addToBot(new RemoveSpecificPowerAction(p, p, FocusPower.POWER_ID));
+        if (focus != 0) {
+            this.addToBot(new ApplyPowerAction(p, p, new IntegrityPower(p, focus * 2), focus * 2));
+            this.addToBot(new RemoveSpecificPowerAction(p, p, FocusPower.POWER_ID));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeBaseCost(1);
             initializeDescription();
         }
     }

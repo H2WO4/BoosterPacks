@@ -27,8 +27,8 @@ public class HonedBladePower extends AbstractPower implements CloneablePowerInte
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("HonedBlade84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("HonedBlade32.png"));
 
     public HonedBladePower(final AbstractCreature owner, int amount) {
         name = NAME;

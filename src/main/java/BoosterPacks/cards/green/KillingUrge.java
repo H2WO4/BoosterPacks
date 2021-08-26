@@ -24,23 +24,21 @@ public class KillingUrge extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.NONE;
-    private static final CardType TYPE = CardType.SKILL;
+    private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = CardColor.GREEN;
-    private static final int COST = 0;
+    private static final int COST = 1;
 
     public KillingUrge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
-
-        this.cardsToPreview = new Shiv();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new KillingUrgePower(p, this.magicNumber)));
+        this.addToBot(new ApplyPowerAction(p, p, new KillingUrgePower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

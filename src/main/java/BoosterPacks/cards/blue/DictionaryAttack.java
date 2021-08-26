@@ -3,6 +3,7 @@ package BoosterPacks.cards.blue;
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.actions.common.MoveToHandAction;
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -49,9 +50,8 @@ public class DictionaryAttack extends CustomCard {
             temp.addToTop(p.drawPile.getNCardFromTop(i));
         }
         temp.sortByRarity(false);
-        this.addToBot(new SelectCardsAction(temp.group, 1, "", (cards) -> {
-            AbstractCard card = cards.get(0);
-            AbstractDungeon.actionManager.addToTop(new MoveToHandAction(card, p.drawPile));
+        this.addToBot(new MoveCardsAction(p.hand, temp, (card) -> true, 1, (cards) -> {
+            p.drawPile.removeCard(cards.get(0));
         }));
     }
 

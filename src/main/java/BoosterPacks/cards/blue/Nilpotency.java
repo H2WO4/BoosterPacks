@@ -3,6 +3,7 @@ package BoosterPacks.cards.blue;
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.actions.common.MoveToHandAction;
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,11 +38,7 @@ public class Nilpotency extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SelectCardsAction(p.drawPile.group, this.magicNumber,"", true, (card) -> card.cost == 0, (cards) -> {
-            for (AbstractCard card: cards) {
-                AbstractDungeon.actionManager.addToTop(new MoveToHandAction(card, p.drawPile));
-            }
-        }));
+        this.addToBot(new MoveCardsAction(p.hand, p.drawPile, (card) -> card.cost == 0, this.magicNumber, (cards) -> {}));
     }
 
     @Override

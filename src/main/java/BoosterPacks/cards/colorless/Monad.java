@@ -68,7 +68,7 @@ public class Monad extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.baseDamage = this.countCards();
         this.calculateCardDamage(m);
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }

@@ -76,15 +76,15 @@
   "BoosterPacks:IntegrityPower": {
     "NAME": "Integrity",
     "DESCRIPTIONS": [
-      "Increase the effectiveness of Orbs' #yEvoke by #b",
+      "Increase the effectiveness of #yEvoking an Orb by #b",
       "."
     ]
   },
   "BoosterPacks:KillingUrgePower": {
     "NAME": "Killing Urge",
     "DESCRIPTIONS": [
-      "Next turn, add #b",
-      " Shivs to your hand."
+      "At the start if your turn, #yShivs deal #b",
+      " additional damage."
     ]
   },
   "BoosterPacks:LoseFocusPower": {
@@ -103,7 +103,7 @@
   "BoosterPacks:MiragePower": {
     "NAME": "Mirage",
     "DESCRIPTIONS": [
-      "Whenever you draw a non-#yCurse, non-#yStatus unplayable card, draw #b",
+      "Whenever you draw a non #yCurse, non #yStatus unplayable card, draw #b",
       " card.",
       " cards."
     ]
@@ -114,6 +114,13 @@
       "At the start of your turn, #yEvoke your rightmost #yOrb twice.",
       "At the start of your turn, #yEvoke your #b",
       " rightmost #yOrbs twice."
+    ]
+  },
+  "BoosterPacks:NarakaPower": {
+    "NAME": "Naraka",
+    "DESCRIPTIONS": [
+      "Whenever you change #yStance, ALL enemies lose #b",
+      " HP."
     ]
   },
   "BoosterPacks:NinjutsuPower": {
