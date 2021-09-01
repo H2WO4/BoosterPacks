@@ -1,6 +1,6 @@
 | Name | Image | Upgraded image | Rarity | Type | Cost | Description |
 | ---- | ------- | -------------- | ------ | ---- | ---- | ----------- |
-| Charge | ![](small-card-images/Charge.png) | ![](small-card-images/ChargePlus.png) | Common | Attack | 0 | Deal 5(7) damage. If this consumes Vigor, draw 1(2) ([diffAddS]) card(s). ([diffAddE]) |
+| Charge | ![](small-card-images/Charge.png) | ![](small-card-images/ChargePlus.png) | Common | Attack | 0 | Deal 5(7) damage. If this consumes Vigor, draw 1(2)  card(s). |
 | Double Edge | ![](small-card-images/DoubleEdge.png) | ![](small-card-images/DoubleEdgePlus.png) | Common | Attack | 1 | Deal 4(5) damage. Gain Vigor equal to damage dealt. |
 | Fury | ![](small-card-images/Fury.png) | ![](small-card-images/FuryPlus.png) | Common | Skill | 1 | Gain 4(6) Vigor. Draw 1 card. |
 | Mob Mentality | ![](small-card-images/MobMentality.png) | ![](small-card-images/MobMentalityPlus.png) | Common | Attack | 0 | Deal 5(8) damage. Put all copies of this card from your draw pile to your hand. |
