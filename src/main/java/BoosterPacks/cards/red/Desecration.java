@@ -4,6 +4,7 @@ import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.CardQueueItem;
@@ -33,28 +34,33 @@ public class Desecration extends CustomCard {
 
     public Desecration() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseMagicNumber = 4;
+        this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new LoseHPAction(p, p, 3));
+        this.addToBot(new LoseHPAction(p, p, 6));
         CardGroup total = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c: p.drawPile.group) {
-            total.addToTop(c);
+            if (!c.cardID.equals(Desecration.ID)) {
+                total.addToTop(c);
+            }
         }
         for (AbstractCard c: p.discardPile.group) {
-            total.addToTop(c);
+            if (!c.cardID.equals(Desecration.ID)) {
+                total.addToTop(c);
+            }
         }
         for (AbstractCard c: p.exhaustPile.group) {
-            total.addToTop(c);
+            if (!c.cardID.equals(Desecration.ID)) {
+                total.addToTop(c);
+            }
         }
         total.sortByRarity(false);
         this.addToBot(new SelectCardsAction(total.group, 1, "Choose a card", (cards) -> {
             AbstractCard card = cards.get(0).makeStatEquivalentCopy();
-            card.purgeOnUse = true;
-            AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(card, AbstractDungeon.getRandomMonster(), 0, true, true));
+            this.addToTop(new MakeTempCardInHandAction(card));
         }));
     }
 
@@ -62,7 +68,7 @@ public class Desecration extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(-1);
+            this.upgradeBaseCost(0);
             initializeDescription();
         }
     }

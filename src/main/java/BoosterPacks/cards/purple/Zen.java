@@ -2,11 +2,7 @@ package BoosterPacks.cards.purple;
 
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.cards.tempCards.ChooseCourage;
-import BoosterPacks.stances.CourageStance;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
-import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.optionCards.ChooseCalm;

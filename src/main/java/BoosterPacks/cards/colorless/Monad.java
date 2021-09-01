@@ -18,12 +18,12 @@ public class Monad extends CustomCard {
     public static final String ID = BoosterPacks.makeID(Monad.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Attack.png");
+    public static final String IMG = makeCardPath("Monad.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.COLORLESS;
@@ -47,8 +47,7 @@ public class Monad extends CustomCard {
     @Override
     public void applyPowers() {
         this.baseDamage = this.countCards();
-        super.applyPowers();
-        this.baseDamage = this.countCards();
+        this.damage = this.baseDamage;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
@@ -57,8 +56,7 @@ public class Monad extends CustomCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         this.baseDamage = this.countCards();
-        super.calculateCardDamage(mo);
-        this.baseDamage = this.countCards();
+        this.damage = this.baseDamage;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
@@ -66,8 +64,6 @@ public class Monad extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.baseDamage = this.countCards();
-        this.calculateCardDamage(m);
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();

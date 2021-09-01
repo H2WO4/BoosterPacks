@@ -2,8 +2,8 @@ package BoosterPacks.cards.tempCards;
 
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.stances.CourageStance;
+import basemod.AutoAdd;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
+@AutoAdd.Ignore
 public class ChooseCourage extends CustomCard {
 
     public static final String ID = BoosterPacks.makeID(ChooseCourage.class.getSimpleName());

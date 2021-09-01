@@ -1,6 +1,8 @@
 package BoosterPacks;
 
+import BoosterPacks.actions.common.PullAllCardsFromPileAction;
 import BoosterPacks.actions.system.LatentAction;
+import BoosterPacks.cards.red.AshesToAshes;
 import BoosterPacks.util.IDCheckDontTouchPls;
 import BoosterPacks.util.TextureLoader;
 import basemod.AutoAdd;
@@ -17,6 +19,8 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -38,7 +42,8 @@ public class BoosterPacks implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         OnStartBattleSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        PostExhaustSubscriber {
     public static final Logger logger = LogManager.getLogger(BoosterPacks.class.getName());
     private static String modID;
 
@@ -228,5 +233,10 @@ public class BoosterPacks implements
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
         AbstractDungeon.actionManager.addToTop(new LatentAction());
+    }
+
+    @Override
+    public void receivePostExhaust(AbstractCard abstractCard) {
+        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.discardPile, AshesToAshes.ID));
     }
 }

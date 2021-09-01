@@ -1,16 +1,9 @@
 package BoosterPacks.patches.watcher;
 
 import BoosterPacks.cards.tempCards.ChooseCourage;
-import BoosterPacks.stances.CourageStance;
-import basemod.ReflectionHacks;
 import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.optionCards.ChooseCalm;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.helpers.PowerTip;
-import com.megacrit.cardcrawl.helpers.TipHelper;
 import javassist.CtBehavior;
 
 import java.util.ArrayList;

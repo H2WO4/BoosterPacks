@@ -97,7 +97,8 @@
   "BoosterPacks:MasteryPower": {
     "NAME": "Mastery",
     "DESCRIPTIONS": [
-      "Whenever at least #b2 #yShivs are added to your hand, adds an additional one."
+      "Whenever at least #b2 #yShivs are added to your hand, adds #b",
+      "additional #yShiv."
     ]
   },
   "BoosterPacks:MiragePower": {
@@ -216,11 +217,13 @@
       " #yPoison as well."
     ]
   },
-  "BoosterPacks:ThreadsOfFatePower": {
-    "NAME": "Threads Of Fate",
+  "BoosterPacks:TitaniumPower": {
+    "NAME": "Titanium",
     "DESCRIPTIONS": [
-      "For every card you discard while you #yScry, deal #b",
-      " damage to a random enemy."
+      "This turn",
+      "The next #b",
+      " turns",
+      ", gain double the block."
     ]
   }
 }

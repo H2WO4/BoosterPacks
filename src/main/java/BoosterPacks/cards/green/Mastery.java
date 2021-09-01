@@ -33,7 +33,7 @@ public class Mastery extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new MasteryPower(p)));
+        this.addToBot(new ApplyPowerAction(p, p, new MasteryPower(p, 1), 1));
     }
 
     @Override

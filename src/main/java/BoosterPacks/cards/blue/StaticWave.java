@@ -25,7 +25,7 @@ public class StaticWave extends CustomCardMultiPreview {
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.BLUE;
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     public StaticWave() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

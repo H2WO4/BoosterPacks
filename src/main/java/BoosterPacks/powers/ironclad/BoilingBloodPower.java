@@ -23,8 +23,8 @@ public class BoilingBloodPower extends AbstractPower implements CloneablePowerIn
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("placeholder_power84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("placeholder_power32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("BoilingBlood84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("BoilingBlood32.png"));
 
     public BoilingBloodPower(final AbstractCreature owner, final int amount) {
         name = NAME;

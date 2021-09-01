@@ -44,7 +44,6 @@ public class ComplexPlane extends CustomCard {
         if (!this.freeToPlayOnce) {
             this.addToBot(new LoseEnergyAction(this.energyOnUse));
         }
-        this.addToBot(new GainEnergyAction(1));
     }
 
     @Override

@@ -22,12 +22,12 @@ public class MasteryPower extends AbstractPower implements CloneablePowerInterfa
     private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("Mastery84.png"));
     private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("Mastery32.png"));
 
-    public MasteryPower(final AbstractCreature owner) {
+    public MasteryPower(final AbstractCreature owner, final int amount) {
         name = NAME;
         ID = POWER_ID;
 
         this.owner = owner;
-        this.amount = -1;
+        this.amount = amount;
 
         type = PowerType.BUFF;
         isTurnBased = false;
@@ -40,11 +40,11 @@ public class MasteryPower extends AbstractPower implements CloneablePowerInterfa
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
     @Override
     public AbstractPower makeCopy() {
-        return new MasteryPower(owner);
+        return new MasteryPower(owner, amount);
     }
 }
