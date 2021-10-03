@@ -1,7 +1,6 @@
 package BoosterPacks.cards.purple;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.powers.watcher.EncorePower;
 import BoosterPacks.powers.watcher.NarakaPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;

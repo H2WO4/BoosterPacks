@@ -1,23 +1,13 @@
 package BoosterPacks.patches.watcher;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.cards.purple.FreeWill;
 import BoosterPacks.stances.CourageStance;
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
 import com.megacrit.cardcrawl.helpers.TipHelper;
 import com.megacrit.cardcrawl.potions.StancePotion;
-import javassist.CtBehavior;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.util.ArrayList;
 
 @SpirePatch(clz = StancePotion.class, method = SpirePatch.CONSTRUCTOR)
 public class StancePotionInit {

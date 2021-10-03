@@ -25,7 +25,7 @@ public class BlazingSword extends CustomCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
     public static final CardColor COLOR = CardColor.RED;
-    private static final int COST = 1;
+    private static final int COST = 2;
 
     public BlazingSword() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

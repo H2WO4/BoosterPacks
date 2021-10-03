@@ -3,8 +3,6 @@ package BoosterPacks.cards.red;
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,7 +33,7 @@ public class Empty extends CustomCard {
 
     public Empty() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 21;
+        this.baseBlock = 18;
         this.block = this.baseBlock;
 
         this.cardsToPreview = new VoidCard();
@@ -52,7 +50,7 @@ public class Empty extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(7);
+            this.upgradeBlock(6);
             initializeDescription();
         }
     }

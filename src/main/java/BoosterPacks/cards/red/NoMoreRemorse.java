@@ -1,6 +1,7 @@
 package BoosterPacks.cards.red;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.patches.BoosterTags;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
@@ -24,7 +25,7 @@ public class NoMoreRemorse extends CustomCard {
 
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
+    private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.RED;
     private static final int COST = 3;
 
@@ -33,6 +34,7 @@ public class NoMoreRemorse extends CustomCard {
         this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
+        this.tags.add(BoosterTags.LATENT);
     }
 
     @Override

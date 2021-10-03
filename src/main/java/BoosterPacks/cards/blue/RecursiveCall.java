@@ -1,7 +1,6 @@
 package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.powers.defect.MultithreadingPower;
 import BoosterPacks.powers.defect.RecursiveCallPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;

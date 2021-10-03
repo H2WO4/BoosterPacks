@@ -49,8 +49,8 @@ public class InnerDemons extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(4);
-            this.upgradeBlock(4);
+            this.upgradeDamage(3);
+            this.upgradeBlock(3);
             initializeDescription();
         }
     }

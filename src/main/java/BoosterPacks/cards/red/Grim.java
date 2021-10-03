@@ -44,7 +44,7 @@ public class Grim extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }

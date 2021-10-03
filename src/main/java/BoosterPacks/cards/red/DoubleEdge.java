@@ -29,7 +29,7 @@ public class DoubleEdge extends CustomCard {
 
     public DoubleEdge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 4;
+        this.baseDamage = 5;
         this.damage = this.baseDamage;
     }
 

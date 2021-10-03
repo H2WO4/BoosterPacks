@@ -14,9 +14,6 @@ import com.megacrit.cardcrawl.powers.ArtifactPower;
 import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 
-import java.util.ArrayList;
-import java.util.Random;
-
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
 public class GutStab extends CustomCard {

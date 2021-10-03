@@ -1,11 +1,9 @@
 package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.patches.BoosterTags;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.defect.EssenceOfDarknessAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;

@@ -1,7 +1,7 @@
 {
   "BoosterPacks:Abyss": {
     "NAME": "Abyss",
-    "DESCRIPTION": "Put all copies of a card in your draw pile into your hand. NL Exhaust."
+    "DESCRIPTION": "Choose a card in your draw pile, put it and all of its copies in your hand. NL Exhaust."
   },
   "BoosterPacks:Ambivalent": {
     "NAME": "Ambivalent",
@@ -26,7 +26,7 @@
   },
   "BoosterPacks:Assassinate": {
     "NAME": "Assassinate",
-    "DESCRIPTION": "Deal !D! damage. NL If this card is discarded from your hand, reduce its cost by 1 until played and add it back to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL When manually discarded, reduce its cost by 1 until played and add it back to your hand."
   },
   "BoosterPacks:Audacity": {
     "NAME": "Audacity",
@@ -96,7 +96,7 @@
   },
   "BoosterPacks:Constant": {
     "NAME": "Constant",
-    "DESCRIPTION": "Deal !M! damage. NL Gain !M! Block. NL boosterpacks:Immutable"
+    "DESCRIPTION": "Deal !M! damage. NL Gain !M! Block. NL Not affected by statuses."
   },
   "BoosterPacks:CorrosiveScent": {
     "NAME": "Corrosive Scent",
@@ -107,7 +107,7 @@
   },
   "BoosterPacks:CryOfDespair": {
     "NAME": "Cry Of Despair",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, ALL enemies lose !M! Strength this turn.",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, ALL enemies lose !M! temporary Strength.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -135,7 +135,7 @@
   },
   "BoosterPacks:Desecration": {
     "NAME": "Desecration",
-    "DESCRIPTION": "Lose !M! HP. NL Add a copy of any card from your draw, discard or exhaust pile into your hand."
+    "DESCRIPTION": "Lose !M! HP. NL Add a copy of a card from your draw, discard or exhaust pile into your hand."
   },
   "BoosterPacks:Determination": {
     "NAME": "Determination",
@@ -183,7 +183,8 @@
   },
   "BoosterPacks:Fiery": {
     "NAME": "Fiery",
-    "DESCRIPTION": "Deal !D! damage. NL Add !M! *Burns to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Add !M! *Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Add !M! *Burns to your hand."
   },
   "BoosterPacks:ForgeReality": {
     "NAME": "Forge Reality",
@@ -225,7 +226,7 @@
   },
   "BoosterPacks:GutStab": {
     "NAME": "Gut Stab",
-    "DESCRIPTION": "Deal !D! damage 3 times. NL Enemy lose !M! Strength this turn."
+    "DESCRIPTION": "Deal !D! damage 3 times. NL Enemy lose !M! temporary Strength."
   },
   "BoosterPacks:HaltingProblem": {
     "NAME": "Halting Problem",
@@ -257,7 +258,7 @@
   },
   "BoosterPacks:KillingUrge": {
     "NAME": "Killing Urge",
-    "DESCRIPTION": "At the start of your turn, Shivs deal !M! additional damage."
+    "DESCRIPTION": "At the start of your turn, gain !M! *Accuracy."
   },
   "BoosterPacks:MasterTrick": {
     "NAME": "Master Trick",
@@ -291,13 +292,14 @@
   },
   "BoosterPacks:MobMentality": {
     "NAME": "Mob Mentality",
-    "DESCRIPTION": "Deal !D! damage. NL Put all copies of this card from your draw pile to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL Draw all copies of this card."
   },
   "BoosterPacks:Monad": {
     "NAME": "Monad",
-    "DESCRIPTION": "Deal damage equal to the number of cards currently in play. NL boosterpacks:Immutable.",
+    "DESCRIPTION": "Target takes damage equal to the number of cards in play X times.",
+    "UPGRADE_DESCRIPTION": "Target takes damage equal to the number of cards in play X+1 times.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Deal !D! damage.)"
+      " NL (You have !M! cards in play.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -319,12 +321,12 @@
   },
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
-    "DESCRIPTION": "Shivs gain Retain. NL When a Shiv is Retained, Upgrade it.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Shivs gain Retain. NL When a Shiv is Retained, Upgrade it."
+    "DESCRIPTION": "Shivs gain Retain. NL When you Retain a Shiv, Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Shivs gain Retain. NL When you Retain a Shiv, Upgrade it."
   },
   "BoosterPacks:NoMoreRemorse": {
     "NAME": "No More Remorse",
-    "DESCRIPTION": "Deal !M! damage to ALL enemies per card in your exhaust pile. NL boosterpacks:Immutable. NL Exhaust."
+    "DESCRIPTION": "ALL enemies take !M! damage per card in your exhaust pile. NL Exhaust."
   },
   "BoosterPacks:Optimize": {
     "NAME": "Optimize",
@@ -355,7 +357,7 @@
   },
   "BoosterPacks:PiercingClaws": {
     "NAME": "Piercing Claws",
-    "DESCRIPTION": "Deal !D! damage twice. NL Increases the damage of ALL Claw cards by 1 this combat"
+    "DESCRIPTION": "Deal !D! damage twice. NL Increases the damage of ALL Claw cards by 1 this combat."
   },
   "BoosterPacks:Pilgrimage": {
     "NAME": "Pilgrimage",
@@ -437,7 +439,7 @@
   },
   "BoosterPacks:Silence": {
     "NAME": "Silence",
-    "DESCRIPTION": "Discard your hand. NL Gain !B! Block per card discarded."
+    "DESCRIPTION": "Discard your hand. NL Gain !B! Block per card discarded. NL Draw !M! card."
   },
   "BoosterPacks:SlidingKick": {
     "NAME": "Sliding Kick",
@@ -480,7 +482,8 @@
   },
   "BoosterPacks:Titanium": {
     "NAME": "Titanium",
-    "DESCRIPTION": "This turn, double any Block gain."
+    "DESCRIPTION": "This turn, double any Block gain. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "This turn, double any Block gain."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinity",

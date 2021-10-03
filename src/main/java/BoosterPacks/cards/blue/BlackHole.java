@@ -31,20 +31,23 @@ public class BlackHole extends CustomCard {
 
     public BlackHole() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new BlackHolePower(p)));
-        this.addToBot(new ChannelAction(new Dark()));
-        this.addToBot(new ChannelAction(new Dark()));
+        for (int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new ChannelAction(new Dark()));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.upgradeMagicNumber(1);
             initializeDescription();
         }
     }

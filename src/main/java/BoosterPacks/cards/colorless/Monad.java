@@ -4,6 +4,7 @@ import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.unique.LoseEnergyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -23,11 +24,11 @@ public class Monad extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.COLORLESS;
-    private static final int COST = 2;
+    private static final int COST = -1;
 
     public Monad() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -46,8 +47,8 @@ public class Monad extends CustomCard {
 
     @Override
     public void applyPowers() {
-        this.baseDamage = this.countCards();
-        this.damage = this.baseDamage;
+        this.baseMagicNumber = this.countCards();
+        this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
@@ -55,8 +56,8 @@ public class Monad extends CustomCard {
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
-        this.baseDamage = this.countCards();
-        this.damage = this.baseDamage;
+        this.baseMagicNumber = this.countCards();
+        this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0];
         this.initializeDescription();
@@ -64,16 +65,21 @@ public class Monad extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        for (int i = 0; i < this.energyOnUse + (this.upgraded ? 1: 0); i++) {
+            this.addToBot(new DamageAction(m, new DamageInfo(p, this.magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
+        }
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
+        if (!freeToPlayOnce) {
+            this.addToBot(new LoseEnergyAction(this.energyOnUse));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

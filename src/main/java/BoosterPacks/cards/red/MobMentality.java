@@ -1,7 +1,7 @@
 package BoosterPacks.cards.red;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.actions.common.PullAllCardsFromPileAction;
+import BoosterPacks.actions.ironclad.MobMentalityAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -38,7 +38,7 @@ public class MobMentality extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
-        this.addToBot(new PullAllCardsFromPileAction(p.drawPile, MobMentality.ID));
+        this.addToBot(new MobMentalityAction());
     }
 
     @Override

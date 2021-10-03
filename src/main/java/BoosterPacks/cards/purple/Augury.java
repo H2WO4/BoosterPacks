@@ -1,19 +1,15 @@
 package BoosterPacks.cards.purple;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.cards.CustomCardMultiPreview;
-import BoosterPacks.cards.green.Instinct;
 import BoosterPacks.cards.tempCards.Vision;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.watcher.MantraPower;
-import com.megacrit.cardcrawl.vfx.combat.GainPowerEffect;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 

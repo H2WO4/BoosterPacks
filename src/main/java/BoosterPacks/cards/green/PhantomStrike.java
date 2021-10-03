@@ -12,8 +12,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import java.util.Iterator;
-
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
 public class PhantomStrike extends CustomCard {

@@ -29,7 +29,7 @@ public class BloodBarrier extends CustomCard {
 
     public BloodBarrier() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 12;
+        this.baseBlock = 11;
         this.block = this.baseBlock;
         this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
@@ -45,6 +45,7 @@ public class BloodBarrier extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeBlock(2);
             this.upgradeMagicNumber(-1);
             initializeDescription();
         }
