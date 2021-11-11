@@ -29,8 +29,7 @@ public class Abyss extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.RED;
     private static final int COST = 1;
-    private AbstractCard card;
-
+    
     public Abyss() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.exhaust = true;

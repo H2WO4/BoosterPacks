@@ -13,15 +13,15 @@
   },
   "BoosterPacks:Animosity": {
     "NAME": "Animosity",
-    "DESCRIPTION": "Deal !D! damage. NL Deal !M! additional damage per debuff stack on you or the enemy."
+    "DESCRIPTION": "Deal !D! damage. NL Deal !M! additional damage per debuff stack on you or the target."
   },
   "BoosterPacks:ArcticWind": {
     "NAME": "Arctic Wind",
     "DESCRIPTION": "At the beginning of your turn, Channel 1 Frost.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the beginning of your turn, Channel 1 Frost."
   },
-  "BoosterPacks:AshesToAshes": {
-    "NAME": "Ashes To Ashes",
+  "BoosterPacks:Ashes": {
+    "NAME": "Ashes",
     "DESCRIPTION": "Deal !D! damage. NL Whenever a card is Exhausted, return this from your discard pile to your hand."
   },
   "BoosterPacks:Assassinate": {
@@ -40,7 +40,7 @@
   },
   "BoosterPacks:BlackDeath": {
     "NAME": "Black Death",
-    "DESCRIPTION": "Apply !M! Poison. NL Double this card's poison and increase its cost by 1 for this combat."
+    "DESCRIPTION": "Apply !M! Poison. NL Double this card's Poison, and increase its cost by 1 for this combat."
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Black Hole",
@@ -87,12 +87,12 @@
   },
   "BoosterPacks:ComplexPlane": {
     "NAME": "Complex Plane",
-    "DESCRIPTION": "Gain X boosterpacks:Integrity..",
-    "UPGRADE_DESCRIPTION": "Gain X+1 boosterpacks:Integrity.."
+    "DESCRIPTION": "Gain X boosterpacks:Integrity.",
+    "UPGRADE_DESCRIPTION": "Gain X+1 boosterpacks:Integrity."
   },
   "BoosterPacks:ConductiveStrike": {
     "NAME": "Conductive Strike",
-    "DESCRIPTION": "Deal !D! damage. NL boosterpacks:Invoke a copy of your rightmost Orb."
+    "DESCRIPTION": "Deal !D! damage. NL Evoke a copy of your rightmost Orb."
   },
   "BoosterPacks:Constant": {
     "NAME": "Constant",
@@ -111,10 +111,6 @@
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
-  },
-  "BoosterPacks:DarkFlames": {
-    "NAME": "Dark Flames",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies."
   },
   "BoosterPacks:DarkMirror": {
     "NAME": "Dark Mirror",
@@ -230,8 +226,8 @@
   },
   "BoosterPacks:HaltingProblem": {
     "NAME": "Halting Problem",
-    "DESCRIPTION": "boosterpacks:Invoke a copy of each of your Orbs. NL End your turn. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "boosterpacks:Invoke a copy of each of your Orbs. NL End your turn."
+    "DESCRIPTION": "Evoke a copy of each of your Orbs. NL End your turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Evoke a copy of each of your Orbs. NL End your turn."
   },
   "BoosterPacks:Hate": {
     "NAME": "Hate",
@@ -446,6 +442,11 @@
     "DESCRIPTION": "Deal !D! damage. NL Discard !M! card.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Discard !M! cards."
   },
+  "BoosterPacks:SlyTrick": {
+    "NAME": "Sly Trick",
+    "DESCRIPTION": "Scry 99. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Scry 99."
+  },
   "BoosterPacks:SomberOmen": {
     "NAME": "Somber Omen",
     "DESCRIPTION": "Whenever you apply Weak, apply !M! Poison as well."
@@ -494,11 +495,6 @@
     "NAME": "Twilight",
     "DESCRIPTION": "boosterpacks:Latent. NL Channel 1 Dark per Orb slot. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Channel 1 Dark per Orb slot. NL Exhaust."
-  },
-  "BoosterPacks:UnderhandedTrick": {
-    "NAME": "Underhanded Trick",
-    "DESCRIPTION": "Scry 99. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Scry 99."
   },
   "BoosterPacks:Valor": {
     "NAME": "Valor",

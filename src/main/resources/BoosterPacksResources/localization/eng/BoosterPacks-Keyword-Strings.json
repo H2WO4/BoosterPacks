@@ -21,13 +21,6 @@
     "DESCRIPTION": "Increase the effectiveness of #yEvoking an Orb by X."
   },
   {
-    "PROPER_NAME": "Invoke",
-    "NAMES": [
-      "invoke"
-    ],
-    "DESCRIPTION": "Use the Evoke effect of the corresponding orb, without consuming it."
-  },
-  {
     "PROPER_NAME": "Courage",
     "NAMES": [
       "courage"

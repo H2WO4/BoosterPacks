@@ -22,7 +22,6 @@ public class PullAllCardsFromPileAction extends AbstractGameAction {
     public void update() {
         AbstractPlayer p = AbstractDungeon.player;
         CardGroup hand = p.hand;
-        CardGroup discardPile = p.discardPile;
         CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c: source.group) {
             if (c.cardID.equals(card)) {

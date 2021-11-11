@@ -1,0 +1,31 @@
+[
+  {
+    "PROPER_NAME": "Oubliette",
+    "NAMES": [
+      "oubliette"
+    ],
+    "DESCRIPTION": "Commencez chaque combat avec cette carte dans votre pile de défausse."
+  },
+  {
+    "PROPER_NAME": "Latent",
+    "NAMES": [
+      "latent"
+    ],
+    "DESCRIPTION": "Commencez chaque combat avec cette carte à la fin de votre pile de pioche."
+  },
+  {
+    "PROPER_NAME": "Intégrité",
+    "NAMES": [
+      "intégrité",
+      "d'intégrité"
+    ],
+    "DESCRIPTION": "L'Intégrité accroît la puissance d'Activation des des Orbes #yCanalisés."
+  },
+  {
+    "PROPER_NAME": "Courage",
+    "NAMES": [
+      "courage"
+    ],
+    "DESCRIPTION": "Quand vous quittez cette #yPosition, piochez #b1 carte. NL Au début de chaque tour, piochez #b1 carte."
+  }
+]

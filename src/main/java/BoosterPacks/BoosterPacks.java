@@ -2,7 +2,7 @@ package BoosterPacks;
 
 import BoosterPacks.actions.common.PullAllCardsFromPileAction;
 import BoosterPacks.actions.system.LatentAction;
-import BoosterPacks.cards.red.AshesToAshes;
+import BoosterPacks.cards.red.Ashes;
 import BoosterPacks.util.IDCheckDontTouchPls;
 import BoosterPacks.util.TextureLoader;
 import basemod.AutoAdd;
@@ -230,6 +230,6 @@ public class BoosterPacks implements
 
     @Override
     public void receivePostExhaust(AbstractCard abstractCard) {
-        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.discardPile, AshesToAshes.ID));
+        AbstractDungeon.actionManager.addToBottom(new PullAllCardsFromPileAction(AbstractDungeon.player.discardPile, Ashes.ID));
     }
 }

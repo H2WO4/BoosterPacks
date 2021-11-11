@@ -1,0 +1,8 @@
+{
+  "BoosterPacks:StancePotion": {
+    "NAME": "Potion de position",
+    "DESCRIPTIONS": [
+      "Prenez la position #yCalme, #yColère ou #yCourage."
+    ]
+  }
+}

@@ -1,7 +1,6 @@
 package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.actions.defect.InvokeAction;
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,7 +36,7 @@ public class Pointer extends CustomCard {
         if (p.filledOrbCount() > 0) {
             AbstractOrb leftOrb = p.orbs.get(p.filledOrbCount() - 1);
             if (this.upgraded) {
-                this.addToBot(new InvokeAction(leftOrb));
+                this.addToBot(new EvokeSpecificOrbAction(leftOrb.makeCopy()));
             }
             this.addToBot(new EvokeSpecificOrbAction(leftOrb));
         }

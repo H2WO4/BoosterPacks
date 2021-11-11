@@ -1,0 +1,515 @@
+{
+  "BoosterPacks:Abyss": {
+    "NAME": "Abîme",
+    "DESCRIPTION": "Choisissez une carte dans votre pioche, mettez la, et toutes ses copies, dans votre main. NL Épuisement."
+  },
+  "BoosterPacks:Ambivalent": {
+    "NAME": "Ambivalent",
+    "DESCRIPTION": "Infligez !D! dégâts 2 fois. NL Défaussez !M! cartes aléatoires. NL Piochez !M! cartes."
+  },
+  "BoosterPacks:Ambush": {
+    "NAME": "Ambuscade",
+    "DESCRIPTION": "Ajoutez des Surins à votre main, jusqu'à ce que vous ayez !M! cartes en main. NL Épuisement."
+  },
+  "BoosterPacks:Animosity": {
+    "NAME": "Animosité",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! dégâts additional par stack de debuff sur vous ou la cible."
+  },
+  "BoosterPacks:ArcticWind": {
+    "NAME": "Vent glacial",
+    "DESCRIPTION": "Au début de votre tour, Canalisez 1 Frost.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, Canalisez 1 Frost."
+  },
+  "BoosterPacks:AshesToAshes": {
+    "NAME": "Poussières",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Quand une carte est épuisée, retournez cet carte depuis votre défausse dans votre main."
+  },
+  "BoosterPacks:Assassinate": {
+    "NAME": "Assassination",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Quand défaussée, réduisez son coût de 1 avant d'être jouée. Remettez la dans votre main."
+  },
+  "BoosterPacks:Audacity": {
+    "NAME": "Audacité",
+    "DESCRIPTION": "Piochez 1 carte. NL Si c'est une Compétence, entrez en boosterpacks:Courage. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Piochez 1 carte. NL Si c'est une Compétence, entrez en boosterpacks:Courage."
+  },
+  "BoosterPacks:Augury": {
+    "NAME": "Augure",
+    "DESCRIPTION": "Gagnez !M! de Mantra. NL Ajoutez 2 *Visions à votre main."
+  },
+  "BoosterPacks:BlackDeath": {
+    "NAME": "Mort noire",
+    "DESCRIPTION": "Appliquez !M! de Poison. NL Doublez le Poison de cette carte, elle coûte 1 de plus pour ce combat"
+  },
+  "BoosterPacks:BlackHole": {
+    "NAME": "Trou noir",
+    "DESCRIPTION": "Quand vous activez un Orbe Obscur, utilisez la capacité passive de TOUT vos Orbes Obscurs. NL Canalisez 2 Orbes Obscurs."
+  },
+  "BoosterPacks:BlazingSword": {
+    "NAME": "Lame flamboyante",
+    "DESCRIPTION": "Quand une carte est épuisée, gagnez !M! de Vigueur.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Quand une carte est épuisée, gagnez !M! de Vigueur."
+  },
+  "BoosterPacks:Blessing": {
+    "NAME": "Bénédiction",
+    "DESCRIPTION": "boosterpacks:Latent. NL Au début de votre tour, gagnez [E] ."
+  },
+  "BoosterPacks:BloodBarrier": {
+    "NAME": "Barrière sanguine",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Perdez !M! PV."
+  },
+  "BoosterPacks:BoilingBlood": {
+    "NAME": "Sang bouillonant",
+    "DESCRIPTION": "Au début de votre tour, gain !M! Vigueur."
+  },
+  "BoosterPacks:Bravery": {
+    "NAME": "Bravoure",
+    "DESCRIPTION": "Retenue. NL Entrez en boosterpacks:Courage. NL Épuisement."
+  },
+  "BoosterPacks:Breakthrough": {
+    "NAME": "Percée",
+    "DESCRIPTION": "Gagnez !M! de Force. NL Gagnez !M! de Dextérité."
+  },
+  "BoosterPacks:Charge": {
+    "NAME": "Charge",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Si vous utilisez votre Vigueur, piochez !M! carte.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Si vous utilisez votre Vigueur, piochez !M! cartes."
+  },
+  "BoosterPacks:ChooseCourage": {
+    "NAME": "Courage",
+    "DESCRIPTION": "Quand vous quittez cette Position, piochez 1 carte. NL Au début de chaque tour, piochez 1 carte."
+  },
+  "BoosterPacks:CollapseReality": {
+    "NAME": "Effondre-réalité",
+    "DESCRIPTION": "Épuisez TOUTES les cartes incolore dans votre main. NL Gagnez [E] et piochez 1 carte pour chaque. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Épuisez TOUTES les cartes incolore dans votre main. NL Gagnez [E] et piochez 1 carte pour chaque."
+  },
+  "BoosterPacks:ComplexPlane": {
+    "NAME": "Plan complexe",
+    "DESCRIPTION": "Gagnez X boosterpacks:d'Integrité.",
+    "UPGRADE_DESCRIPTION": "Gagnez X+1 boosterpacks:d'Integrité."
+  },
+  "BoosterPacks:ConductiveStrike": {
+    "NAME": "Frappe conductrice",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Activez une copie de votre prochain Orbe."
+  },
+  "BoosterPacks:Constant": {
+    "NAME": "Constante",
+    "DESCRIPTION": "Infligez !M! dégâts. NL Gagnez !M! d'Armure. NL Pas affecté par les modificateurs."
+  },
+  "BoosterPacks:CorrosiveScent": {
+    "NAME": "Parfum corrosif",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, appliquez !M! de Poison à TOUT les ennemis.",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:CryOfDespair": {
+    "NAME": "Cri de désespoir",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, TOUT les ennemis perdent !M! de Force temporaire.",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:DarkMirror": {
+    "NAME": "Mirroir sombre",
+    "DESCRIPTION": "Gagnez !M! de Concentration *Obscure. NL Canalisez 1 Orbe Obscur."
+  },
+  "BoosterPacks:Dauntless": {
+    "NAME": "Intrépide",
+    "DESCRIPTION": "Appliquez !M! de Faiblesse. NL Si vous êtes en boosterpacks:Courage, gagnez [W] et quittez votre Position."
+  },
+  "BoosterPacks:Debris": {
+    "NAME": "Débris",
+    "DESCRIPTION": "Retenue. NL Épuisement."
+  },
+  "BoosterPacks:DefyReality": {
+    "NAME": "Défi-réalité",
+    "DESCRIPTION": "Scrutez 5 cartes. NL Ajoutez !M! *Vision à votre main.",
+    "UPGRADE_DESCRIPTION": "Scrutez 5 cartes. NL Ajoutez !M! *Visions à votre main."
+  },
+  "BoosterPacks:Desecration": {
+    "NAME": "Profane",
+    "DESCRIPTION": "Perdez !M! PV. NL Ajoutez une copie d'une carte de votre pioche, défausse ou cimetière à votre main."
+  },
+  "BoosterPacks:Determination": {
+    "NAME": "Détermination",
+    "DESCRIPTION": "Si vous êtes en boosterpacks:Courage, gagnez !B! d'Armure. NL Sinon, entrez en boosterpacks:Courage."
+  },
+  "BoosterPacks:DictionaryAttack": {
+    "NAME": "Attaque par dictionnaire",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Regardez les !M! premières cartes de votre pioche, ajoutez en une à votre main."
+  },
+  "BoosterPacks:DominateReality": {
+    "NAME": "Domine-réalité",
+    "DESCRIPTION": "AJoutez !M! *Perspicacités et *Gifles à votre pioche. NL Épuisement."
+  },
+  "BoosterPacks:DoubleEdge": {
+    "NAME": "Double tranchant",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez de la Vigueur équivalente aux dégâts infligés non bloqués."
+  },
+  "BoosterPacks:DuckTyping": {
+    "NAME": "Duck Typing",
+    "DESCRIPTION": "Activez toutes vos Orbes du même type que votre prochain Orbe. NL Piochez 1 carte par Orbe activé."
+  },
+  "BoosterPacks:Empty": {
+    "NAME": "Vide",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez a *Néant au dessus de votre pioche."
+  },
+  "BoosterPacks:EmptyPrediction": {
+    "NAME": "Prédiction vide",
+    "DESCRIPTION": "Scrutez !M! cartes. NL Quittez votre Position."
+  },
+  "BoosterPacks:Encore": {
+    "NAME": "Encore",
+    "DESCRIPTION": "Quand votre tour est forcé à être terminé, piochez 1 carte, défaussez 2 cartes et continuez à jouer.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Quand votre tour est forcé à être terminé, piochez 1 carte, défaussez 2 cartes et continuez à jouer."
+  },
+  "BoosterPacks:EvasiveManeuver": {
+    "NAME": "Manœuvre évasive",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, Gagnez !B! d'Armure.",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:Factorization": {
+    "NAME": "Factorisation",
+    "DESCRIPTION": "Gagnez !M! boosterpacks:d'Integrité. NL Perdez 2 de Concentration."
+  },
+  "BoosterPacks:Fiery": {
+    "NAME": "Ardent",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Draw !M! card. NL Add !M! *Burn to your hand.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Draw !M! cards. NL Add !M! *Burns to your hand."
+  },
+  "BoosterPacks:ForgeReality": {
+    "NAME": "Forge-réalité",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Ajoutez une *Gifle et une *Sécurité à votre main."
+  },
+  "BoosterPacks:Fortune": {
+    "NAME": "Fortune",
+    "DESCRIPTION": "Retenue. NL Scrutez !M! cartes. NL Épuisement."
+  },
+  "BoosterPacks:FreeWill": {
+    "NAME": "Libre arbitre",
+    "DESCRIPTION": "Scrutez !M! cartes. NL Piochez autant de cartes que a été défaussé."
+  },
+  "BoosterPacks:Friendship": {
+    "NAME": "Amitié",
+    "DESCRIPTION": "Retenue. NL À la fin de ce tour, retenez votre main. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL À la fin de ce tour, retenez votre main."
+  },
+  "BoosterPacks:Fury": {
+    "NAME": "Fureur",
+    "DESCRIPTION": "Gain !M! Vigueur. NL piochez 1 card."
+  },
+  "BoosterPacks:GalacticAlgorithm": {
+    "NAME": "Algorithme Galactique",
+    "DESCRIPTION": "Gain 1 Orb Slot. NL Canalisez 1 Plasma."
+  },
+  "BoosterPacks:Gambit": {
+    "NAME": "Gambit",
+    "DESCRIPTION": "Draw !M! card. NL ALL Attacks in your hand cost 1 less this turn. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL ALL Attacks in your hand cost 1 less this turn. NL Épuisement."
+  },
+  "BoosterPacks:Grim": {
+    "NAME": "Sinistre",
+    "DESCRIPTION": "Lose 3 PV. NL Gain !M! Strength."
+  },
+  "BoosterPacks:GroupTherapy": {
+    "NAME": "Thérapie de groupe",
+    "DESCRIPTION": "ALL enemies lose PV equal to their *Mark. NL Apply !M! *Mark to ALL enemies."
+  },
+  "BoosterPacks:GutStab": {
+    "NAME": "Tord-boyaux",
+    "DESCRIPTION": "Infligez !D! dégâts 3 times. NL Enemy lose !M! temporary Strength."
+  },
+  "BoosterPacks:HaltingProblem": {
+    "NAME": "Problème de l'arrêt",
+    "DESCRIPTION": "boosterpacks:Invoke a copy of each of your Orbs. NL End your turn. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "boosterpacks:Invoke a copy of each of your Orbs. NL End your turn."
+  },
+  "BoosterPacks:Hate": {
+    "NAME": "Haine",
+    "DESCRIPTION": "Infligez !D! dégâts. NL If you are in Wrath, gain !M! Strength and exit your Stance."
+  },
+  "BoosterPacks:HiddenStrike": {
+    "NAME": "Frappe cachée",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, Infligez !D! dégâts to ALL enemies",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:HonedBlade": {
+    "NAME": "Lame aiguisée",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Next turn, gain !M! temporary Strength."
+  },
+  "BoosterPacks:InnerDemons": {
+    "NAME": "Démons intérieurs",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Add a random Curse to your hand."
+  },
+  "BoosterPacks:Instinct": {
+    "NAME": "Instinct",
+    "DESCRIPTION": "Retenue. NL Discard any number of cards from your hand. NL Épuisement."
+  },
+  "BoosterPacks:KillingUrge": {
+    "NAME": "Désir de meurtre",
+    "DESCRIPTION": "Au début de votre tour, gain !M! *Accuracy."
+  },
+  "BoosterPacks:MasterTrick": {
+    "NAME": "Tour de maître",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, put a card from your draw pile to your hand.",
+    "UPGRADE_DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, put a card from your draw or discard pile to your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:Mastery": {
+    "NAME": "Maîtrise",
+    "DESCRIPTION": "Whenever at least 2 Shivs are added to your hand, adds an additional one."
+  },
+  "BoosterPacks:MatrixInversion": {
+    "NAME": "Inversion matricielle",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Invert the order of your Orbs."
+  },
+  "BoosterPacks:Memories": {
+    "NAME": "Souvenirs",
+    "DESCRIPTION": "Exchange your discard pile and your draw pile. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Exchange your discard pile and your draw pile."
+  },
+  "BoosterPacks:MindOverMatter": {
+    "NAME": "Supériorité de l'esprit",
+    "DESCRIPTION": "Draw !M! cards. NL Discard 2 cards. NL Enter boosterpacks:Courage."
+  },
+  "BoosterPacks:Mirage": {
+    "NAME": "Mirage",
+    "DESCRIPTION": "Whenever you draw a non Curse, non Status Injouable card, piochez 1 card.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Whenever you draw a non Curse, non Status Injouable card, piochez 1 card."
+  },
+  "BoosterPacks:MobMentality": {
+    "NAME": "Mentalité de foule",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Draw all copies of this card."
+  },
+  "BoosterPacks:Monad": {
+    "NAME": "Monade",
+    "DESCRIPTION": "Target takes damage equal to the number of cards in play X times.",
+    "UPGRADE_DESCRIPTION": "Target takes damage equal to the number of cards in play X+1 times.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (You have !M! cards in play.)"
+    ]
+  },
+  "BoosterPacks:Multithreading": {
+    "NAME": "Multithreading",
+    "DESCRIPTION": "Au début de votre tour, Evoke your rightmost Orb twice.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, Evoke your rightmost Orb twice."
+  },
+  "BoosterPacks:Mutilation": {
+    "NAME": "Mutilation",
+    "DESCRIPTION": "boosterpacks:Forgotten. NL Heal 10 PV. NL Lose !M! Max PV. NL Épuisement."
+  },
+  "BoosterPacks:Naraka": {
+    "NAME": "Naraka",
+    "DESCRIPTION": "Whenever you change Stance, ALL enemies lose !M! PV."
+  },
+  "BoosterPacks:Nilpotency": {
+    "NAME": "Nilpotence",
+    "DESCRIPTION": "Put !M! cost 0 cards from your draw pile into your hand."
+  },
+  "BoosterPacks:Ninjutsu": {
+    "NAME": "Ninjutsu",
+    "DESCRIPTION": "Shivs gain Retenue. NL When you Retenue a Shiv, Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Shivs gain Retenue. NL When you Retenue a Shiv, Upgrade it."
+  },
+  "BoosterPacks:NoMoreRemorse": {
+    "NAME": "Sans remords",
+    "DESCRIPTION": "ALL enemies take !M! damage per card in your Épuisement pile. NL Épuisement."
+  },
+  "BoosterPacks:Optimize": {
+    "NAME": "Optimiser",
+    "DESCRIPTION": "Au début de votre tour, apply 1 Lock-on to ALL enemies.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Au début de votre tour, apply 1 Lock-on to ALL enemies."
+  },
+  "BoosterPacks:Oracle": {
+    "NAME": "Oracle",
+    "DESCRIPTION": "Whenever you Scry, Scrutez 1 cartes more card.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Whenever you Scry, Scrutez 1 cartes more card."
+  },
+  "BoosterPacks:Overflow": {
+    "NAME": "Overflow",
+    "DESCRIPTION": "Fills your hand with copies of a card in your hand. NL Épuisement."
+  },
+  "BoosterPacks:ParadigmShift": {
+    "NAME": "Évolution du paradigme",
+    "DESCRIPTION": "Lose all Focus. NL Gain double the boosterpacks:Integrity."
+  },
+  "BoosterPacks:PhantomStrike": {
+    "NAME": "Frappe fantôme",
+    "DESCRIPTION": "Infligez !D! dégâts per cost 0 or Injouable card in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deal damage ",
+      " time).",
+      " times)."
+    ]
+  },
+  "BoosterPacks:PiercingClaws": {
+    "NAME": "Griffes perçantes",
+    "DESCRIPTION": "Infligez !D! dégâts twice. NL Increases the damage of ALL Claw cards by 1 this combat."
+  },
+  "BoosterPacks:Pilgrimage": {
+    "NAME": "Pèlerinage",
+    "DESCRIPTION": "Gain !M! Mantra. NL End your turn.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL Gain !M! Mantra. NL End your turn."
+  },
+  "BoosterPacks:Pointer": {
+    "NAME": "Pointeur",
+    "DESCRIPTION": "Evoke your leftmost Orb.",
+    "UPGRADE_DESCRIPTION": "Evoke your leftmost Orb twice."
+  },
+  "BoosterPacks:Polynomial": {
+    "NAME": "Polynomial",
+    "DESCRIPTION": "Deal !D! + !M!X damage to ALL enemies. NL Cannot drain more than [B] .",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Deal ",
+      " damage.)"
+    ]
+  },
+  "BoosterPacks:Prophecy": {
+    "NAME": "Prophétie",
+    "DESCRIPTION": "Whenever you enter Divinity, put !M! card from your draw pile into your hand.",
+    "UPGRADE_DESCRIPTION": "Whenever you enter Divinity, put !M! cards from your draw pile into your hand."
+  },
+  "BoosterPacks:Quagmire": {
+    "NAME": "Bourbier",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Add !M! *Debris into your hand."
+  },
+  "BoosterPacks:RecursiveCall": {
+    "NAME": "Appel récursif",
+    "DESCRIPTION": "Every time you play 4 cards in a turn, Canalisez a copy of your leftmost orb."
+  },
+  "BoosterPacks:Register": {
+    "NAME": "Registre",
+    "DESCRIPTION": "Draw X cards. NL Cannot drain more than [B] .",
+    "UPGRADE_DESCRIPTION": "Draw X+1 cards. NL Cannot drain more than [B] ."
+  },
+  "BoosterPacks:Reincarnation": {
+    "NAME": "Réincarnation",
+    "DESCRIPTION": "Gain X Strength. NL Gain X Dexterity. NL End your turn. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Gain X+1 Strength. NL Gain X+1 Dexterity. NL End your turn. NL Épuisement."
+  },
+  "BoosterPacks:Reprieve": {
+    "NAME": "Grâce",
+    "DESCRIPTION": "boosterpacks:Forgotten. NL Heal !M! PV. NL Épuisement."
+  },
+  "BoosterPacks:Respite": {
+    "NAME": "Répit",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL If you are in Calm, draw !M! cards and exit your Stance."
+  },
+  "BoosterPacks:Revenge": {
+    "NAME": "Revanche",
+    "DESCRIPTION": "Whenever you lose PV, deal !M! damage to ALL enemies."
+  },
+  "BoosterPacks:Roar": {
+    "NAME": "Rugissement",
+    "DESCRIPTION": "Gain Vigueur equal to your Strength.",
+    "UPGRADE_DESCRIPTION": "Gain Vigueur equal to your Strength +4."
+  },
+  "BoosterPacks:Scythe": {
+    "NAME": "Faux",
+    "DESCRIPTION": "Lose 1 PV and Infligez !D! dégâts !M! times."
+  },
+  "BoosterPacks:SecretArsenal": {
+    "NAME": "Arsenal secret",
+    "DESCRIPTION": "Whenever you play a card that costs 2 energy or more, add 2 Shivs to your hand."
+  },
+  "BoosterPacks:Shinigami": {
+    "NAME": "Shinigami",
+    "DESCRIPTION": "Whenever Poison is Fatal, heal !M! PV.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Whenever Poison is Fatal, heal !M! PV."
+  },
+  "BoosterPacks:Shinobi": {
+    "NAME": "Shinobi",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, add !M! Shivs+ to your hand.",
+    "EXTENDED_DESCRIPTION": [
+      "Je ne peux pas jouer cette carte."
+    ]
+  },
+  "BoosterPacks:Silence": {
+    "NAME": "Silence",
+    "DESCRIPTION": "Discard your hand. NL Gagnez !B! d'Armure per card discarded. NL Draw !M! card."
+  },
+  "BoosterPacks:SlidingKick": {
+    "NAME": "Coup de pied glissé",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Discard !M! card.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Discard !M! cards."
+  },
+  "BoosterPacks:SlyTrick": {
+    "NAME": "Sournoiserie",
+    "DESCRIPTION": "Scrutez 9 cartes9. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Scrutez 9 cartes9."
+  },
+  "BoosterPacks:SomberOmen": {
+    "NAME": "Sombre présage",
+    "DESCRIPTION": "Whenever you apply Weak, apply !M! Poison as well."
+  },
+  "BoosterPacks:Sprint": {
+    "NAME": "Sprint",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Gain !M! Vigueur."
+  },
+  "BoosterPacks:StaticWave": {
+    "NAME": "Onde statique",
+    "DESCRIPTION": "Activate the passive effect of each of your Orbs. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Activate the passive effect of each of your Orbs."
+  },
+  "BoosterPacks:StrikeOfTheFallen": {
+    "NAME": "Frappe du déchu",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Deal !M! additional damage per card in your Épuisement pile."
+  },
+  "BoosterPacks:SwiftClaw": {
+    "NAME": "Griffe rapide",
+    "DESCRIPTION": "Infligez !D! dégâts. NL piochez 1 card."
+  },
+  "BoosterPacks:Tackle": {
+    "NAME": "Tacle",
+    "DESCRIPTION": "Infligez !D! dégâts. NL If the last card you played cost 2 or more, gain [E] .",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL If the last card you played cost 2 or more, gain [E] [E] ."
+  },
+  "BoosterPacks:TacticalAdvantage": {
+    "NAME": "Avantage tactique",
+    "DESCRIPTION": "Infligez !D! dégâts. NL If the enemy does not have Poison, apply !M! Poison. NL Épuisement."
+  },
+  "BoosterPacks:TargetingSystem": {
+    "NAME": "Système de ciblage",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Apply !M! Lock-on."
+  },
+  "BoosterPacks:Titanium": {
+    "NAME": "Titanium",
+    "DESCRIPTION": "This turn, double any Block gain. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "This turn, double any Block gain."
+  },
+  "BoosterPacks:Trinity": {
+    "NAME": "Trinité",
+    "DESCRIPTION": "Infligez !D! dégâts. NL If you are in Divinity, deal triple damage and exit your Stance.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL Infligez !D! dégâts. NL If you are in Divinity, deal triple damage and exit your Stance."
+  },
+  "BoosterPacks:Twilight": {
+    "NAME": "Crépuscule",
+    "DESCRIPTION": "boosterpacks:Latent. NL Canalisez 1 Dark per Orb slot. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Canalisez 1 Dark per Orb slot. NL Épuisement."
+  },
+  "BoosterPacks:Valor": {
+    "NAME": "Valeur",
+    "DESCRIPTION": "Scrutez !M! cartes. NL piochez 1 card. NL Enter boosterpacks:Courage."
+  },
+  "BoosterPacks:Vision": {
+    "NAME": "Vision",
+    "DESCRIPTION": "Retenue. NL Scrutez !M! cartes. NL Épuisement."
+  },
+  "BoosterPacks:Worsening": {
+    "NAME": "Aggravation",
+    "DESCRIPTION": "boosterpacks:Latent. NL Infligez !D! dégâts. NL Double ALL debuffs on the target. NL Épuisement."
+  },
+  "BoosterPacks:Zen": {
+    "NAME": "Zen",
+    "DESCRIPTION": "Enter Calm, Wrath or boosterpacks:Courage. NL End your turn.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL Enter Calm, Wrath or boosterpacks:Courage. NL End your turn."
+  }
+}

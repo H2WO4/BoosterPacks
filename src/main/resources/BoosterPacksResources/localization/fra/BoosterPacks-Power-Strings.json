@@ -1,0 +1,229 @@
+{
+  "BoosterPacks:ArcticWindPower": {
+    "NAME": "Arctic Wind",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yChannel #b",
+      " #yFrost."
+    ]
+  },
+  "BoosterPacks:BlackHolePower": {
+    "NAME": "Black Hole",
+    "DESCRIPTIONS": [
+      "Whenever a #yDark is #yEvoked, trigger the passive ability of ALL #yDark orbs."
+    ]
+  },
+  "BoosterPacks:BlazingSwordPower": {
+    "NAME": "Blazing Sword",
+    "DESCRIPTIONS": [
+      "Whenever you #yExhaust a card, gain #b",
+      " #yVigor."
+    ]
+  },
+  "BoosterPacks:BlessingPower": {
+    "NAME": "Blessing",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain [E] .",
+      "At the start of your turn, gain [E] [E] .",
+      "At the start of your turn, gain [E] [E] [E] .",
+      "At the start of your turn, gain #b",
+      " energy."
+    ]
+  },
+  "BoosterPacks:BlissfulIgnorancePower": {
+    "NAME": "Blissful Ignorance",
+    "DESCRIPTIONS": [
+      "Whenever you discard every card you #yScry, gain #b",
+      " #yBlock per card #yScried."
+    ]
+  },
+  "BoosterPacks:BoilingBloodPower": {
+    "NAME": "Boiling Blood",
+    "DESCRIPTIONS": [
+      "At the beginning of your turn, gain #b",
+      " #yVigor."
+    ]
+  },
+  "BoosterPacks:DarkFocusPower": {
+    "NAME": "Dark Focus",
+    "DESCRIPTIONS": [
+      "Increase the passive effect of #yDark orbs by #b",
+      "."
+    ]
+  },
+  "BoosterPacks:EncorePower": {
+    "NAME": "Encore",
+    "DESCRIPTIONS": [
+      "Whenever your turn is forced to end, draw #b",
+      " card",
+      " cards",
+      ", discard #b",
+      " cards and continue to play."
+    ]
+  },
+  "BoosterPacks:GalvanicAuraPower": {
+    "NAME": "Galvanic Aura",
+    "DESCRIPTIONS": [
+      "Whenever you #yEvoke a non #yLightning, Invoke a #yLightning."
+    ]
+  },
+  "BoosterPacks:HonedBladePower": {
+    "NAME": "Honed Blade",
+    "DESCRIPTIONS": [
+      "Next turn, gain #b",
+      " #yStrength for this turn."
+    ]
+  },
+  "BoosterPacks:IntegrityPower": {
+    "NAME": "Integrity",
+    "DESCRIPTIONS": [
+      "Increase the effectiveness of #yEvoking an Orb by #b",
+      "."
+    ]
+  },
+  "BoosterPacks:KillingUrgePower": {
+    "NAME": "Killing Urge",
+    "DESCRIPTIONS": [
+      "At the start if your turn, #yShivs deal #b",
+      " additional damage."
+    ]
+  },
+  "BoosterPacks:LoseFocusPower": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": [
+      "At the end of this turn, lose #b",
+      " #Focus."
+    ]
+  },
+  "BoosterPacks:MasteryPower": {
+    "NAME": "Mastery",
+    "DESCRIPTIONS": [
+      "Whenever at least #b2 #yShivs are added to your hand, adds #b",
+      "additional #yShiv."
+    ]
+  },
+  "BoosterPacks:MiragePower": {
+    "NAME": "Mirage",
+    "DESCRIPTIONS": [
+      "Whenever you draw a non #yCurse, non #yStatus unplayable card, draw #b",
+      " card.",
+      " cards."
+    ]
+  },
+  "BoosterPacks:MultithreadingPower": {
+    "NAME": "Multi-threading",
+    "DESCRIPTIONS": [
+      "At the start of your turn, #yEvoke your rightmost #yOrb twice.",
+      "At the start of your turn, #yEvoke your #b",
+      " rightmost #yOrbs twice."
+    ]
+  },
+  "BoosterPacks:NarakaPower": {
+    "NAME": "Naraka",
+    "DESCRIPTIONS": [
+      "Whenever you change #yStance, ALL enemies lose #b",
+      " HP."
+    ]
+  },
+  "BoosterPacks:NinjutsuPower": {
+    "NAME": "Ninjutsu",
+    "DESCRIPTIONS": [
+      "When a #yShiv is #yRetained, #yUpgrade it."
+    ]
+  },
+  "BoosterPacks:OptimizePower": {
+    "NAME": "Optimize",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yLock-on to ALL enemies."
+    ]
+  },
+  "BoosterPacks:OraclePower": {
+    "NAME": "Oracle",
+    "DESCRIPTIONS": [
+      "Whenever you #yScry, #yScry #b",
+      " more card.",
+      " more cards."
+    ]
+  },
+  "BoosterPacks:OrpheusPower": {
+    "NAME": "Orpheus",
+    "DESCRIPTIONS": [
+      "During this turn",
+      "During your next #b",
+      "turns",
+      ", whenever you exhaust a card, add a copy of it to your discard pile."
+    ]
+  },
+  "BoosterPacks:ProphecyPower": {
+    "NAME": "Prophecy",
+    "DESCRIPTIONS": [
+      "Whenever you enter #yDivinity, put #b",
+      " card",
+      " cards",
+      " from your draw pile into your hand."
+    ]
+  },
+  "BoosterPacks:ProvidencePower": {
+    "NAME": "Providence",
+    "DESCRIPTIONS": [
+      "Whenever you gain #yMantra, gain #b",
+      " block."
+    ]
+  },
+  "BoosterPacks:PsychoanalysisPower": {
+    "NAME": "Psychoanalysis",
+    "DESCRIPTIONS": [
+      "At the start of your turn, apply #b",
+      " #yMark to ALL enemies and ALL enemies lose #b",
+      " HP."
+    ]
+  },
+  "BoosterPacks:RecursiveCallPower": {
+    "NAME": "Recursive Call",
+    "DESCRIPTIONS": [
+      "If you play #b",
+      " more card this turn, #yChannel #b",
+      " more cards this turn, #yChannel #b",
+      " copy of your leftmost Orb.",
+      " copies of your leftmost Orb."
+    ]
+  },
+  "BoosterPacks:RevengePower": {
+    "NAME": "Revenge",
+    "DESCRIPTIONS": [
+      "Whenever you lose HP, deal #b",
+      " damage to ALL enemies."
+    ]
+  },
+  "BoosterPacks:SecretArsenalPower": {
+    "NAME": "Secret Arsenal",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that costs #b2 energy or more, adds #b",
+      " #yShiv to your hand.",
+      " #yShivs to your hand."
+    ]
+  },
+  "BoosterPacks:ShinigamiPower": {
+    "NAME": "Shinigami",
+    "DESCRIPTIONS": [
+      "Whenever #yPoison is #yFatal, heal #b",
+      " HP."
+    ]
+  },
+  "BoosterPacks:SomberOmenPower": {
+    "NAME": "Somber Omen",
+    "DESCRIPTIONS": [
+      "Whenever you apply #yWeak, apply #b",
+      " #yPoison as well."
+    ]
+  },
+  "BoosterPacks:TitaniumPower": {
+    "NAME": "Titanium",
+    "DESCRIPTIONS": [
+      "This turn",
+      "The next #b",
+      " turns",
+      ", gain double the block."
+    ]
+  }
+}
