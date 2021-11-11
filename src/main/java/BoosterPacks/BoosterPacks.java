@@ -16,6 +16,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
@@ -185,14 +186,20 @@ public class BoosterPacks implements
     
     @Override
     public void receiveEditStrings() {
-        logger.info("You seeing this?");
-        logger.info("Beginning to edit strings for mod with ID: " + getModID());
+        logger.info(" - Loading locales");
 
-        BaseMod.loadCustomStringsFile(CardStrings.class, getModID() + "Resources/localization/eng/BoosterPacks-Card-Strings.json");
-
-        BaseMod.loadCustomStringsFile(PowerStrings.class, getModID() + "Resources/localization/eng/BoosterPacks-Power-Strings.json");
-
-        BaseMod.loadCustomStringsFile(PotionStrings.class, getModID() + "Resources/localization/eng/BoosterPacks-Potion-Strings.json");
+        String lang_pre = "";
+        switch (Settings.language) {
+            case FRA:
+                lang_pre = "fra";
+                break;
+            default:
+                lang_pre = "eng";
+                break;
+        }
+        BaseMod.loadCustomStringsFile(CardStrings.class, getModID() + "Resources/localization/" + lang_pre + "/BoosterPacks-Card-Strings.json");
+        BaseMod.loadCustomStringsFile(PowerStrings.class, getModID() + "Resources/localization/" + lang_pre + "/BoosterPacks-Power-Strings.json");
+        BaseMod.loadCustomStringsFile(PotionStrings.class, getModID() + "Resources/localization/" + lang_pre + "/BoosterPacks-Potion-Strings.json");
 
         logger.info("Done edittting strings");
     }

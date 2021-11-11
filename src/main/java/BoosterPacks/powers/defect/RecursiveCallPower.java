@@ -67,7 +67,7 @@ public class RecursiveCallPower extends AbstractPower implements CloneablePowerI
             if (p.filledOrbCount() >= 1) {
                 AbstractOrb leftOrb = p.orbs.get(p.filledOrbCount() - 1);
                 for (int i = 0; i < this.stackAmount; i++) {
-                    this.addToBot(new ChannelAction(leftOrb.makeCopy()));
+                    this.addToTop(new ChannelAction(leftOrb.makeCopy()));
                 }
             }
             this.amount = 4;

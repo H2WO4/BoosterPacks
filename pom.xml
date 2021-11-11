@@ -6,7 +6,7 @@
     <groupId>BoosterPacks</groupId>
     <artifactId>BoosterPacks</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>Booster Packs</name>
-    <version>0.9.0</version>
+    <version>0.9.1</version>
     <description>Adds 25 new cards per character, as well as new relics expanding upon base mechanics.</description>
 
     <properties>

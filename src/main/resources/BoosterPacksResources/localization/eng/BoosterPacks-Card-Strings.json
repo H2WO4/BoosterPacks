@@ -9,7 +9,7 @@
   },
   "BoosterPacks:Ambush": {
     "NAME": "Ambush",
-    "DESCRIPTION": "Add Shivs to your hand until you have !M! cards in your hand. NL Exhaust."
+    "DESCRIPTION": "Add *Shivs to your hand until you have !M! cards in your hand. NL Exhaust."
   },
   "BoosterPacks:Animosity": {
     "NAME": "Animosity",
@@ -266,7 +266,7 @@
   },
   "BoosterPacks:Mastery": {
     "NAME": "Mastery",
-    "DESCRIPTION": "Whenever at least 2 Shivs are added to your hand, adds an additional one."
+    "DESCRIPTION": "Whenever at least 2 *Shivs are added to your hand, adds an additional one."
   },
   "BoosterPacks:MatrixInversion": {
     "NAME": "Matrix Inversion",
@@ -292,10 +292,10 @@
   },
   "BoosterPacks:Monad": {
     "NAME": "Monad",
-    "DESCRIPTION": "Target takes damage equal to the number of cards in play X times.",
-    "UPGRADE_DESCRIPTION": "Target takes damage equal to the number of cards in play X+1 times.",
+    "DESCRIPTION": "Deal damage equal to the number of cards in play X times.",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in play X+1 times.",
     "EXTENDED_DESCRIPTION": [
-      " NL (You have !M! cards in play.)"
+      " NL (There is !M! cards in play.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -317,8 +317,8 @@
   },
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
-    "DESCRIPTION": "Shivs gain Retain. NL When you Retain a Shiv, Upgrade it.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Shivs gain Retain. NL When you Retain a Shiv, Upgrade it."
+    "DESCRIPTION": "*Shivs gain Retain. NL When you Retain a *Shiv, Upgrade it.",
+    "UPGRADE_DESCRIPTION": "Innate. NL *Shivs gain Retain. NL When you Retain a *Shiv, Upgrade it."
   },
   "BoosterPacks:NoMoreRemorse": {
     "NAME": "No More Remorse",
@@ -408,18 +408,13 @@
     "NAME": "Revenge",
     "DESCRIPTION": "Whenever you lose HP, deal !M! damage to ALL enemies."
   },
-  "BoosterPacks:Roar": {
-    "NAME": "Roar",
-    "DESCRIPTION": "Gain Vigor equal to your Strength.",
-    "UPGRADE_DESCRIPTION": "Gain Vigor equal to your Strength +4."
-  },
   "BoosterPacks:Scythe": {
     "NAME": "Scythe",
     "DESCRIPTION": "Lose 1 HP and deal !D! damage !M! times."
   },
   "BoosterPacks:SecretArsenal": {
     "NAME": "Secret Arsenal",
-    "DESCRIPTION": "Whenever you play a card that costs 2 energy or more, add 2 Shivs to your hand."
+    "DESCRIPTION": "Whenever you play a card that costs 2 energy or more, add 2 *Shivs to your hand."
   },
   "BoosterPacks:Shinigami": {
     "NAME": "Shinigami",
@@ -428,7 +423,7 @@
   },
   "BoosterPacks:Shinobi": {
     "NAME": "Shinobi",
-    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add !M! Shivs+ to your hand.",
+    "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, add !M! *Shivs+ to your hand.",
     "EXTENDED_DESCRIPTION": [
       "I can't play this card."
     ]
@@ -467,11 +462,6 @@
   "BoosterPacks:SwiftClaw": {
     "NAME": "Swift Claw",
     "DESCRIPTION": "Deal !D! damage. NL Draw 1 card."
-  },
-  "BoosterPacks:Tackle": {
-    "NAME": "Tackle",
-    "DESCRIPTION": "Deal !D! damage. NL If the last card you played cost 2 or more, gain [E] .",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If the last card you played cost 2 or more, gain [E] [E] ."
   },
   "BoosterPacks:TacticalAdvantage": {
     "NAME": "Tactical Advantage",
