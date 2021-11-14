@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class DuckTypingAction extends AbstractGameAction {
 
@@ -22,15 +21,17 @@ public class DuckTypingAction extends AbstractGameAction {
         AbstractPlayer p = AbstractDungeon.player;
         if (!p.orbs.isEmpty()) {
             AbstractOrb firstOrb = p.orbs.get(0);
-            ArrayList<AbstractOrb> toEvoke = new ArrayList<>();
+            ArrayList<Integer> toEvoke = new ArrayList<>();
+            int i = 0;
             for (AbstractOrb o: p.orbs) {
                 if (!(o instanceof EmptyOrbSlot) && o.ID.equals(firstOrb.ID)) {
-                    toEvoke.add(o);
+                    toEvoke.add(i);
                 }
+                i++;
             }
-            Collections.reverse(toEvoke);
-            for (AbstractOrb o: toEvoke) {
-                this.addToBot(new EvokeSpecificOrbAction(o));
+            int negIndex = 0;
+            for (int o: toEvoke) {
+                this.addToBot(new EvokeSpecificOrbAction(p.orbs.get(o-negIndex)));
                 this.addToBot(new DrawCardAction(1));
             }
         }

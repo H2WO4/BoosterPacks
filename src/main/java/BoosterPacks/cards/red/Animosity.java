@@ -34,7 +34,7 @@ public class Animosity extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseDamage = 7;
         this.damage = this.baseDamage;
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;
     }
 
@@ -84,8 +84,7 @@ public class Animosity extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(2);
-            this.upgradeMagicNumber(1);
+            this.upgradeDamage(4);
             initializeDescription();
         }
     }

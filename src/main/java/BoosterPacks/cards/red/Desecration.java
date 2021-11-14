@@ -2,11 +2,10 @@ package BoosterPacks.cards.red;
 
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
+
 import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsAction;
-import com.megacrit.cardcrawl.actions.common.LoseHPAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -38,35 +37,26 @@ public class Desecration extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new LoseHPAction(p, p, 6));
-        CardGroup total = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractCard c: p.drawPile.group) {
-            if (!c.cardID.equals(Desecration.ID)) {
-                total.addToTop(c);
-            }
-        }
-        for (AbstractCard c: p.discardPile.group) {
-            if (!c.cardID.equals(Desecration.ID)) {
-                total.addToTop(c);
-            }
-        }
-        for (AbstractCard c: p.exhaustPile.group) {
-            if (!c.cardID.equals(Desecration.ID)) {
-                total.addToTop(c);
-            }
-        }
-        total.sortByRarity(false);
-        this.addToBot(new SelectCardsAction(total.group, 1, "Choose a card", (cards) -> {
-            AbstractCard card = cards.get(0).makeStatEquivalentCopy();
-            this.addToTop(new MakeTempCardInHandAction(card));
+        this.addToBot(new ExhaustAction(this.magicNumber, false));
+        this.addToBot(new SelectCardsAction(p.exhaustPile.group, "Select a card:", (cards) -> {
+            AbstractCard card = cards.get(0);
+            card.unfadeOut();
+            p.hand.addToHand(card);
+            p.exhaustPile.removeCard(card);
+            card.setCostForTurn(0);
         }));
+    }
+
+    @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        return super.canUse(p, m) && p.hand.size() > this.magicNumber;
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.upgradeMagicNumber(-1);;
             initializeDescription();
         }
     }
