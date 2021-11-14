@@ -34,7 +34,7 @@ public class Charge extends CustomCard {
 
     public Charge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 5;
+        this.baseDamage = 6;
         this.damage = this.baseDamage;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
@@ -59,7 +59,7 @@ public class Charge extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(2);
+            this.upgradeDamage(3);
             this.upgradeMagicNumber(1);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();

@@ -131,7 +131,7 @@
   },
   "BoosterPacks:Desecration": {
     "NAME": "Desecration",
-    "DESCRIPTION": "Lose !M! HP. NL Add a copy of a card from your draw, discard or exhaust pile into your hand."
+    "DESCRIPTION": "Exhaust !M! cards to add a card from your exhaust pile to your hand. It cost 0 this turn."
   },
   "BoosterPacks:Determination": {
     "NAME": "Determination",
@@ -177,11 +177,6 @@
     "NAME": "Factorization",
     "DESCRIPTION": "Gain !M! boosterpacks:Integrity. NL Lose 2 Focus."
   },
-  "BoosterPacks:Fiery": {
-    "NAME": "Fiery",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card. NL Add !M! *Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Draw !M! cards. NL Add !M! *Burns to your hand."
-  },
   "BoosterPacks:ForgeReality": {
     "NAME": "Forge Reality",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Add a *Smite and a *Safety to your hand."
@@ -199,6 +194,10 @@
     "DESCRIPTION": "Retain. NL At the end of this turn, Retain your entire hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL At the end of this turn, Retain your entire hand."
   },
+  "BoosterPacks:Frenzy": {
+    "NAME": "Frenzy",
+    "DESCRIPTION": "Lose 2 HP. NL Gain !M! Vigor."
+  },
   "BoosterPacks:Fury": {
     "NAME": "Fury",
     "DESCRIPTION": "Gain !M! Vigor. NL Draw 1 card."
@@ -214,7 +213,8 @@
   },
   "BoosterPacks:Grim": {
     "NAME": "Grim",
-    "DESCRIPTION": "Lose 3 HP. NL Gain !M! Strength."
+    "DESCRIPTION": "Lose 3 HP. NL Gain !M! Strength.",
+    "UPGRADE_DESCRIPTION": "Lose 4 HP. NL Gain !M! Strength."
   },
   "BoosterPacks:GroupTherapy": {
     "NAME": "Group Therapy",

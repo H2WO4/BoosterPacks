@@ -3,7 +3,6 @@ package BoosterPacks.cards.blue;
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.cards.CustomCardMultiPreview;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,7 +38,7 @@ public class HaltingProblem extends CustomCardMultiPreview {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractOrb o: p.orbs) {
             if (!(o instanceof EmptyOrbSlot)) {
-                this.addToBot(new EvokeSpecificOrbAction(o.makeCopy()));
+                o.onEvoke();
             }
         }
         this.addToBot(new PressEndTurnButtonAction());

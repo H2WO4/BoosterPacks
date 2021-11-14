@@ -176,11 +176,6 @@
     "NAME": "Factorisation",
     "DESCRIPTION": "Gagnez !M! boosterpacks:d'Integrité. NL Perdez 2 de Concentration."
   },
-  "BoosterPacks:Fiery": {
-    "NAME": "Ardent",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Draw !M! carte. NL Add !M! *Burn to your hand.",
-    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Draw !M! cartes. NL Add !M! *Burns to your hand."
-  },
   "BoosterPacks:ForgeReality": {
     "NAME": "Forge-réalité",
     "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Ajoutez une *Gifle et une *Sécurité à votre main."
@@ -198,6 +193,10 @@
     "DESCRIPTION": "Retenue. NL À la fin de ce tour, retenez votre main. NL Épuisement.",
     "UPGRADE_DESCRIPTION": "Retenue. NL À la fin de ce tour, retenez votre main."
   },
+  "BoosterPacks:Frenzy": {
+    "NAME": "Frénésie",
+    "DESCRIPTION": "Perdez 2 PV. NL Gagnez !M! de Vigueur."
+  },
   "BoosterPacks:Fury": {
     "NAME": "Fureur",
     "DESCRIPTION": "Gagnez !M! de Vigueur. NL Piochez 1 carte."
@@ -213,7 +212,8 @@
   },
   "BoosterPacks:Grim": {
     "NAME": "Sinistre",
-    "DESCRIPTION": "Perdez 3 PV. NL Gagnez !M! de Force."
+    "DESCRIPTION": "Perdez 3 PV. NL Gagnez !M! de Force.",
+    "UPGRADE_DESCRIPTION": "Perdez 4 PV. NL Gagnez !M! de Force"
   },
   "BoosterPacks:GroupTherapy": {
     "NAME": "Thérapie de groupe",

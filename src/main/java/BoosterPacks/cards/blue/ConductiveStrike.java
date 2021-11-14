@@ -3,7 +3,6 @@ package BoosterPacks.cards.blue;
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.defect.EvokeSpecificOrbAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -40,7 +39,7 @@ public class ConductiveStrike extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
         if (!p.orbs.isEmpty()) {
-            this.addToBot(new EvokeSpecificOrbAction(p.orbs.get(0).makeCopy()));
+            p.orbs.get(0).onEvoke();
         }
     }
 
