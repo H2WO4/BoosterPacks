@@ -473,8 +473,7 @@
   },
   "BoosterPacks:Titanium": {
     "NAME": "Titanium",
-    "DESCRIPTION": "This turn, double any Block gain. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "This turn, double any Block gain."
+    "DESCRIPTION": "Gain !B! Block !M! times."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinity",

@@ -472,8 +472,7 @@
   },
   "BoosterPacks:Titanium": {
     "NAME": "Titanium",
-    "DESCRIPTION": "Pendant ce tour, doublez tout gain d'Armure. NL Épuisement.",
-    "UPGRADE_DESCRIPTION": "Pendant ce tour, doublez tout gain d'Armure."
+    "DESCRIPTION": "Gagnez !B! d'Armure !M! fois."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinité",
