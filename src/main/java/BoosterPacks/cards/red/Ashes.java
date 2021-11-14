@@ -26,11 +26,11 @@ public class Ashes extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.RED;
-    private static final int COST = 1;
+    private static final int COST = 0;
 
     public Ashes() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 10;
+        this.baseDamage = 4;
         this.damage = this.baseDamage;
     }
 
@@ -43,7 +43,7 @@ public class Ashes extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(4);
+            this.upgradeDamage(2);
             initializeDescription();
         }
     }

@@ -1,10 +1,11 @@
-package BoosterPacks.cards.red;
+package BoosterPacks.cards.colorless;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.cards.tempCards.Debris;
+import BoosterPacks.patches.BoosterTags;
+import BoosterPacks.powers.colorless.ClimaxPower;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,43 +13,38 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
-public class Quagmire extends CustomCard {
+public class Climax extends CustomCard {
 
-    public static final String ID = BoosterPacks.makeID(Quagmire.class.getSimpleName());
+    public static final String ID = BoosterPacks.makeID(Climax.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Quagmire.png");
+    public static final String IMG = makeCardPath("Climax.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
+    private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = CardColor.RED;
-    private static final int COST = 1;
+    public static final CardColor COLOR = CardColor.COLORLESS;
+    private static final int COST = 2;
 
-    public Quagmire() {
+    public Climax() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 12;
-        this.block = this.baseBlock;
-        this.baseMagicNumber = 2;
-        this.magicNumber = this.baseMagicNumber;
-
-        this.cardsToPreview = new Debris();
+        this.exhaust = true;
+        this.tags.add(BoosterTags.LATENT);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new GainBlockAction(p, p, this.block));
-        this.addToBot(new MakeTempCardInHandAction(new Debris(), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new ClimaxPower(p, 1), 1));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(5);
+            this.exhaust = false;
             initializeDescription();
         }
     }

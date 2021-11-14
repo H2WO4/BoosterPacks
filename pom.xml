@@ -6,8 +6,8 @@
     <groupId>BoosterPacks</groupId>
     <artifactId>BoosterPacks</artifactId> <!--Keep a note of this one: this is the ID used in the "auto add cards" method-->
     <name>Booster Packs</name>
-    <version>0.9.1</version>
-    <description>Adds 25 new cards per character, as well as new relics expanding upon base mechanics.</description>
+    <version>0.9.2</version>
+    <description>Adds 25 new cards per character, as well as some colorless cards expanding upon base mechanics.</description>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -16,7 +16,7 @@
         <ModTheSpire.version>3.8.0</ModTheSpire.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!--CHANGE THIS TO YOUR STEAM INSTALLATION-->
-        <Steam.path>D:\SteamLibrary\steamapps</Steam.path>
+        <Steam.path>E:\Steam\steamapps</Steam.path>
     </properties>
     <dependencies>
         <dependency>

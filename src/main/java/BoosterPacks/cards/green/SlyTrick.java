@@ -33,15 +33,14 @@ public class SlyTrick extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ScryAction(p.drawPile.size()));
+        this.addToBot(new ScryAction(99));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.exhaust = false;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.upgradeBaseCost(0);
             initializeDescription();
         }
     }

@@ -29,11 +29,11 @@ public class Empty extends CustomCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = CardColor.RED;
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     public Empty() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 18;
+        this.baseBlock = 13;
         this.block = this.baseBlock;
 
         this.cardsToPreview = new VoidCard();
@@ -50,7 +50,7 @@ public class Empty extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(6);
+            this.upgradeBlock(5);
             initializeDescription();
         }
     }

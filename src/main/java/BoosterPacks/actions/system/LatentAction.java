@@ -19,7 +19,7 @@ public class LatentAction extends AbstractGameAction {
         CardGroup draw = p.drawPile;
         CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c: draw.group) {
-            if (c.hasTag(BoosterTags.LATENT)) {
+            if (c.hasTag(BoosterTags.LATENT) && !(c.inBottleFlame || c.inBottleLightning || c.inBottleTornado)) {
                 temp.addToTop(c);
             }
         }

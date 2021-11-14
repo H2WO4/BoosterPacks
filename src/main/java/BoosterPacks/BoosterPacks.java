@@ -133,7 +133,7 @@ public class BoosterPacks implements
     
     public static void initialize() {
         logger.info("========================= Initializing Default Mod. Hi. =========================");
-        BoosterPacks BoosterPacks = new BoosterPacks();
+        new BoosterPacks();
         logger.info("========================= /Default Mod Initialized. Hello World./ =========================");
     }
 

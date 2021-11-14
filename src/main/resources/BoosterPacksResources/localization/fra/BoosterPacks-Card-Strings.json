@@ -26,7 +26,7 @@
   },
   "BoosterPacks:Assassinate": {
     "NAME": "Assassination",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Quand défaussée, réduisez son coût de 1 avant d'être jouée. Remettez la dans votre main."
+    "DESCRIPTION": "Infligez !D! dégâts. NL Quand défaussée, réduisez son coût de 1 avant d'être jouée. NL Remettez la dans votre main."
   },
   "BoosterPacks:Audacity": {
     "NAME": "Audacité",
@@ -43,7 +43,7 @@
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Trou noir",
-    "DESCRIPTION": "Quand vous activez un Orbe Obscur, utilisez la capacité passive de TOUT vos Orbes Obscurs. NL Canalisez 2 Orbes Obscurs."
+    "DESCRIPTION": "Quand vous activez un Orbe Obscur, utilisez la capacité passive de TOUT vos Orbes Obscurs. NL Canalisez !M! Orbes Obscurs."
   },
   "BoosterPacks:BlazingSword": {
     "NAME": "Lame flamboyante",
@@ -78,6 +78,10 @@
   "BoosterPacks:ChooseCourage": {
     "NAME": "Courage",
     "DESCRIPTION": "Quand vous quittez cette Position, piochez 1 carte. NL Au début de chaque tour, piochez 1 carte."
+  },
+  "BoosterPacks:Climax": {
+    "NAME": "Climax",
+    "DESCRIPTION": "boosterpacks:Latent. NL Jouez votre prochaine carte 3 fois. NL Épuisement."
   },
   "BoosterPacks:CollapseReality": {
     "NAME": "Effondre-réalité",
@@ -130,7 +134,7 @@
   },
   "BoosterPacks:Desecration": {
     "NAME": "Profane",
-    "DESCRIPTION": "Perdez !M! PV. NL Ajoutez une copie d'une carte de votre pioche, défausse ou cimetière à votre main."
+    "DESCRIPTION": "Épuisez !M! cartes pour ajouter une carte de votre cimetière à votre main. NL Elle coûte 0 pour ce tour."
   },
   "BoosterPacks:Determination": {
     "NAME": "Détermination",
@@ -250,6 +254,10 @@
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
     "DESCRIPTION": "Retenue. NL Défaussez autant de cartes que vous voulez de votre main. NL Épuisement."
+  },
+  "BoosterPacks:Ire": {
+    "NAME": "Ire",
+    "DESCRIPTION": "Piochez !M! cartes. NL Entrez en Colère."
   },
   "BoosterPacks:KillingUrge": {
     "NAME": "Désir de meurtre",
@@ -438,8 +446,7 @@
   },
   "BoosterPacks:SlyTrick": {
     "NAME": "Sournoiserie",
-    "DESCRIPTION": "Scrutez 99 cartes. NL Épuisement.",
-    "UPGRADE_DESCRIPTION": "Scrutez 99 cartes."
+    "DESCRIPTION": "Scrutez 99 cartes. NL Épuisement."
   },
   "BoosterPacks:SomberOmen": {
     "NAME": "Sombre présage",
@@ -498,7 +505,6 @@
   },
   "BoosterPacks:Zen": {
     "NAME": "Zen",
-    "DESCRIPTION": "Entrez en Calme, Colère ou boosterpacks:Courage. NL Finissez votre tour.",
-    "UPGRADE_DESCRIPTION": "Retenue. NL Entrez en Calme, Colère ou boosterpacks:Courage. NL Finissez votre tour."
+    "DESCRIPTION": "Retenue. Entrez en Calme, Colère ou boosterpacks:Courage. NL Finissez votre tour."
   }
 }

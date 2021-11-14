@@ -34,6 +34,7 @@ public class Zen extends CustomCard {
 
     public Zen() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.selfRetain = true;
     }
 
     @Override
@@ -49,8 +50,7 @@ public class Zen extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.selfRetain = true;
-            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            this.upgradeBaseCost(0);
             initializeDescription();
         }
     }

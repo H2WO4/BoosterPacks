@@ -26,7 +26,7 @@
   },
   "BoosterPacks:Assassinate": {
     "NAME": "Assassinate",
-    "DESCRIPTION": "Deal !D! damage. NL When manually discarded, reduce its cost by 1 until played and add it back to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL When manually discarded, cost 1 less until played. NL Add it back to your hand."
   },
   "BoosterPacks:Audacity": {
     "NAME": "Audacity",
@@ -44,7 +44,7 @@
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Black Hole",
-    "DESCRIPTION": "Whenever a Dark is Evoked, trigger the passive ability of ALL Dark orbs. NL Channel 2 Dark."
+    "DESCRIPTION": "Whenever a Dark is Evoked, trigger the passive ability of ALL Dark orbs. NL Channel !M! Dark."
   },
   "BoosterPacks:BlazingSword": {
     "NAME": "Blazing Sword",
@@ -79,6 +79,10 @@
   "BoosterPacks:ChooseCourage": {
     "NAME": "Courage",
     "DESCRIPTION": "Upon exiting Courage, draw 1 card. NL At the start of your turn, draw 1 card."
+  },
+  "BoosterPacks:Climax": {
+    "NAME": "Climax",
+    "DESCRIPTION": "boosterpacks:Latent. NL Play your next card three times. NL Exhaust."
   },
   "BoosterPacks:CollapseReality": {
     "NAME": "Collapse Reality",
@@ -131,7 +135,7 @@
   },
   "BoosterPacks:Desecration": {
     "NAME": "Desecration",
-    "DESCRIPTION": "Exhaust !M! cards to add a card from your exhaust pile to your hand. It cost 0 this turn."
+    "DESCRIPTION": "Exhaust !M! cards to add a card from your exhaust pile to your hand. NL It cost 0 this turn."
   },
   "BoosterPacks:Determination": {
     "NAME": "Determination",
@@ -251,6 +255,10 @@
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
     "DESCRIPTION": "Retain. NL Discard any number of cards from your hand. NL Exhaust."
+  },
+  "BoosterPacks:Ire": {
+    "NAME": "Ire",
+    "DESCRIPTION": "Draw !M! cards. NL Enter Wrath."
   },
   "BoosterPacks:KillingUrge": {
     "NAME": "Killing Urge",
@@ -439,8 +447,7 @@
   },
   "BoosterPacks:SlyTrick": {
     "NAME": "Sly Trick",
-    "DESCRIPTION": "Scry 99. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Scry 99."
+    "DESCRIPTION": "Scry 99. NL Exhaust."
   },
   "BoosterPacks:SomberOmen": {
     "NAME": "Somber Omen",
@@ -499,7 +506,6 @@
   },
   "BoosterPacks:Zen": {
     "NAME": "Zen",
-    "DESCRIPTION": "Enter Calm, Wrath or boosterpacks:Courage. NL End your turn.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Enter Calm, Wrath or boosterpacks:Courage. NL End your turn."
+    "DESCRIPTION": "Retain. Enter Calm, Wrath or boosterpacks:Courage. NL End your turn."
   }
 }

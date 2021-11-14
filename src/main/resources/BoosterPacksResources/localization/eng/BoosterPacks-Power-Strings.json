@@ -43,6 +43,14 @@
       " #yVigor."
     ]
   },
+  "BoosterPacks:ClimaxPower": {
+    "NAME": "Climax",
+    "DESCRIPTIONS": [
+      "Play your next card #b3 times.",
+      "Play your next #b",
+      " cards #b3 times."
+    ]
+  },
   "BoosterPacks:DarkFocusPower": {
     "NAME": "Dark Focus",
     "DESCRIPTIONS": [
