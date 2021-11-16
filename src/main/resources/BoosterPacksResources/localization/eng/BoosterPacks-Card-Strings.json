@@ -82,7 +82,8 @@
   },
   "BoosterPacks:Climax": {
     "NAME": "Climax",
-    "DESCRIPTION": "boosterpacks:Latent. NL Play your next card three times. NL Exhaust."
+    "DESCRIPTION": "boosterpacks:Latent. NL Play your next card three times. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "boosterpacks:Latent. NL Play your next card three times."
   },
   "BoosterPacks:CollapseReality": {
     "NAME": "Collapse Reality",
@@ -202,6 +203,10 @@
     "NAME": "Frenzy",
     "DESCRIPTION": "Lose 2 HP. NL Gain !M! Vigor."
   },
+  "BoosterPacks:Furtivity": {
+    "NAME": "Furtivity",
+    "DESCRIPTION": "Gain !M! Dexterity."
+  },
   "BoosterPacks:Fury": {
     "NAME": "Fury",
     "DESCRIPTION": "Gain !M! Vigor. NL Draw 1 card."
@@ -284,6 +289,10 @@
     "NAME": "Memories",
     "DESCRIPTION": "Exchange your discard pile and your draw pile. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Exchange your discard pile and your draw pile."
+  },
+  "BoosterPacks:Might": {
+    "NAME": "Might",
+    "DESCRIPTION": "Gain !M! Strength."
   },
   "BoosterPacks:MindOverMatter": {
     "NAME": "Mind Over Matter",
@@ -481,6 +490,10 @@
   "BoosterPacks:Titanium": {
     "NAME": "Titanium",
     "DESCRIPTION": "Gain !B! Block !M! times."
+  },
+  "BoosterPacks:Transcendance": {
+    "NAME": "Transcendance",
+    "DESCRIPTION": "Double ALL your buffs and debuffs. NL Exhaust."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinity",

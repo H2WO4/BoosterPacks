@@ -1,17 +1,16 @@
 package BoosterPacks.cards.red;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.actions.ironclad.WorseningAction;
 import BoosterPacks.patches.BoosterTags;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
@@ -41,12 +40,8 @@ public class Worsening extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractPower po: m.powers) {
-            if (po.type == AbstractPower.PowerType.DEBUFF) {
-                this.addToBot(new ApplyPowerAction(m, p, po));
-            }
-        }
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        this.addToBot(new WorseningAction(p, m));
     }
 
     @Override

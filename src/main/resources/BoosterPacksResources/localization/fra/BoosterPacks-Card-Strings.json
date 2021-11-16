@@ -81,7 +81,8 @@
   },
   "BoosterPacks:Climax": {
     "NAME": "Climax",
-    "DESCRIPTION": "boosterpacks:Latent. NL Jouez votre prochaine carte 3 fois. NL Épuisement."
+    "DESCRIPTION": "boosterpacks:Latent. NL Jouez votre prochaine carte 3 fois. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "boosterpacks:Latent. NL Jouez votre prochaine carte 3 fois."
   },
   "BoosterPacks:CollapseReality": {
     "NAME": "Effondre-réalité",
@@ -201,6 +202,10 @@
     "NAME": "Frénésie",
     "DESCRIPTION": "Perdez 2 PV. NL Gagnez !M! de Vigueur."
   },
+  "BoosterPacks:Furtivity": {
+    "NAME": "Furtivité",
+    "DESCRIPTION": "Gagnez !M! de Dextérité."
+  },
   "BoosterPacks:Fury": {
     "NAME": "Fureur",
     "DESCRIPTION": "Gagnez !M! de Vigueur. NL Piochez 1 carte."
@@ -283,6 +288,10 @@
     "NAME": "Souvenirs",
     "DESCRIPTION": "Échangez votre pioche et défausse. NL Épuisement.",
     "UPGRADE_DESCRIPTION": "Échangez votre pioche et défausse."
+  },
+  "BoosterPacks:Might": {
+    "NAME": "Puissance",
+    "DESCRIPTION": "Gagnez !M! de Force."
   },
   "BoosterPacks:MindOverMatter": {
     "NAME": "Supériorité de l'esprit",
@@ -480,6 +489,10 @@
   "BoosterPacks:Titanium": {
     "NAME": "Titanium",
     "DESCRIPTION": "Gagnez !B! d'Armure !M! fois."
+  },
+  "BoosterPacks:Transcendance": {
+    "NAME": "Transcendance",
+    "DESCRIPTION": "Double TOUT vos buffs et débuffs. NL Épuisement."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinité",

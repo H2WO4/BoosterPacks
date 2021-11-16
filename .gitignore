@@ -84,3 +84,4 @@ $RECYCLE.BIN/
 *.log
 
 .vscode/
+pom.xml
