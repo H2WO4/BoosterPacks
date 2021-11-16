@@ -308,10 +308,10 @@
   },
   "BoosterPacks:Monad": {
     "NAME": "Monade",
-    "DESCRIPTION": "Infligez des dégâts égaux au nombre de carte en jeu X fois.",
-    "UPGRADE_DESCRIPTION": "Infligez des dégâts égaux au nombre de carte en jeu X+1 fois.",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Attaquez une fois de plus par carte rare en jeu.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Il y a !M! cartes en jeu.)"
+      " NL (Il y a !M! cartes rare en jeu.)",
+      " NL (Il y a !M! cartes rares en jeu.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -490,7 +490,7 @@
     "NAME": "Titanium",
     "DESCRIPTION": "Gagnez !B! d'Armure !M! fois."
   },
-  "BoosterPacks:Transcendance": {
+  "BoosterPacks:Transcendence": {
     "NAME": "Transcendance",
     "DESCRIPTION": "Double TOUT vos buffs et débuffs. NL Épuisement."
   },

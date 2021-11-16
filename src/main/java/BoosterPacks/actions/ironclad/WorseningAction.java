@@ -18,7 +18,7 @@ public class WorseningAction extends AbstractGameAction {
 
     public void update() {
         for (AbstractPower po: this.target.powers) {
-            if (po.type == AbstractPower.PowerType.DEBUFF && po.amount > 0) {
+            if (po.type == AbstractPower.PowerType.DEBUFF && po.amount != 0) {
                 this.addToBot(new ApplyPowerAction(this.target, this.source, po));
             }
         }

@@ -309,10 +309,10 @@
   },
   "BoosterPacks:Monad": {
     "NAME": "Monad",
-    "DESCRIPTION": "Deal damage equal to the number of cards in play X times.",
-    "UPGRADE_DESCRIPTION": "Deal damage equal to the number of cards in play X+1 times.",
+    "DESCRIPTION": "Deal !D! damage. NL Attack an additional time per rare card in play.",
     "EXTENDED_DESCRIPTION": [
-      " NL (There is !M! cards in play.)"
+      " NL (There is !M! rare card in play.)",
+      " NL (There are !M! rare cards in play.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -491,8 +491,8 @@
     "NAME": "Titanium",
     "DESCRIPTION": "Gain !B! Block !M! times."
   },
-  "BoosterPacks:Transcendance": {
-    "NAME": "Transcendance",
+  "BoosterPacks:Transcendence": {
+    "NAME": "Transcendence",
     "DESCRIPTION": "Double ALL your buffs and debuffs. NL Exhaust."
   },
   "BoosterPacks:Trinity": {
