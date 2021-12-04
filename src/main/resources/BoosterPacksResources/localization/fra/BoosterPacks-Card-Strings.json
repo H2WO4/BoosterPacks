@@ -15,6 +15,11 @@
     "NAME": "Animosité",
     "DESCRIPTION": "Infligez !D! dégâts. NL Infligez !M! dégâts additionnels par stack de débuff sur vous ou la cible."
   },
+  "BoosterPacks:Apocrypha": {
+    "NAME": "Apocrypha",
+    "DESCRIPTION": "Perdez !M! PV. NL Entrez en Divinité. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Retenue. NL Perdez !M! PV. NL Entrez en Divinité. NL Épuisement."
+  },
   "BoosterPacks:ArcticWind": {
     "NAME": "Vent glacial",
     "DESCRIPTION": "Au début de votre tour, Canalisez 1 Frost.",
@@ -145,6 +150,10 @@
     "NAME": "Attaque par dictionnaire",
     "DESCRIPTION": "Infligez !D! dégâts. NL Regardez les !M! premières cartes de votre pioche, ajoutez en une à votre main."
   },
+  "BoosterPacks:Dignity": {
+    "NAME": "Dignité",
+    "DESCRIPTION": "Ne peut être jouée que si vous n'avez pas de carte *Rare en main. NL Infligez !D! dégâts. NL Gagnez !B! de d'Armure."
+  },
   "BoosterPacks:DominateReality": {
     "NAME": "Domine-réalité",
     "DESCRIPTION": "AJoutez !M! *Perspicacités et *Gifles à votre pioche. NL Épuisement."
@@ -252,10 +261,6 @@
     "NAME": "Lame aiguisée",
     "DESCRIPTION": "Infligez !D! dégâts. NL Au prochain tour, gagnez !M! de Force temporaire."
   },
-  "BoosterPacks:InnerDemons": {
-    "NAME": "Démons intérieurs",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Ajoutez une Malédiction aléatoire à votre main."
-  },
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
     "DESCRIPTION": "Retenue. NL Défaussez autant de cartes que vous voulez de votre main. NL Épuisement."
@@ -284,11 +289,6 @@
     "NAME": "Inversion matricielle",
     "DESCRIPTION": "Infligez !D! dégâts. NL Inversez l'ordre de vos Orbes."
   },
-  "BoosterPacks:Memories": {
-    "NAME": "Souvenirs",
-    "DESCRIPTION": "Échangez votre pioche et défausse. NL Épuisement.",
-    "UPGRADE_DESCRIPTION": "Échangez votre pioche et défausse."
-  },
   "BoosterPacks:Might": {
     "NAME": "Puissance",
     "DESCRIPTION": "Gagnez !M! de Force."
@@ -308,10 +308,10 @@
   },
   "BoosterPacks:Monad": {
     "NAME": "Monade",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Attaquez une fois de plus par carte rare en jeu.",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Attaquez une fois de plus par carte *Rare dans votre deck.",
     "EXTENDED_DESCRIPTION": [
-      " NL (Il y a !M! cartes rare en jeu.)",
-      " NL (Il y a !M! cartes rares en jeu.)"
+      " NL (Il y a !M! cartes *Rare dans votre deck.)",
+      " NL (Il y a !M! cartes *Rares dans votre deck.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -492,7 +492,7 @@
   },
   "BoosterPacks:Transcendence": {
     "NAME": "Transcendance",
-    "DESCRIPTION": "Double TOUT vos buffs et débuffs. NL Épuisement."
+    "DESCRIPTION": "Éthérée. NL Double TOUT vos buffs et débuffs. NL Épuisement."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinité",

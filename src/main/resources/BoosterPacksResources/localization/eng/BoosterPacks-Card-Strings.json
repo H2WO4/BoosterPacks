@@ -15,6 +15,11 @@
     "NAME": "Animosity",
     "DESCRIPTION": "Deal !D! damage. NL Deal !M! additional damage per debuff stack on you or the target."
   },
+  "BoosterPacks:Apocrypha": {
+    "NAME": "Apocrypha",
+    "DESCRIPTION": "Lose !M! HP. NL Enter Divinity. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Lose !M! HP. NL Enter Divinity. NL Exhaust."
+  },
   "BoosterPacks:ArcticWind": {
     "NAME": "Arctic Wind",
     "DESCRIPTION": "At the beginning of your turn, Channel 1 Frost.",
@@ -146,6 +151,10 @@
     "NAME": "Dictionary Attack",
     "DESCRIPTION": "Deal !D! damage. NL Look at the top !M! cards of your deck, choose one and add it to your hand."
   },
+  "BoosterPacks:Dignity": {
+    "NAME": "Dignity",
+    "DESCRIPTION": "Can only be played if you have no *Rare card in hand. NL Deal !D! damage. NL Gain !B! Block."
+  },
   "BoosterPacks:DominateReality": {
     "NAME": "Dominate Reality",
     "DESCRIPTION": "Add !M! *Insights and *Smites to your draw pile. NL Exhaust."
@@ -253,10 +262,6 @@
     "NAME": "Honed Blade",
     "DESCRIPTION": "Deal !D! damage. NL Next turn, gain !M! temporary Strength."
   },
-  "BoosterPacks:InnerDemons": {
-    "NAME": "Inner Demons",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Add a random Curse to your hand."
-  },
   "BoosterPacks:Instinct": {
     "NAME": "Instinct",
     "DESCRIPTION": "Retain. NL Discard any number of cards from your hand. NL Exhaust."
@@ -285,11 +290,6 @@
     "NAME": "Matrix Inversion",
     "DESCRIPTION": "Deal !D! damage. NL Invert the order of your Orbs."
   },
-  "BoosterPacks:Memories": {
-    "NAME": "Memories",
-    "DESCRIPTION": "Exchange your discard pile and your draw pile. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Exchange your discard pile and your draw pile."
-  },
   "BoosterPacks:Might": {
     "NAME": "Might",
     "DESCRIPTION": "Gain !M! Strength."
@@ -309,10 +309,10 @@
   },
   "BoosterPacks:Monad": {
     "NAME": "Monad",
-    "DESCRIPTION": "Deal !D! damage. NL Attack an additional time per rare card in play.",
+    "DESCRIPTION": "Deal !D! damage. NL Attack an additional time per *Rare card in your deck.",
     "EXTENDED_DESCRIPTION": [
-      " NL (There is !M! rare card in play.)",
-      " NL (There are !M! rare cards in play.)"
+      " NL (There is !M! rare card in your deck.)",
+      " NL (There are !M! rare cards in your deck.)"
     ]
   },
   "BoosterPacks:Multithreading": {
@@ -493,7 +493,7 @@
   },
   "BoosterPacks:Transcendence": {
     "NAME": "Transcendence",
-    "DESCRIPTION": "Double ALL your buffs and debuffs. NL Exhaust."
+    "DESCRIPTION": "Ethereal. NL Double ALL your buffs and debuffs. NL Exhaust."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinity",

@@ -3,21 +3,22 @@ package BoosterPacks.cards.colorless;
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.LoseHPAction;
+import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.stances.DivinityStance;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
-public class Transcendence extends CustomCard {
+public class Apocrypha extends CustomCard {
 
-    public static final String ID = BoosterPacks.makeID(Transcendence.class.getSimpleName());
+    public static final String ID = BoosterPacks.makeID(Apocrypha.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("Transcendence.png");
+    public static final String IMG = makeCardPath("Memories.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
@@ -28,26 +29,25 @@ public class Transcendence extends CustomCard {
     public static final CardColor COLOR = CardColor.COLORLESS;
     private static final int COST = 2;
 
-    public Transcendence() {
+    public Apocrypha() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.baseMagicNumber = 7;
+        this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
-        this.isEthereal = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractPower po: p.powers) {
-            if (po.amount != 0) {
-                this.addToBot(new ApplyPowerAction(p, p, po));
-            }
-        }
+        this.addToBot(new LoseHPAction(p, p, this.magicNumber));
+        this.addToBot(new ChangeStanceAction(DivinityStance.STANCE_ID));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.selfRetain = true;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

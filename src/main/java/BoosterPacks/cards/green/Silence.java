@@ -3,7 +3,6 @@ package BoosterPacks.cards.green;
 import BoosterPacks.BoosterPacks;
 import BoosterPacks.actions.silent.SilenceAction;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -38,7 +37,6 @@ public class Silence extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new SilenceAction(this.block));
-        this.addToBot(new DrawCardAction(this.magicNumber));
     }
 
     @Override

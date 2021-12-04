@@ -2,6 +2,7 @@ package BoosterPacks.actions.silent;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -25,7 +26,8 @@ public class SilenceAction extends AbstractGameAction {
         for (int i = 0; i < n; i++) {
             this.addToBot(new GainBlockAction(p, p, this.block));
         }
-
+        
+        this.addToBot(new DrawCardAction(1));
         this.isDone = true;
     }
 }

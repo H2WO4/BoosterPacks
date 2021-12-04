@@ -34,12 +34,6 @@ public class Gash {
                 c.applyPowers();
             }
         }
-        for (AbstractCard c: p.exhaustPile.group) {
-            if (c.hasTag(BoosterTags.CLAW)) {
-                c.baseDamage += __instance.amount;
-                c.applyPowers();
-            }
-        }
 
         __instance.isDone = true;
     }

@@ -2,6 +2,7 @@ package BoosterPacks.cards.colorless;
 
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
+
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -37,20 +38,8 @@ public class Monad extends CustomCard {
     }
 
     private int countCards() {
-        AbstractPlayer p = AbstractDungeon.player;
         int count = 0;
-
-        for (AbstractCard c: p.drawPile.group) {
-            if (c.rarity == CardRarity.RARE) {
-                count++;
-            }
-        }
-        for (AbstractCard c: p.hand.group) {
-            if (c.rarity == CardRarity.RARE) {
-                count++;
-            }
-        }
-        for (AbstractCard c: p.discardPile.group) {
+        for (AbstractCard c: AbstractDungeon.player.masterDeck.group) {
             if (c.rarity == CardRarity.RARE) {
                 count++;
             }
@@ -85,6 +74,7 @@ public class Monad extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         for (int i = 0; i < this.magicNumber; i++) {
             this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
