@@ -334,7 +334,7 @@
   "BoosterPacks:Ninjutsu": {
     "NAME": "Ninjutsu",
     "DESCRIPTION": "Vos *Surins gagnent Retenue. NL Lorsque qu'un *Surin est Retenu, Améliorez-le.",
-    "UPGRADE_DESCRIPTION": "Inné. NL Shivs gain Retenue. NL Lorsque qu'un *Surin est Retenu, Améliorez-le."
+    "UPGRADE_DESCRIPTION": "Inné. NL Vos *Surins gagnent Retenue. NL Lorsque qu'un *Surin est Retenu, Améliorez-le."
   },
   "BoosterPacks:NoMoreRemorse": {
     "NAME": "Sans remords",
