@@ -40,7 +40,7 @@ public class MasteryPower extends AbstractPower implements CloneablePowerInterfa
 
     @Override
     public void updateDescription() {
-        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[this.amount > 1 ? 2 : 1];
     }
 
     @Override

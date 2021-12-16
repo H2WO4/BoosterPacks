@@ -1,10 +1,9 @@
-package BoosterPacks.cards.tempCards;
+package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.stances.CourageStance;
-import basemod.AutoAdd;
+import BoosterPacks.powers.defect.TailRecursivityPower;
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.watcher.ChangeStanceAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -12,40 +11,36 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
-@AutoAdd.Ignore
-public class ChooseCourage extends CustomCard {
+public class TailRecursivity extends CustomCard {
 
-    public static final String ID = BoosterPacks.makeID(ChooseCourage.class.getSimpleName());
+    public static final String ID = BoosterPacks.makeID(TailRecursivity.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
-    public static final String IMG = makeCardPath("ChooseCourage.png");
+    public static final String IMG = makeCardPath("TailRecursivity.png");
 
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
 
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.NONE;
-    private static final CardType TYPE = CardType.STATUS;
-    public static final CardColor COLOR = CardColor.COLORLESS;
-    private static final int COST = -2;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.POWER;
+    public static final CardColor COLOR = CardColor.BLUE;
+    private static final int COST = 2;
 
-    public ChooseCourage() {
+    public TailRecursivity() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-    }
-
-    @Override
-    public void onChoseThisOption() {
-        this.addToBot(new ChangeStanceAction(new CourageStance()));
+        this.addToBot(new ApplyPowerAction(p, p, new TailRecursivityPower(p)));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+            this.upgradeBaseCost(1);
             initializeDescription();
         }
     }

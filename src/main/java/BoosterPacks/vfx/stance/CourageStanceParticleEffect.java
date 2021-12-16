@@ -54,6 +54,5 @@ public class CourageStanceParticleEffect extends AbstractGameEffect {
         sb.setBlendFunction(770, 771);
     }
 
-    public void dispose() {
-    }
+    public void dispose() {}
 }

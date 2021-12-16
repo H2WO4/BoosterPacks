@@ -1,6 +1,7 @@
 package BoosterPacks.cards.blue;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.actions.defect.InvokeAction;
 import BoosterPacks.cards.CustomCardMultiPreview;
 
 import com.megacrit.cardcrawl.actions.watcher.PressEndTurnButtonAction;
@@ -38,7 +39,7 @@ public class HaltingProblem extends CustomCardMultiPreview {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractOrb o: p.orbs) {
             if (!(o instanceof EmptyOrbSlot)) {
-                o.onEvoke();
+                this.addToBot(new InvokeAction(o));
             }
         }
         this.addToBot(new PressEndTurnButtonAction());

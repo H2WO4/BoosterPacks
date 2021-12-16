@@ -33,7 +33,7 @@ public class Monad extends CustomCard {
 
     public Monad() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 8;
+        this.baseDamage = 7;
         this.damage = this.baseDamage;
     }
 
@@ -50,25 +50,28 @@ public class Monad extends CustomCard {
 
     @Override
     public void onMoveToDiscard() {
+        super.onMoveToDiscard();
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }
 
     @Override
     public void applyPowers() {
+        super.applyPowers();
         this.baseMagicNumber = this.countCards();
         this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber >= 1 ? 1 : 0];
+        this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber > 1 ? 1 : 0];
         this.initializeDescription();
     }
 
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
+        super.calculateCardDamage(mo);
         this.baseMagicNumber = this.countCards();
         this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
-        this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber >= 1 ? 1 : 0];
+        this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber > 1 ? 1 : 0];
         this.initializeDescription();
     }
 

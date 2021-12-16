@@ -1,6 +1,7 @@
 package BoosterPacks.cards.green;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.patches.BoosterTags;
 import BoosterPacks.powers.silent.ShinigamiPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -31,6 +32,8 @@ public class Shinigami extends CustomCard {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
+
+        this.tags.add(BoosterTags.LATENT);
     }
 
     @Override
@@ -42,7 +45,7 @@ public class Shinigami extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.isInnate = true;
+            this.tags.remove(BoosterTags.LATENT);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

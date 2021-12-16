@@ -1,8 +1,8 @@
 package BoosterPacks.cards.red;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.patches.BoosterTags;
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
 import com.megacrit.cardcrawl.actions.common.HealAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -32,8 +32,9 @@ public class Reprieve extends CustomCard {
         this.baseMagicNumber = 6;
         this.magicNumber = this.baseMagicNumber;
         this.exhaust = true;
-        GraveField.grave.set(this, true);
+
         this.tags.add(CardTags.HEALING);
+        this.tags.add(BoosterTags.LATENT);
     }
 
     @Override

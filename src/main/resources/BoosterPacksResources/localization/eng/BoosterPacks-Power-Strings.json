@@ -29,13 +29,6 @@
       " energy."
     ]
   },
-  "BoosterPacks:BlissfulIgnorancePower": {
-    "NAME": "Blissful Ignorance",
-    "DESCRIPTIONS": [
-      "Whenever you discard every card you #yScry, gain #b",
-      " #yBlock per card #yScried."
-    ]
-  },
   "BoosterPacks:BoilingBloodPower": {
     "NAME": "Boiling Blood",
     "DESCRIPTIONS": [
@@ -68,17 +61,11 @@
       " cards and continue to play."
     ]
   },
-  "BoosterPacks:GalvanicAuraPower": {
-    "NAME": "Galvanic Aura",
-    "DESCRIPTIONS": [
-      "Whenever you #yEvoke a non #yLightning, Invoke a #yLightning."
-    ]
-  },
   "BoosterPacks:HonedBladePower": {
     "NAME": "Honed Blade",
     "DESCRIPTIONS": [
       "Next turn, gain #b",
-      " #yStrength for this turn."
+      " temporary #yStrength."
     ]
   },
   "BoosterPacks:IntegrityPower": {
@@ -91,22 +78,16 @@
   "BoosterPacks:KillingUrgePower": {
     "NAME": "Killing Urge",
     "DESCRIPTIONS": [
-      "At the start if your turn, #yShivs deal #b",
-      " additional damage."
-    ]
-  },
-  "BoosterPacks:LoseFocusPower": {
-    "NAME": "Focus Down",
-    "DESCRIPTIONS": [
-      "At the end of this turn, lose #b",
-      " #Focus."
+      "At the start if your turn, gain #b",
+      " #yAccuracy."
     ]
   },
   "BoosterPacks:MasteryPower": {
     "NAME": "Mastery",
     "DESCRIPTIONS": [
       "Whenever at least #b2 #yShivs are added to your hand, adds #b",
-      "additional #yShiv."
+      "additional #yShiv.",
+      "additional #yShivs."
     ]
   },
   "BoosterPacks:MiragePower": {
@@ -153,15 +134,6 @@
       " more cards."
     ]
   },
-  "BoosterPacks:OrpheusPower": {
-    "NAME": "Orpheus",
-    "DESCRIPTIONS": [
-      "During this turn",
-      "During your next #b",
-      "turns",
-      ", whenever you exhaust a card, add a copy of it to your discard pile."
-    ]
-  },
   "BoosterPacks:ProphecyPower": {
     "NAME": "Prophecy",
     "DESCRIPTIONS": [
@@ -171,23 +143,8 @@
       " from your draw pile into your hand."
     ]
   },
-  "BoosterPacks:ProvidencePower": {
-    "NAME": "Providence",
-    "DESCRIPTIONS": [
-      "Whenever you gain #yMantra, gain #b",
-      " block."
-    ]
-  },
-  "BoosterPacks:PsychoanalysisPower": {
-    "NAME": "Psychoanalysis",
-    "DESCRIPTIONS": [
-      "At the start of your turn, apply #b",
-      " #yMark to ALL enemies and ALL enemies lose #b",
-      " HP."
-    ]
-  },
-  "BoosterPacks:RecursiveCallPower": {
-    "NAME": "Recursive Call",
+  "BoosterPacks:TailRecursivityPower": {
+    "NAME": "Tail Recursivity",
     "DESCRIPTIONS": [
       "If you play #b",
       " more card this turn, #yChannel #b",
@@ -223,15 +180,6 @@
     "DESCRIPTIONS": [
       "Whenever you apply #yWeak, apply #b",
       " #yPoison as well."
-    ]
-  },
-  "BoosterPacks:TitaniumPower": {
-    "NAME": "Titanium",
-    "DESCRIPTIONS": [
-      "This turn",
-      "The next #b",
-      " turns",
-      ", gain double the block."
     ]
   }
 }

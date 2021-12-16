@@ -31,7 +31,7 @@
   },
   "BoosterPacks:Assassinate": {
     "NAME": "Assassinate",
-    "DESCRIPTION": "Deal !D! damage. NL When manually discarded, cost 1 less until played. NL Add it back to your hand."
+    "DESCRIPTION": "Deal !D! damage. NL When manually discarded, cost 1 less until played. NL Add it to your hand."
   },
   "BoosterPacks:Audacity": {
     "NAME": "Audacity",
@@ -42,10 +42,6 @@
     "NAME": "Augury",
     "DESCRIPTION": "Gain !M! Mantra. NL Add 2 *Visions to your hand.",
     "UPGRADE_DESCRIPTION": "Draw 1 card. NL If you draw a Skill, enter boosterpacks:Courage."
-  },
-  "BoosterPacks:BlackDeath": {
-    "NAME": "Black Death",
-    "DESCRIPTION": "Apply !M! Poison. NL Double this card's Poison, and increase its cost by 1 for this combat."
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Black Hole",
@@ -108,6 +104,14 @@
     "NAME": "Constant",
     "DESCRIPTION": "Deal !M! damage. NL Gain !M! Block. NL Not affected by statuses."
   },
+  "BoosterPacks:Contemplate": {
+    "NAME": "Contemplate",
+    "DESCRIPTION": "Scry !M!."
+  },
+  "BoosterPacks:Cornucopia": {
+    "NAME": "Cornucopia",
+    "DESCRIPTION": "Choose one: Gain !M! Gold, Heal !B! HP, or Gain !D! Strength and 1 Dexterity. NL Exhaust."
+  },
   "BoosterPacks:CorrosiveScent": {
     "NAME": "Corrosive Scent",
     "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, apply !M! Poison to ALL enemies.",
@@ -150,10 +154,6 @@
   "BoosterPacks:DictionaryAttack": {
     "NAME": "Dictionary Attack",
     "DESCRIPTION": "Deal !D! damage. NL Look at the top !M! cards of your deck, choose one and add it to your hand."
-  },
-  "BoosterPacks:Dignity": {
-    "NAME": "Dignity",
-    "DESCRIPTION": "Can only be played if you have no *Rare card in hand. NL Deal !D! damage. NL Gain !B! Block."
   },
   "BoosterPacks:DominateReality": {
     "NAME": "Dominate Reality",
@@ -212,6 +212,10 @@
     "NAME": "Frenzy",
     "DESCRIPTION": "Lose 2 HP. NL Gain !M! Vigor."
   },
+  "BoosterPacks:Fruit": {
+    "NAME": "Fruit",
+    "DESCRIPTION": "Heal !M! HP."
+  },
   "BoosterPacks:Furtivity": {
     "NAME": "Furtivity",
     "DESCRIPTION": "Gain !M! Dexterity."
@@ -231,8 +235,7 @@
   },
   "BoosterPacks:Grim": {
     "NAME": "Grim",
-    "DESCRIPTION": "Lose 3 HP. NL Gain !M! Strength.",
-    "UPGRADE_DESCRIPTION": "Lose 4 HP. NL Gain !M! Strength."
+    "DESCRIPTION": "Lose 3 HP. NL Gain !M! Strength."
   },
   "BoosterPacks:GroupTherapy": {
     "NAME": "Group Therapy",
@@ -322,7 +325,7 @@
   },
   "BoosterPacks:Mutilation": {
     "NAME": "Mutilation",
-    "DESCRIPTION": "boosterpacks:Forgotten. NL Heal 10 HP. NL Lose !M! Max HP. NL Exhaust."
+    "DESCRIPTION": "boosterpacks:Latent. NL Heal 10 HP. NL Lose !M! Max HP. NL Exhaust."
   },
   "BoosterPacks:Naraka": {
     "NAME": "Naraka",
@@ -358,6 +361,10 @@
   "BoosterPacks:ParadigmShift": {
     "NAME": "Paradigm Shift",
     "DESCRIPTION": "Lose all Focus. NL Gain double the boosterpacks:Integrity."
+  },
+  "BoosterPacks:Pestilence": {
+    "NAME": "Pestilence",
+    "DESCRIPTION": "Apply !M! Poison. NL Double this card's Poison, increase its cost by 1 for this combat."
   },
   "BoosterPacks:PhantomStrike": {
     "NAME": "Phantom Strike",
@@ -399,10 +406,6 @@
     "NAME": "Quagmire",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! *Debris into your hand."
   },
-  "BoosterPacks:RecursiveCall": {
-    "NAME": "Recursive Call",
-    "DESCRIPTION": "Every time you play 4 cards in a turn, Channel a copy of your leftmost orb."
-  },
   "BoosterPacks:Register": {
     "NAME": "Register",
     "DESCRIPTION": "Draw X cards. NL Cannot drain more than [B] .",
@@ -415,11 +418,15 @@
   },
   "BoosterPacks:Reprieve": {
     "NAME": "Reprieve",
-    "DESCRIPTION": "boosterpacks:Forgotten. NL Heal !M! HP. NL Exhaust."
+    "DESCRIPTION": "boosterpacks:Latent. NL Heal !M! HP. NL Exhaust."
   },
   "BoosterPacks:Respite": {
     "NAME": "Respite",
     "DESCRIPTION": "Gain !B! Block. NL If you are in Calm, draw !M! cards and exit your Stance."
+  },
+  "BoosterPacks:Restless": {
+    "NAME": "Restless",
+    "DESCRIPTION": "Deal !D! damage once for each turn passed."
   },
   "BoosterPacks:Revenge": {
     "NAME": "Revenge",
@@ -435,8 +442,8 @@
   },
   "BoosterPacks:Shinigami": {
     "NAME": "Shinigami",
-    "DESCRIPTION": "Whenever Poison is Fatal, heal !M! HP.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Whenever Poison is Fatal, heal !M! HP."
+    "DESCRIPTION": "boosterpacks:Latent. NL Whenever Poison is Fatal, heal !M! HP.",
+    "UPGRADE_DESCRIPTION": "Whenever Poison is Fatal, heal !M! HP."
   },
   "BoosterPacks:Shinobi": {
     "NAME": "Shinobi",
@@ -447,7 +454,7 @@
   },
   "BoosterPacks:Silence": {
     "NAME": "Silence",
-    "DESCRIPTION": "Discard your hand. NL Gain !B! Block per card discarded. NL Draw !M! card."
+    "DESCRIPTION": "Discard !M! cards. NL Gain !B! Block. NL Draw 1 card."
   },
   "BoosterPacks:SlidingKick": {
     "NAME": "Sliding Kick",
@@ -483,6 +490,10 @@
     "NAME": "Tactical Advantage",
     "DESCRIPTION": "Deal !D! damage. NL If the enemy does not have Poison, apply !M! Poison. NL Exhaust."
   },
+  "BoosterPacks:TailRecursivity": {
+    "NAME": "Tail Recursivity",
+    "DESCRIPTION": "Every time you play 4 cards in a turn, Channel a copy of your leftmost orb."
+  },
   "BoosterPacks:TargetingSystem": {
     "NAME": "Targeting System",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Lock-on."
@@ -491,9 +502,17 @@
     "NAME": "Titanium",
     "DESCRIPTION": "Gain !B! Block !M! times."
   },
+  "BoosterPacks:Tools": {
+    "NAME": "Tools",
+    "DESCRIPTION": "Gain !M! Strength. NL Gain 1 Dexterity."
+  },
   "BoosterPacks:Transcendence": {
     "NAME": "Transcendence",
     "DESCRIPTION": "Ethereal. NL Double ALL your buffs and debuffs. NL Exhaust."
+  },
+  "BoosterPacks:Treasure": {
+    "NAME": "Treasure",
+    "DESCRIPTION": "Gain !M! Gold."
   },
   "BoosterPacks:Trinity": {
     "NAME": "Trinity",
@@ -513,6 +532,10 @@
     "NAME": "Vision",
     "DESCRIPTION": "Retain. NL Scry !M!. NL Exhaust."
   },
+  "BoosterPacks:Wisdom": {
+    "NAME": "Wisdom",
+    "DESCRIPTION": "Equalize your Strength and Dexterity."
+  },
   "BoosterPacks:Worsening": {
     "NAME": "Worsening",
     "DESCRIPTION": "boosterpacks:Latent. NL Deal !D! damage. NL Double ALL debuffs on the target. NL Exhaust."
@@ -520,5 +543,10 @@
   "BoosterPacks:Zen": {
     "NAME": "Zen",
     "DESCRIPTION": "Retain. Enter Calm, Wrath or boosterpacks:Courage. NL End your turn."
+  },
+  "BoosterPacks:Zodiac": {
+    "NAME": "Zodiac",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply 1 Weak. NL Apply 1 Vulnerable. NL Apply !M! Poison. NL Gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply 2 Weak. NL Apply 2 Vulnerable. NL Apply !M! Poison. NL Gain !M! Vigor."
   }
 }

@@ -1,8 +1,11 @@
 package BoosterPacks.cards.green;
 
 import BoosterPacks.BoosterPacks;
-import BoosterPacks.actions.silent.SilenceAction;
 import basemod.abstracts.CustomCard;
+
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -28,22 +31,24 @@ public class Silence extends CustomCard {
 
     public Silence() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 2;
+        this.baseBlock = 4;
         this.block = this.baseBlock;
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new SilenceAction(this.block));
+        this.addToBot(new DiscardAction(p, p, this.magicNumber, false));
+        this.addToBot(new GainBlockAction(p, p, this.block));
+        this.addToBot(new DrawCardAction(p, 1));
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBlock(1);
+            this.upgradeBlock(2);
             initializeDescription();
         }
     }

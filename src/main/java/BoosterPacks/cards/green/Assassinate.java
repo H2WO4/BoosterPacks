@@ -55,7 +55,13 @@ public class Assassinate extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
+
+            int tmp = this.cost;
+            boolean tmp2 = this.isCostModified;
             this.upgradeBaseCost(3);
+            this.cost = tmp;
+            this.isCostModified = tmp2;
+
             initializeDescription();
         }
     }

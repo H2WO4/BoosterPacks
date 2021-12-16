@@ -63,6 +63,5 @@ public class CourageAuraEffect extends AbstractGameEffect {
         sb.setBlendFunction(770, 771);
     }
 
-    public void dispose() {
-    }
+    public void dispose() {}
 }

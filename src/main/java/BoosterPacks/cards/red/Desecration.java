@@ -37,19 +37,16 @@ public class Desecration extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ExhaustAction(this.magicNumber, false));
-        this.addToBot(new SelectCardsAction(p.exhaustPile.group, "Select a card:", (cards) -> {
-            AbstractCard card = cards.get(0);
-            card.unfadeOut();
-            p.hand.addToHand(card);
-            p.exhaustPile.removeCard(card);
-            card.setCostForTurn(0);
-        }));
-    }
-
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return super.canUse(p, m) && p.hand.size() > this.magicNumber;
+        if (p.hand.size() > this.magicNumber) {
+            this.addToBot(new ExhaustAction(this.magicNumber, false));
+            this.addToBot(new SelectCardsAction(p.exhaustPile.group, "Select a card:", (cards) -> {
+                AbstractCard card = cards.get(0);
+                card.unfadeOut();
+                p.hand.addToHand(card);
+                p.exhaustPile.removeCard(card);
+                card.setCostForTurn(0);
+            }));
+        }
     }
 
     @Override

@@ -18,19 +18,19 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import static BoosterPacks.BoosterPacks.makePowerPath;
 
-public class RecursiveCallPower extends AbstractPower implements CloneablePowerInterface {
+public class TailRecursivityPower extends AbstractPower implements CloneablePowerInterface {
 
-    public static final String POWER_ID = BoosterPacks.makeID("RecursiveCallPower");
+    public static final String POWER_ID = BoosterPacks.makeID("TailRecursivityPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("RecursiveCall84.png"));
-    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("RecursiveCall32.png"));
+    private static final Texture tex84 = TextureLoader.getTexture(makePowerPath("TailRecursivity84.png"));
+    private static final Texture tex32 = TextureLoader.getTexture(makePowerPath("TailRecursivity32.png"));
 
     int stackAmount;
 
-    public RecursiveCallPower(final AbstractCreature owner) {
+    public TailRecursivityPower(final AbstractCreature owner) {
         name = NAME;
         ID = POWER_ID;
 
@@ -82,6 +82,6 @@ public class RecursiveCallPower extends AbstractPower implements CloneablePowerI
 
     @Override
     public AbstractPower makeCopy() {
-        return new RecursiveCallPower(owner);
+        return new TailRecursivityPower(owner);
     }
 }
