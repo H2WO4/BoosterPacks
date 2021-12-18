@@ -34,7 +34,7 @@
     "DESCRIPTION": "Infligez !D! dégâts. NL Quand défaussée, réduisez son coût de 1 avant d'être jouée. NL Remettez la dans votre main."
   },
   "BoosterPacks:Audacity": {
-    "NAME": "Audacité",
+    "NAME": "Audace",
     "DESCRIPTION": "Piochez 1 carte. NL Si c'est une Compétence, entrez en boosterpacks:Courage. NL Épuisement.",
     "UPGRADE_DESCRIPTION": "Piochez 1 carte. NL Si c'est une Compétence, entrez en boosterpacks:Courage."
   },
