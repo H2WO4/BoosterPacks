@@ -138,7 +138,7 @@
     "DESCRIPTION": "Retenue. NL Épuisement."
   },
   "BoosterPacks:DefyReality": {
-    "NAME": "Défi-réalité",
+    "NAME": "Défie-réalité",
     "DESCRIPTION": "Scrutez 5 cartes. NL Ajoutez !M! *Vision à votre main.",
     "UPGRADE_DESCRIPTION": "Scrutez 5 cartes. NL Ajoutez !M! *Visions à votre main."
   },
@@ -241,7 +241,7 @@
     "DESCRIPTION": "TOUS les ennemis perdent des PV équivalents à leur *Marque. NL Appliquez !M! de *Marque à TOUT les ennemis."
   },
   "BoosterPacks:GutStab": {
-    "NAME": "Coupe-tripes",
+    "NAME": "Tranche-boyaux",
     "DESCRIPTION": "Infligez !D! dégâts 3 fois. NL L'ennemi perd !M! de Force temporaire."
   },
   "BoosterPacks:HaltingProblem": {
@@ -254,7 +254,7 @@
     "DESCRIPTION": "Infligez !D! dégâts. NL Si vous êtes en Colère, gagnez !M! de Force et quittez votre position."
   },
   "BoosterPacks:HiddenStrike": {
-    "NAME": "Frappe cachée",
+    "NAME": "Frappe dérobée",
     "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, infligez !D! dégâts à TOUT les ennemis",
     "EXTENDED_DESCRIPTION": [
       "Je ne peux pas jouer cette carte."
