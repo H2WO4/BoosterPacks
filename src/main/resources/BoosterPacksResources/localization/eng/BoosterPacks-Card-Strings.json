@@ -528,6 +528,10 @@
     "NAME": "Valor",
     "DESCRIPTION": "Scry !M!. NL Draw 1 card. NL Enter boosterpacks:Courage."
   },
+  "BoosterPacks:Vigilance": {
+    "NAME": "Vigilance",
+    "DESCRIPTION": "Gain !B! Block. NL Choose one: Enter Calm, or boosterpacks:Courage."
+  },
   "BoosterPacks:Vision": {
     "NAME": "Vision",
     "DESCRIPTION": "Retain. NL Scry !M!. NL Exhaust."

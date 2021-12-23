@@ -527,6 +527,10 @@
     "NAME": "Valeur",
     "DESCRIPTION": "Scrutez !M! cartes. NL Piochez 1 carte. NL Entrez en boosterpacks:Courage."
   },
+  "BoosterPacks:Vigilance": {
+    "NAME": "Vigilance",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Choississez: Entrez en Calme, ou en boosterpacks:Courage."
+  },
   "BoosterPacks:Vision": {
     "NAME": "Vision",
     "DESCRIPTION": "Retenue. NL Scrutez !M! cartes. NL Épuisement."
