@@ -549,7 +549,7 @@
   },
   "BoosterPacks:Zodiac": {
     "NAME": "Zodiac",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez 1 de Faiblesse. NL Appliquez 1 de Vulnérabilité. NL Appliquez !M! de Poison. NL Gagnez !M! de Vigeur.",
-    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez 2 de Faiblesse. NL Appliquez  de Vulnérabilité. NL Appliquez !M! de Poison. NL Gagnez !M! de Vigeur."
+    "DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez !M! de Poison. NL Gagnez !M! de Vigeur.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégâts. NL Gagnez !B! d'Armure. NL Appliquez !M! de Poison. NL Gagnez !M! de Vigeur."
   }
 }

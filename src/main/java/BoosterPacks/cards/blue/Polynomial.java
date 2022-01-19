@@ -47,9 +47,9 @@ public class Polynomial extends CustomCard {
 
     @Override
     public void applyPowers() {
-        super.applyPowers();
         AbstractPlayer p = AbstractDungeon.player;
-        int damage = this.damage + (p.energy.energy + (p.hasRelic(ChemicalX.ID) ? 2: 0) * this.magicNumber);
+        int damage = this.damage + ((p.energy.energy + (p.hasRelic(ChemicalX.ID) ? 2: 0)) * this.magicNumber);
+        super.applyPowers();
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + damage + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
@@ -59,7 +59,7 @@ public class Polynomial extends CustomCard {
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
         AbstractPlayer p = AbstractDungeon.player;
-        int damage = this.damage + (p.energy.energy + (p.hasRelic(ChemicalX.ID) ? 2: 0) * this.magicNumber);
+        int damage = this.damage + ((p.energy.energy + (p.hasRelic(ChemicalX.ID) ? 2: 0)) * this.magicNumber);
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[0] + damage + cardStrings.EXTENDED_DESCRIPTION[1];
         this.initializeDescription();
@@ -75,6 +75,11 @@ public class Polynomial extends CustomCard {
         this.rawDescription = cardStrings.DESCRIPTION;
         this.initializeDescription();
     }
+
+    @Override
+    public void triggerOnGainEnergy(int e, boolean dueToCard) {
+        this.applyPowers();
+    } 
 
     @Override
     public void upgrade() {

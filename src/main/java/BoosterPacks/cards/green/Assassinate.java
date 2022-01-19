@@ -59,7 +59,7 @@ public class Assassinate extends CustomCard {
             int tmp = this.cost;
             boolean tmp2 = this.isCostModified;
             this.upgradeBaseCost(3);
-            this.cost = tmp;
+            this.cost = tmp - 1;
             this.isCostModified = tmp2;
 
             initializeDescription();

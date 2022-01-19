@@ -550,7 +550,7 @@
   },
   "BoosterPacks:Zodiac": {
     "NAME": "Zodiac",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply 1 Weak. NL Apply 1 Vulnerable. NL Apply !M! Poison. NL Gain !M! Vigor.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply 2 Weak. NL Apply 2 Vulnerable. NL Apply !M! Poison. NL Gain !M! Vigor."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! Poison. NL Gain !M! Vigor.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Apply !M! Poison. NL Gain !M! Vigor."
   }
 }

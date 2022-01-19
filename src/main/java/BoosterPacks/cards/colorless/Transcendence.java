@@ -37,7 +37,7 @@ public class Transcendence extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (AbstractPower po: p.powers) {
-            if (po.amount != 0 && (!po.canGoNegative && po.amount == -1)) {
+            if (po.amount != 0 && ((!po.canGoNegative) && po.amount == -1)) {
                 this.addToBot(new ApplyPowerAction(p, p, po));
             }
         }
