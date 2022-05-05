@@ -18,6 +18,7 @@ import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PotionStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -84,7 +85,6 @@ public class BoosterPacks implements
         setModID("BoosterPacks");
         
         logger.info("Done subscribing");
-        
     }
     
     // ====== NO EDIT AREA ======
@@ -153,7 +153,6 @@ public class BoosterPacks implements
         
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
 
-
         logger.info("Done loading badge Image and mod options");
     }
     
@@ -169,6 +168,9 @@ public class BoosterPacks implements
         logger.info("Add variables");
         
         logger.info("Adding cards");
+
+        for (AbstractCard c: CardLibrary.getAllCards())
+            c.isSeen = true;
 
         new AutoAdd("BoosterPacks")
             .packageFilter("BoosterPacks.cards")
@@ -213,7 +215,16 @@ public class BoosterPacks implements
 
         Gson gson = new Gson();
         String json;
-        json = Gdx.files.internal(getModID() + "Resources/localization/eng/BoosterPacks-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
+        String lang_pre = "";
+        switch (Settings.language) {
+            case FRA:
+                lang_pre = "fra";
+                break;
+            default:
+                lang_pre = "eng";
+                break;
+        }
+        json = Gdx.files.internal(getModID() + "Resources/localization/" + lang_pre + "/BoosterPacks-Keyword-Strings.json").readString(String.valueOf(StandardCharsets.UTF_8));
 
         com.evacipated.cardcrawl.mod.stslib.Keyword[] keywords = gson.fromJson(json, com.evacipated.cardcrawl.mod.stslib.Keyword[].class);
 

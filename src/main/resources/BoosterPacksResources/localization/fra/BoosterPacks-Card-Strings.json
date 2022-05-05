@@ -44,7 +44,7 @@
   },
   "BoosterPacks:BlackHole": {
     "NAME": "Trou noir",
-    "DESCRIPTION": "Quand vous Activez un Orbe Obscur, utilisez la capacité passive de TOUT vos Orbes Obscurs. NL Canalisez !M! Orbes Obscurs."
+    "DESCRIPTION": "Quand vous Activez un Orbe Obscur, utilisez la capacité passive de TOUS vos Orbes Obscurs. NL Canalisez !M! Orbes Obscurs."
   },
   "BoosterPacks:BlazingSword": {
     "NAME": "Lame flamboyante",
@@ -61,7 +61,7 @@
   },
   "BoosterPacks:BoilingBlood": {
     "NAME": "Sang bouillonnant",
-    "DESCRIPTION": "Au début de votre tour, gain !M! Vigueur."
+    "DESCRIPTION": "Au début de votre tour, gagnez !M! Vigueur."
   },
   "BoosterPacks:Bravery": {
     "NAME": "Bravoure",
@@ -92,8 +92,8 @@
   },
   "BoosterPacks:ComplexPlane": {
     "NAME": "Plan complexe",
-    "DESCRIPTION": "Gagnez X boosterpacks:d'Integrité.",
-    "UPGRADE_DESCRIPTION": "Gagnez X+1 boosterpacks:d'Integrité."
+    "DESCRIPTION": "Gagnez X boosterpacks:d'Intégrité.",
+    "UPGRADE_DESCRIPTION": "Gagnez X+1 boosterpacks:d'Intégrité."
   },
   "BoosterPacks:ConductiveStrike": {
     "NAME": "Frappe conductrice",
@@ -152,7 +152,7 @@
   },
   "BoosterPacks:DictionaryAttack": {
     "NAME": "Attaque par dictionnaire",
-    "DESCRIPTION": "Infligez !D! dégâts. NL Regardez les !M! premières cartes de votre pioche, ajoutez en une à votre main."
+    "DESCRIPTION": "Infligez !D! dégâts. NL Regardez les !M! premières cartes de votre pioche, ajoutez en 1 à votre main."
   },
   "BoosterPacks:DominateReality": {
     "NAME": "Domine-réalité",
@@ -168,7 +168,7 @@
   },
   "BoosterPacks:Empty": {
     "NAME": "Vide",
-    "DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez a *Néant au dessus de votre pioche."
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Ajoutez un *Néant au dessus de votre pioche."
   },
   "BoosterPacks:EmptyPrediction": {
     "NAME": "Prédiction vide",
@@ -179,6 +179,14 @@
     "DESCRIPTION": "Quand votre tour est forcé à être terminé, piochez 1 carte, défaussez 2 cartes et continuez à jouer.",
     "UPGRADE_DESCRIPTION": "Inné. NL Quand votre tour est forcé à être terminé, piochez 1 carte, défaussez 2 cartes et continuez à jouer."
   },
+  "BoosterPacks:Erudite": {
+    "NAME": "Érudit",
+    "DESCRIPTION": "Infligez !D! dégâts. NL Attaquez une fois de plus par mot-clé unique présent dans vos cartes en main.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (Il y a !M! mot-clé unique.)",
+      " NL (Il y a !M! mots-clés unique.)"
+    ]
+  },
   "BoosterPacks:EvasiveManeuver": {
     "NAME": "Manœuvre évasive",
     "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, Gagnez !B! d'Armure.",
@@ -188,7 +196,7 @@
   },
   "BoosterPacks:Factorization": {
     "NAME": "Factorisation",
-    "DESCRIPTION": "Gagnez !M! boosterpacks:d'Integrité. NL Perdez 2 de Concentration."
+    "DESCRIPTION": "Gagnez !M! boosterpacks:d'Intégrité. NL Perdez 2 de Concentration."
   },
   "BoosterPacks:ForgeReality": {
     "NAME": "Forge-réalité",
@@ -278,8 +286,8 @@
   },
   "BoosterPacks:MasterTrick": {
     "NAME": "Tour de maître",
-    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, choisissez et placez un carte de votre pioche dans votre main.",
-    "UPGRADE_DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, choisissez et placez un carte de votre pioche ou défausse dans votre main.",
+    "DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, choisissez et placez 1 carte de votre pioche dans votre main.",
+    "UPGRADE_DESCRIPTION": "Injouable. NL Quand cette carte est défaussée, choisissez et placez 1 carte de votre pioche ou défausse dans votre main.",
     "EXTENDED_DESCRIPTION": [
       "Je ne peux pas jouer cette carte."
     ]
@@ -359,7 +367,7 @@
   },
   "BoosterPacks:ParadigmShift": {
     "NAME": "Évolution du paradigme",
-    "DESCRIPTION": "Perdez toute votre Concentration. Gagnez le double boosterpacks:d'Integrité."
+    "DESCRIPTION": "Perdez toute votre Concentration. NL Gagnez le double boosterpacks:d'Intégrité."
   },
   "BoosterPacks:Pestilence": {
     "NAME": "Pestilence",
@@ -436,7 +444,7 @@
     "DESCRIPTION": "Quand vous perdez des PV, infligez !M! dégâts à TOUT les ennemis."
   },
   "BoosterPacks:Scythe": {
-    "NAME": "Faux",
+    "NAME": "Fauchage",
     "DESCRIPTION": "Perdez 1 PV et infligez !D! dégâts !M! fois."
   },
   "BoosterPacks:SecretArsenal": {
@@ -470,7 +478,7 @@
   },
   "BoosterPacks:SomberOmen": {
     "NAME": "Sombre présage",
-    "DESCRIPTION": "Quand vous infligez de la Faiblesse, infligez !M! de Poison aussi."
+    "DESCRIPTION": "Quand vous infligez de la Faiblesse, infligez aussi !M! de Poison."
   },
   "BoosterPacks:Sprint": {
     "NAME": "Sprint",
@@ -494,7 +502,7 @@
     "DESCRIPTION": "Infligez !D! dégâts. NL Si l'ennemi n'est pas Empoisonné, infligez !M! de Poison. NL Épuisement."
   },
   "BoosterPacks:TargetingSystem": {
-    "NAME": "Système de ciblage",
+    "NAME": "Système de visée",
     "DESCRIPTION": "Gagnez !B! d'Armure. NL Appliquez !M! de Ciblage."
   },
   "BoosterPacks:Titanium": {
@@ -541,7 +549,7 @@
   },
   "BoosterPacks:Worsening": {
     "NAME": "Aggravation",
-    "DESCRIPTION": "boosterpacks:Latent. NL Infligez !D! dégâts. NL Double TOUT les débuffs de l'ennemi. NL Épuisement."
+    "DESCRIPTION": "boosterpacks:Latent. NL Infligez !D! dégâts. NL Double TOUS les débuffs de l'ennemi. NL Épuisement."
   },
   "BoosterPacks:Zen": {
     "NAME": "Zen",

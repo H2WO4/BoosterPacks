@@ -4,6 +4,7 @@ import BoosterPacks.BoosterPacks;
 import BoosterPacks.powers.silent.SecretArsenalPower;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.tempCards.Shiv;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -29,6 +30,7 @@ public class SecretArsenal extends CustomCard {
 
     public SecretArsenal() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        this.cardsToPreview = new Shiv();
     }
 
     @Override

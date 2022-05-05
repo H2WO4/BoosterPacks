@@ -1,6 +1,7 @@
 package BoosterPacks.powers.defect;
 
 import BoosterPacks.BoosterPacks;
+import BoosterPacks.actions.defect.TailRecursivityAction;
 import BoosterPacks.util.TextureLoader;
 import basemod.interfaces.CloneablePowerInterface;
 import com.badlogic.gdx.graphics.Texture;
@@ -64,12 +65,7 @@ public class TailRecursivityPower extends AbstractPower implements CloneablePowe
         AbstractPlayer p = AbstractDungeon.player;
         this.amount--;
         if (this.amount == 0) {
-            if (p.filledOrbCount() >= 1) {
-                AbstractOrb leftOrb = p.orbs.get(p.filledOrbCount() - 1);
-                for (int i = 0; i < this.stackAmount; i++) {
-                    this.addToTop(new ChannelAction(leftOrb.makeCopy()));
-                }
-            }
+            this.addToBot(new TailRecursivityAction(this.stackAmount));
             this.amount = 4;
         }
     }

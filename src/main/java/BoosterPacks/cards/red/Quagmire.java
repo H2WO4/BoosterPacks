@@ -30,9 +30,9 @@ public class Quagmire extends CustomCard {
 
     public Quagmire() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 16;
+        this.baseBlock = 11;
         this.block = this.baseBlock;
-        this.baseMagicNumber = 3;
+        this.baseMagicNumber = 2;
         this.magicNumber = this.baseMagicNumber;
 
         this.cardsToPreview = new Debris();
@@ -49,6 +49,7 @@ public class Quagmire extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName();
             this.upgradeBlock(5);
+            this.upgradeMagicNumber(1);
             initializeDescription();
         }
     }

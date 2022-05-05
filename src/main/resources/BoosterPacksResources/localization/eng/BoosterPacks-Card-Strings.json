@@ -180,6 +180,14 @@
     "DESCRIPTION": "Whenever your turn is forced to end, draw 1 card, discard 2 cards and continue to play.",
     "UPGRADE_DESCRIPTION": "Innate. NL Whenever your turn is forced to end, draw 1 card, discard 2 cards and continue to play."
   },
+  "BoosterPacks:Erudite": {
+    "NAME": "Erudite",
+    "DESCRIPTION": "Deal !D! damage. NL Attack an additional time per unique keyword in your hand.",
+    "EXTENDED_DESCRIPTION": [
+      " NL (There is !M! unique keyword in your hand.)",
+      " NL (There are !M! unique keywords in your hand.)"
+    ]
+  },
   "BoosterPacks:EvasiveManeuver": {
     "NAME": "Evasive Maneuver",
     "DESCRIPTION": "Unplayable. NL If this card is discarded from your hand, gain !B! Block.",
@@ -530,7 +538,7 @@
   },
   "BoosterPacks:Vigilance": {
     "NAME": "Vigilance",
-    "DESCRIPTION": "Gain !B! Block. NL Choose one: Enter Calm, or boosterpacks:Courage."
+    "DESCRIPTION": "Gain !B! Block. NL Enter Calm or boosterpacks:Courage."
   },
   "BoosterPacks:Vision": {
     "NAME": "Vision",

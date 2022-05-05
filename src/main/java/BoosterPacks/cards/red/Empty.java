@@ -33,7 +33,7 @@ public class Empty extends CustomCard {
 
     public Empty() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseBlock = 12;
+        this.baseBlock = 13;
         this.block = this.baseBlock;
 
         this.cardsToPreview = new VoidCard();

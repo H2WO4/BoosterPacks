@@ -44,7 +44,7 @@ public class Frenzy extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(2);
             initializeDescription();
         }
     }

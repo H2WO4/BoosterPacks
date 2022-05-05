@@ -2,7 +2,6 @@ package BoosterPacks.cards.colorless;
 
 import BoosterPacks.BoosterPacks;
 import basemod.abstracts.CustomCard;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -10,14 +9,20 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import java.util.ArrayList;
+import java.util.Locale;
 
 import static BoosterPacks.BoosterPacks.makeCardPath;
 
-public class Monad extends CustomCard {
+public class Erudite extends CustomCard {
 
-    public static final String ID = BoosterPacks.makeID(Monad.class.getSimpleName());
+    public static final String ID = BoosterPacks.makeID(Erudite.class.getSimpleName());
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
 
     public static final String IMG = makeCardPath("Monad.png");
@@ -29,23 +34,27 @@ public class Monad extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = CardColor.COLORLESS;
-    private static final int COST = 2;
+    private static final int COST = 1;
 
-    public Monad() {
+    public Erudite() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
-        this.baseDamage = 7;
+        this.baseDamage = 4;
         this.damage = this.baseDamage;
     }
 
-    private int countCards() {
-        int count = 0;
-        for (AbstractCard c: AbstractDungeon.player.masterDeck.group) {
-            if (c.rarity == CardRarity.RARE) {
-                count++;
+    private int countKeywords() {
+        Logger logger = LogManager.getLogger(BoosterPacks.class.getName());
+        ArrayList<String> keywords = new ArrayList<>();
+        for (AbstractCard c: AbstractDungeon.player.hand.group) {
+            String desc = c.rawDescription.toLowerCase(Locale.ROOT);
+            for (String key: GameDictionary.keywords.keySet()) {
+                String val = GameDictionary.keywords.get(key);
+                if (desc.contains(key) && !keywords.contains(val))
+                    keywords.add(val);
             }
         }
 
-        return count;
+        return keywords.size();
     }
 
     @Override
@@ -58,7 +67,7 @@ public class Monad extends CustomCard {
     @Override
     public void applyPowers() {
         super.applyPowers();
-        this.baseMagicNumber = this.countCards();
+        this.baseMagicNumber = this.countKeywords();
         this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber > 1 ? 1 : 0];
@@ -68,7 +77,7 @@ public class Monad extends CustomCard {
     @Override
     public void calculateCardDamage(AbstractMonster mo) {
         super.calculateCardDamage(mo);
-        this.baseMagicNumber = this.countCards();
+        this.baseMagicNumber = this.countKeywords();
         this.magicNumber = this.baseMagicNumber;
         this.rawDescription = cardStrings.DESCRIPTION;
         this.rawDescription = this.rawDescription + cardStrings.EXTENDED_DESCRIPTION[this.magicNumber > 1 ? 1 : 0];
@@ -89,7 +98,7 @@ public class Monad extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeDamage(3);
+            this.upgradeDamage(2);
             initializeDescription();
         }
     }

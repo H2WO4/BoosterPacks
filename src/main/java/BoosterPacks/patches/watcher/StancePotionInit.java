@@ -14,8 +14,8 @@ public class StancePotionInit {
     public static void Postfix(StancePotion __instance) {
         __instance.tips.clear();
         __instance.tips.add(new PowerTip(__instance.name, CardCrawlGame.languagePack.getPotionString(BoosterPacks.getModID() + ":StancePotion").DESCRIPTIONS[0]));
-        __instance.tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.CALM.NAMES[0]), (String)GameDictionary.keywords.get(GameDictionary.CALM.NAMES[0])));
-        __instance.tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.WRATH.NAMES[0]), (String)GameDictionary.keywords.get(GameDictionary.WRATH.NAMES[0])));
+        __instance.tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.CALM.NAMES[0]), GameDictionary.keywords.get(GameDictionary.CALM.NAMES[0])));
+        __instance.tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.WRATH.NAMES[0]), GameDictionary.keywords.get(GameDictionary.WRATH.NAMES[0])));
         __instance.tips.add(new PowerTip(TipHelper.capitalize(new CourageStance().name), new CourageStance().description));
     }
 }
